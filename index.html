@@ -159,7 +159,8 @@
     .archive-cover-number{position:absolute;left:22px;top:20px;font-size:10px;letter-spacing:.15em;text-transform:uppercase;font-weight:700;background:var(--paper);padding:9px 11px}
     .archive-item-head{display:flex;justify-content:space-between;gap:12px;padding:19px 0 15px}
     .archive-item-head h3{font-size:clamp(21px,2.1vw,32px);letter-spacing:-.05em;font-weight:600;line-height:1.15;margin:0}
-    .archive-item-head span{font-size:11px;color:var(--muted);white-space:nowrap;margin-top:5px}
+    .archive-item-head .archive-cta{font-size:11px;color:var(--orange);white-space:nowrap;margin-top:5px;font-weight:700;border-bottom:1px solid currentColor;padding-bottom:4px}
+    .archive-title-link:hover h3{color:var(--orange);transition:color .25s}
     .archive-details{border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
     .archive-details summary{list-style:none;cursor:pointer;font-size:12px;font-weight:700;padding:15px 0;display:flex;justify-content:space-between}
     .archive-details summary::-webkit-details-marker{display:none}
@@ -323,7 +324,7 @@
       <div id="original-portfolio" class="archive-panel" aria-live="polite">
         <p id="archive-counter" class="archive-counter"></p>
         <div id="archive-list" class="archive-list"></div>
-        <p class="archive-note">Original campaigns and source assets, presented directly from the DAN PRADANA GitHub repository.</p>
+        <p class="archive-note">Campaign concepts, films, credits and project narratives from the original portfolio archive. Every case study and media file is hosted in this GitHub repository.</p>
       </div>
       <div class="ads-grid" id="temporary-ad-grid">
         <article class="ad-card">
@@ -472,7 +473,7 @@
   </script>
 
   <script>
-    /* Populate advertising section automatically after the original ZIP is imported. */
+    /* Use the original portfolio ZIP as the canonical advertising collection. */
     (async function(){
       var panel=document.getElementById('original-portfolio');
       var list=document.getElementById('archive-list');
@@ -486,46 +487,81 @@
         if(text!==undefined)e.textContent=text;
         return e;
       }
-      try{
+      var projectTitles={
+        '01-jagasehatmu-bersama-klikdokter':'#JagaSehatmu bersama KlikDokter',
+        '02-dicuekin-nana-mirdad-para-penyakit-curhat':'Dicuekin Nana Mirdad, Para Penyakit Curhat',
+        '03-maxicorn-product-launch':'Maxicorn Product Launch',
+        '04-klikdokter-gdn-facebook-instagram-banner':'KlikDokter — GDN, Facebook, Instagram, Banner',
+        '05-getcontact-ketahui-siapa-sebelum-sapa':'Getcontact — Ketahui Siapa Sebelum Sapa',
+        '06-p-g-maafibudihidupku':'P&G — #MaafIbuDiHidupku',
+        '07-sweety-silver-pants-little-monster-case-study':'Sweety Silver Pants — Little Monster',
+        '08-sweety-silver-pants-1-detik':'Sweety Silver Pants — 1 Detik',
+        '09-bca-finhacks-2019-dinda-kirana-dirantai-cowok-idaman':'BCA Finhacks 2019 — Dinda Kirana',
+        '10-nutriclub-be-resilient':'Nutriclub — Be Resilient!',
+        '11-loreal-indonesia-berani-matahari':"L’Oréal Indonesia — Berani Matahari",
+        '12-sambal-indofood-social-media':'Sambal Indofood — Social Media',
+        '13-bmj-paper-pack':'BMJ Paper Pack',
+        '14-teman-rakyat-unboxingcaleg':'Teman Rakyat — #UnboxingCaleg'
+      };
+      try {
         var response=await fetch('portfolio-assets/manifest.json',{cache:'no-store'});
-        if(!response.ok)return;
+        if(!response.ok)throw new Error('Manifest unavailable');
         var manifest=await response.json();
-        if(!manifest.projects||!manifest.projects.length)return;
-        manifest.projects.forEach(function(project,i){
-          var article=node('article','archive-item');
+        var projects=(manifest.projects||[]).filter(function(project){
+          return (project.assets||[]).some(function(asset){
+            return asset.name==='index.html' && asset.path.indexOf('/projects/')!==-1;
+          });
+        });
+        if(!projects.length)throw new Error('No imported projects');
+        projects.forEach(function(project,i){
           var assets=project.assets||[];
-          var cover=assets.find(function(asset){return asset.type==='image';})||assets.find(function(asset){return asset.type==='video';})||assets[0];
+          var title=projectTitles[project.slug]||project.name;
+          var caseStudy=assets.find(function(asset){return asset.name==='index.html';});
+          var cover=assets.find(function(asset){return /^cover\./i.test(asset.name)&&asset.type==='image';})
+            ||assets.find(function(asset){return asset.type==='image';});
+          var article=node('article','archive-item');
           var visual=node('a','archive-cover');
+          visual.href=caseStudy.url;
+          visual.target='_blank';
+          visual.rel='noopener noreferrer';
+          visual.setAttribute('aria-label','View '+title+' case study');
           if(cover){
-            visual.href=cover.url;
-            visual.target='_blank';
-            visual.rel='noopener noreferrer';
-            visual.setAttribute('aria-label','View '+project.name+' source file');
-            if(cover.type==='image'){
-              var img=node('img');img.src=cover.url;img.alt=project.name;img.loading='lazy';img.decoding='async';visual.appendChild(img);
-            }else if(cover.type==='video'){
-              var video=node('video');video.src=cover.url;video.muted=true;video.playsInline=true;video.preload='metadata';visual.appendChild(video);
-            }else{
-              visual.appendChild(node('span','archive-cover-fallback',project.name));
-            }
-          }else visual.appendChild(node('span','archive-cover-fallback',project.name));
-          visual.appendChild(node('span','archive-cover-number',String(i+1).padStart(2,'0')+' / Archive'));
+            var img=node('img');
+            img.src=cover.url;img.alt=title+' campaign cover';
+            img.loading='lazy';img.decoding='async';
+            visual.appendChild(img);
+          }else{
+            visual.appendChild(node('span','archive-cover-fallback',title));
+          }
+          visual.appendChild(node('span','archive-cover-number',String(i+1).padStart(2,'0')+' / Advertising'));
           article.appendChild(visual);
+
           var header=node('div','archive-item-head');
-          header.appendChild(node('h3','',project.name));
-          header.appendChild(node('span','',String(project.file_count||assets.length)+' files'));
+          var titleLink=node('a','archive-title-link');
+          titleLink.href=caseStudy.url;
+          titleLink.target='_blank';
+          titleLink.rel='noopener noreferrer';
+          titleLink.appendChild(node('h3','',title));
+          header.appendChild(titleLink);
+          var view=node('a','archive-cta','Case study ↗');
+          view.href=caseStudy.url;
+          view.target='_blank';
+          view.rel='noopener noreferrer';
+          header.appendChild(view);
           article.appendChild(header);
+
           var details=node('details','archive-details');
-          details.appendChild(node('summary','','Explore original project files'));
+          var downloadable=assets.filter(function(asset){return asset.name!=='index.html';});
+          details.appendChild(node('summary','','Browse '+String(downloadable.length)+' original media files'));
           var thumbnails=node('div','archive-assets');
-          assets.forEach(function(asset){
+          downloadable.forEach(function(asset){
             var link=node('a','archive-asset');
             link.href=asset.url;link.target='_blank';link.rel='noopener noreferrer';
             if(asset.type==='image'){
-              var thumb=node('img');thumb.src=asset.url;thumb.alt=asset.name;thumb.loading='lazy';thumb.decoding='async';link.appendChild(thumb);
-            }else{
-              link.appendChild(node('span','archive-asset-icon',asset.type==='video'?'▶':'↗'));
-            }
+              var thumb=node('img');
+              thumb.src=asset.url;thumb.alt=asset.name;thumb.loading='lazy';
+              thumb.decoding='async';link.appendChild(thumb);
+            }else link.appendChild(node('span','archive-asset-icon',asset.type==='video'?'▶':'↗'));
             link.appendChild(node('span','',asset.name));
             thumbnails.appendChild(link);
           });
@@ -533,12 +569,12 @@
           article.appendChild(details);
           list.appendChild(article);
         });
-        count.textContent=String(manifest.projects.length)+' project folders / '+String(manifest.file_count)+' original files, hosted in this GitHub repository.';
+        count.textContent=String(projects.length)+' advertising case studies · '+String(manifest.file_count)+' original files imported and hosted on GitHub.';
         panel.classList.add('ready');
         if(cards)cards.hidden=true;
         if(oldNote)oldNote.hidden=true;
       }catch(error){
-        /* Keep the existing curated layout if no archive has been imported yet. */
+        /* The temporary curated layout remains until the source ZIP is available. */
       }
     }());
   </script>
