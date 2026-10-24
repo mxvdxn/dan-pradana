@@ -58,12 +58,38 @@ def build(project, index):
     for n, (headline, paragraph) in enumerate(project["parts"], 1):
         chapters.append(f'<section class="chapter"><span class="chapter-no">{n:02d} / The thinking</span><h2>{esc(headline)}</h2><p>{paragraph}</p></section>')
 
-    credits = [["My contribution", project["role"]]]
-    for role, name in project.get("credits", []):
-        if role == "Copywriter" and "copywriting" in project["role"].lower():
-            continue
-        credits.append([role, name])
-    credit_html = "".join(f'<div class="credit-row"><strong>{esc(label)}</strong><span>{esc(person)}</span></div>' for label, person in credits)
+    # Extract the exact named credits from the ORIGINAL, backed-up portfolio.
+    # The author's role summary is not a substitute for an explicit copywriter credit.
+    from html import unescape
+    credit_re = re.compile(
+        r"(Agency|Associate Creative Director|Creative Director|Creative Group Head|Video Director|Art Director|Copywriter|Strategist|Content)\s*:\s*([^<\r\n]+)",
+        re.IGNORECASE,
+    )
+    original_credits = []
+    for label, person in credit_re.findall(source):
+        entry = [label.strip(), unescape(person).strip()]
+        if entry not in original_credits:
+            original_credits.append(entry)
+    verified_credits = project.get("verified_credits", [])
+    credits = original_credits if original_credits else verified_credits
+    if not credits:
+        # These projects have no crew list in their supplied archive.
+        # Attribute only the author's stated work, and label the gap clearly.
+        credits = [["Copywriting / creative work", "Danif Pradana"]]
+    credit_html = "".join(
+        f'<div class="credit-row"><strong>{esc(label)}</strong><span>{esc(person)}</span></div>'
+        for label, person in credits
+    )
+    if original_credits:
+        credit_note = "Team credits preserved from the original portfolio archive."
+    elif verified_credits:
+        credit_note = "Campaign credits independently verified from published industry records."
+    else:
+        credit_note = "The original portfolio did not specify the wider production team. No additional names have been assumed."
+    credit_source = project.get("credit_source")
+    credit_note_html = f'<p class="credit-source">{esc(credit_note)}</p>'
+    if credit_source:
+        credit_note_html += f'<a class="credit-source-link" href="{esc(credit_source)}" target="_blank" rel="noopener noreferrer">Published campaign credits ↗</a>'
 
     facts = [
         ["Client", project["client"]],
@@ -99,7 +125,7 @@ def build(project, index):
 <div class="shell"><div class="case-facts">{facts_html}</div></div>
 <section class="thinking shell" aria-label="Creative thinking"><div class="rail">Behind the idea / {index+1:02d}</div><div>{''.join(chapters)}</div></section>
 <section class="gallery"><div class="shell"><div class="gallery-lead"><div><span class="eyebrow">Selected executions</span><h2>See the <em>work.</em></h2></div><p>Original campaign imagery and films from Dan Pradana's archive, hosted in this repository.</p></div><div class="media-grid">{''.join(gallery)}</div></div></section>
-<section class="credits shell"><div class="credits-grid"><div><span class="eyebrow">The people behind it</span><h2>Creative <em>credits.</em></h2></div><div class="credits-table">{credit_html}</div></div></section>
+<section class="credits shell"><div class="credits-grid"><div><span class="eyebrow">The people behind it</span><h2>Creative <em>credits.</em></h2></div><div><div class="credits-table">{credit_html}</div>{credit_note_html}</div></div></section>
 <nav class="next-nav" aria-label="Other case studies"><div class="shell nav-grid">
 <a class="nav-item previous" href="../{esc(prior["slug"])}/index.html"><span>← Previous project</span><strong>{esc(prior["title"])}</strong></a>
 <a class="nav-item next" href="../{esc(following["slug"])}/index.html"><span>Next project ↗</span><strong>{esc(following["title"])}</strong></a>
