@@ -1,0 +1,20 @@
+*{box-sizing:border-box}html{-webkit-text-size-adjust:100%}
+body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:#111;background:#fff;line-height:1.55}
+a{color:inherit}header.site{padding:28px 24px;border-bottom:1px solid #eee;display:flex;justify-content:space-between;align-items:baseline;gap:16px;flex-wrap:wrap}
+header.site h1{margin:0;font-size:20px;font-weight:600;letter-spacing:.01em}header.site h1 a{text-decoration:none}
+main{max-width:1400px;margin:0 auto;padding:24px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:24px}
+.card{text-decoration:none;display:block}.card .thumb{aspect-ratio:404/316;background:#f3f3f3;overflow:hidden;border-radius:4px}
+.card img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .3s}.card:hover img{transform:scale(1.03)}
+.card h2{font-size:15px;font-weight:600;margin:10px 0 2px}.card p{margin:0;font-size:13px;color:#777}
+.project{max-width:1400px;margin:0 auto}.phead{padding:8px 0 24px}.phead h1{font-size:28px;margin:0 0 6px;line-height:1.25}
+.meta{font-size:14px;color:#666}.back{font-size:14px;text-decoration:none;color:#666}.back:hover{color:#111}
+.mod{margin:0 auto}.mod img,.mod video{display:block;width:100%;height:auto;margin:0 auto;background:#000}
+.mod img{background:none}.mod.text{max-width:860px;padding:24px 0;font-size:17px;overflow-wrap:anywhere}
+.mod.text .main-text,.mod.text p{margin:0}.embed{position:relative;width:100%;height:0;overflow:hidden}.embed iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.caption{font-size:13px;color:#777;text-align:center;padding:6px 0}.desc{max-width:860px;white-space:pre-line}
+nav.pn{display:flex;justify-content:space-between;gap:16px;border-top:1px solid #eee;margin-top:48px;padding-top:20px;font-size:14px}
+
+.mod.text .bold{font-weight:700}.mod.text .italic{font-style:italic}.mod.text .underline{text-decoration:underline}.mod.text .title{display:block;font-size:1.6em;font-weight:700;line-height:1.25}
+footer{padding:32px 24px;color:#999;font-size:12px;text-align:center}
+@media(max-width:600px){main{padding:16px}.phead h1{font-size:22px}.mod.text{font-size:16px}}

@@ -1,0 +1,944 @@
+{
+  "source_archive": "danifpradana-portfolio.zip",
+  "file_count": 118,
+  "projects": [
+    {
+      "name": "01 jagasehatmu bersama klikdokter",
+      "slug": "01-jagasehatmu-bersama-klikdokter",
+      "file_count": 4,
+      "assets": [
+        {
+          "name": "cover.png",
+          "path": "danifpradana-portfolio/projects/01-jagasehatmu-bersama-klikdokter/cover.png",
+          "url": "portfolio-assets/danifpradana-portfolio/projects/01-jagasehatmu-bersama-klikdokter/cover.png",
+          "type": "image",
+          "bytes": 901503
+        },
+        {
+          "name": "video-01-poster.jpg",
+          "path": "danifpradana-portfolio/projects/01-jagasehatmu-bersama-klikdokter/video-01-poster.jpg",
+          "url": "portfolio-assets/danifpradana-portfolio/projects/01-jagasehatmu-bersama-klikdokter/video-01-poster.jpg",
+          "type": "image",
+          "bytes": 548734
+        },
+        {
+          "name": "video-01.mp4",
+          "path": "danifpradana-portfolio/projects/01-jagasehatmu-bersama-klikdokter/video-01.mp4",
+          "url": "portfolio-assets/danifpradana-portfolio/projects/01-jagasehatmu-bersama-klikdokter/video-01.mp4",
+          "type": "video",
+          "bytes": 39660386
+        },
+        {
+          "name": "index.html",
+          "path": "danifpradana-portfolio/projects/01-jagasehatmu-bersama-klikdokter/index.html",
+          "url": "portfolio-assets/danifpradana-portfolio/projects/01-jagasehatmu-bersama-klikdokter/index.html",
+          "type": "file",
+          "bytes": 2159
+        }
+      ]
+    },
+    {
+      "name": "02 dicuekin nana mirdad para penyakit curhat",
+      "slug": "02-dicuekin-nana-mirdad-para-penyakit-curhat",
+      "file_count": 4,
+      "assets": [
+        {
+          "name": "cover.jpg",
+          "path": "danifpradana-portfolio/projects/02-dicuekin-nana-mirdad-para-penyakit-curhat/cover.jpg",
+          "url": "portfolio-assets/danifpradana-portfolio/projects/02-dicuekin-nana-mirdad-para-penyakit-curhat/cover.jpg",
+          "type": "image",
+          "bytes": 172728
+        },
+        {
+          "name": "video-01-poster.jpg",
+          "path": "danifpradana-portfolio/projects/02-dicuekin-nana-mirdad-para-penyakit-curhat/video-01-poster.jpg",
+          "url": "portfolio-assets/danifpradana-portfolio/projects/02-dicuekin-nana-mirdad-para-penyakit-curhat/video-01-poster.jpg",
+          "type": "image",
+          "bytes": 331090
+        },
+        {
+          "name": "video-01.mp4",
+          "path": "danifpradana-portfolio/projects/02-dicuekin-nana-mirdad-para-penyakit-curhat/video-01.mp4",
+          "url": "portfolio-assets/danifpradana-portfolio/projects/02-dicuekin-nana-mirdad-para-penyakit-curhat/video-01.mp4",
+          "type": "video",
+          "bytes": 20508965
+        },
+        {
+          "name": "index.html",
+          "path": "danifpradana-portfolio/projects/02-dicuekin-nana-mirdad-para-penyakit-curhat/index.html",
+          "url": "portfolio-assets/danifpradana-portfolio/projects/02-dicuekin-nana-mirdad-para-penyakit-curhat/index.html",
+          "type": "file",
+          "bytes": 2289
+        }
+      ]
+    },
+    {
+      "name": "03 maxicorn product launch",
+      "slug": "03-maxicorn-product-launch",
+      "file_count": 4,
+      "assets": [
+        {
+          "name": "cover.png",
+          "path": "danifpradana-portfolio/projects/03-maxicorn-product-launch/cover.png",
+          "url": "portfolio-assets/danifpradana-portfolio/projects/03-maxicorn-product-launch/cover.png",
+          "type": "image",
+          "bytes": 776176
+        },
+        {
+          "name": "video-01-poster.jpg",
+          "path": "danifpradana-portfolio/projects/03-maxicorn-product-launch/video-01-poster.jpg",
+          "url": "portfolio-assets/danifpradana-portfolio/projects/03-maxicorn-product-launch/video-01-poster.jpg",
+          "type": "image",
+          "bytes": 228088
+        },
+        {
+          "name": "video-01.mp4",
+          "path": "danifpradana-portfolio/projects/03-maxicorn-product-launch/video-01.mp4",
+          "url": "portfolio-assets/danifpradana-portfolio/projects/03-maxicorn-product-launch/video-01.mp4",
+          "type": "video",
+          "bytes": 13240650
+        },
+        {
+          "name": "index.html",
+          "path": "danifpradana-portfolio/projects/03-maxicorn-product-launch/index.html",
+          "url": "portfolio-assets/danifpradana-portfolio/projects/03-maxicorn-product-launch/index.html",
+          "type": "file",
+          "bytes": 2163
+        }
+      ]
+    },
+    {
+      "name": "04 klikdokter gdn facebook instagram banner",
+      "slug": "04-klikdokter-gdn-facebook-instagram-banner",
+      "file_count": 13,
+      "assets": [
+        {
+          "name": "cover.jpg",
+          "path": "danifpradana-portfolio/projects/04-klikdokter-gdn-facebook-instagram-banner/cover.jpg",
+          "url": "portfolio-assets/danifpradana-portfolio/projects/04-klikdokter-gdn-facebook-instagram-banner/cover.jpg",
+          "type": "image",
+          "bytes": 242989
+        },
+        {
+          "name": "image-01.jpg",
+          "path": "danifpradana-portfolio/projects/04-klikdokter-gdn-facebook-instagram-banner/image-01.jpg",
+          "url": "portfolio-assets/danifpradana-portfolio/projects/04-klikdokter-gdn-facebook-instagram-banner/image-01.jpg",
+          "type": "image",
+          "bytes": 135898
+        },
+        {
+          "name": "image-02.jpg",
+          "path": "danifpradana-portfolio/projects/04-klikdokter-gdn-facebook-instagram-banner/image-02.jpg",
+          "url": "portfolio-assets/danifpradana-portfolio/projects/04-klikdokter-gdn-facebook-instagram-banner/image-02.jpg",
+          "type": "image",
+          "bytes": 493522
+        },
+        {
+          "name": "image-03.jpg",
+          "path": "danifpradana-portfolio/projects/04-klikdokter-gdn-facebook-instagram-banner/image-03.jpg",
+          "url": "portfolio-assets/danifpradana-portfolio/projects/04-klikdokter-gdn-facebook-instagram-banner/image-03.jpg",
+          "type": "image",
+          "bytes": 95472
+        },
+        {
+          "name": "image-04.jpg",
+          "path": "danifpradana-portfolio/projects/04-klikdokter-gdn-facebook-instagram-banner/image-04.jpg",
+          "url": "portfolio-assets/danifpradana-portfolio/projects/04-klikdokter-gdn-facebook-instagram-banner/image-04.jpg",
+          "type": "image",
+          "bytes": 91426
+        },
+        {
+          "name": "image-05.jpg",
+          "path": "danifpradana-portfolio/projects/04-klikdokter-gdn-facebook-instagram-banner/image-05.jpg",
+          "url": "portfolio-assets/danifpradana-portfolio/projects/04-klikdokter-gdn-facebook-instagram-banner/image-05.jpg",
+          "type": "image",
+          "bytes": 89752
+        },
+        {
+          "name": "image-06.jpg",
+          "path": "danifpradana-portfolio/projects/04-klikdokter-gdn-facebook-instagram-banner/image-06.jpg",
+          "url": "portfolio-assets/danifpradana-portfolio/projects/04-klikdokter-gdn-facebook-instagram-banner/image-06.jpg",
+          "type": "image",
+          "bytes": 91050
+        },
+        {
+          "name": "image-07.jpg",
+          "path": "danifpradana-portfolio/projects/04-klikdokter-gdn-facebook-instagram-banner/image-07.jpg",
+          "url": "portfolio-assets/danifpradana-portfolio/projects/04-klikdokter-gdn-facebook-instagram-banner/image-07.jpg",
+          "type": "image",
+          "bytes": 97403
+        },
+        {
+          "name": "image-08.jpg",
+          "path": "danifpradana-portfolio/projects/04-klikdokter-gdn-facebook-instagram-banner/image-08.jpg",
+          "url": "portfolio-assets/danifpradana-portfolio/projects/04-klikdokter-gdn-facebook-instagram-banner/image-08.jpg",
+          "type": "image",
+          "bytes": 93448
+        },
+        {
+          "name": "image-09.jpg",
+          "path": "danifpradana-portfolio/projects/04-klikdokter-gdn-facebook-instagram-banner/image-09.jpg",
+          "url": "portfolio-assets/danifpradana-portfolio/projects/04-klikdokter-gdn-facebook-instagram-banner/image-09.jpg",
+          "type": "image",
+          "bytes": 149143
+        },
+        {
+          "name": "image-10.jpg",
+          "path": "danifpradana-portfolio/projects/04-klikdokter-gdn-facebook-instagram-banner/image-10.jpg",
+          "url": "portfolio-assets/danifpradana-portfolio/projects/04-klikdokter-gdn-facebook-instagram-banner/image-10.jpg",
+          "type": "image",
+          "bytes": 143407
+        },
+        {
+          "name": "image-11.jpg",
+          "path": "danifpradana-portfolio/projects/04-klikdokter-gdn-facebook-instagram-banner/image-11.jpg",
+          "url": "portfolio-assets/danifpradana-portfolio/projects/04-klikdokter-gdn-facebook-instagram-banner/image-11.jpg",
+          "type": "image",
+          "bytes": 141727
+        },
+        {
+          "name": "index.html",
+          "path": "danifpradana-portfolio/projects/04-klikdokter-gdn-facebook-instagram-banner/index.html",
+          "url": "portfolio-assets/danifpradana-portfolio/projects/04-klikdokter-gdn-facebook-instagram-banner/index.html",
+          "type": "file",
+          "bytes": 3381
+        }
+      ]
+    },
+    {
+      "name": "05 getcontact ketahui siapa sebelum sapa",
+      "slug": "05-getcontact-ketahui-siapa-sebelum-sapa",
+      "file_count": 3,
+      "assets": [
+        {
+          "name": "cover.png",
+          "path": "danifpradana-portfolio/projects/05-getcontact-ketahui-siapa-sebelum-sapa/cover.png",
+          "url": "portfolio-assets/danifpradana-portfolio/projects/05-getcontact-ketahui-siapa-sebelum-sapa/cover.png",
+          "type": "image",
+          "bytes": 710343
+        },
+        {
+          "name": "video-01.mp4",
+          "path": "danifpradana-portfolio/projects/05-getcontact-ketahui-siapa-sebelum-sapa/video-01.mp4",
+          "url": "portfolio-assets/danifpradana-portfolio/projects/05-getcontact-ketahui-siapa-sebelum-sapa/video-01.mp4",
+          "type": "video",
+          "bytes": 6292549
+        },
+        {
+          "name": "index.html",
+          "path": "danifpradana-portfolio/projects/05-getcontact-ketahui-siapa-sebelum-sapa/index.html",
+          "url": "portfolio-assets/danifpradana-portfolio/projects/05-getcontact-ketahui-siapa-sebelum-sapa/index.html",
+          "type": "file",
+          "bytes": 2226
+        }
+      ]
+    },
+    {
+      "name": "06 p g maafibudihidupku",
+      "slug": "06-p-g-maafibudihidupku",
+      "file_count": 4,
+      "assets": [
+        {
+          "name": "cover.png",
+          "path": "danifpradana-portfolio/projects/06-p-g-maafibudihidupku/cover.png",
+          "url": "portfolio-assets/danifpradana-portfolio/projects/06-p-g-maafibudihidupku/cover.png",
+          "type": "image",
+          "bytes": 748532
+        },
+        {
+          "name": "video-01-poster.jpg",
+          "path": "danifpradana-portfolio/projects/06-p-g-maafibudihidupku/video-01-poster.jpg",
+          "url": "portfolio-assets/danifpradana-portfolio/projects/06-p-g-maafibudihidupku/video-01-poster.jpg",
+          "type": "image",
+          "bytes": 60759
+        },
+        {
+          "name": "video-01.mp4",
+          "path": "danifpradana-portfolio/projects/06-p-g-maafibudihidupku/video-01.mp4",
+          "url": "portfolio-assets/danifpradana-portfolio/projects/06-p-g-maafibudihidupku/video-01.mp4",
+          "type": "video",
+          "bytes": 81850128
+        },
+        {
+          "name": "index.html",
+          "path": "danifpradana-portfolio/projects/06-p-g-maafibudihidupku/index.html",
+          "url": "portfolio-assets/danifpradana-portfolio/projects/06-p-g-maafibudihidupku/index.html",
+          "type": "file",
+          "bytes": 2378
+        }
+      ]
+    },
+    {
+      "name": "07 sweety silver pants little monster case study",
+      "slug": "07-sweety-silver-pants-little-monster-case-study",
+      "file_count": 5,
+      "assets": [
+        {
+          "name": "cover.jpeg",
+          "path": "danifpradana-portfolio/projects/07-sweety-silver-pants-little-monster-case-study/cover.jpeg",
+          "url": "portfolio-assets/danifpradana-portfolio/projects/07-sweety-silver-pants-little-monster-case-study/cover.jpeg",
+          "type": "image",
+          "bytes": 156423
+        },
+        {
+          "name": "image-01.jpeg",
+          "path": "danifpradana-portfolio/projects/07-sweety-silver-pants-little-monster-case-study/image-01.jpeg",
+          "url": "portfolio-assets/danifpradana-portfolio/projects/07-sweety-silver-pants-little-monster-case-study/image-01.jpeg",
+          "type": "image",
+          "bytes": 102920
+        },
+        {
+          "name": "video-01-poster.jpg",
+          "path": "danifpradana-portfolio/projects/07-sweety-silver-pants-little-monster-case-study/video-01-poster.jpg",
+          "url": "portfolio-assets/danifpradana-portfolio/projects/07-sweety-silver-pants-little-monster-case-study/video-01-poster.jpg",
+          "type": "image",
+          "bytes": 433908
+        },
+        {
+          "name": "video-01.mp4",
+          "path": "danifpradana-portfolio/projects/07-sweety-silver-pants-little-monster-case-study/video-01.mp4",
+          "url": "portfolio-assets/danifpradana-portfolio/projects/07-sweety-silver-pants-little-monster-case-study/video-01.mp4",
+          "type": "video",
+          "bytes": 32835798
+        },
+        {
+          "name": "index.html",
+          "path": "danifpradana-portfolio/projects/07-sweety-silver-pants-little-monster-case-study/index.html",
+          "url": "portfolio-assets/danifpradana-portfolio/projects/07-sweety-silver-pants-little-monster-case-study/index.html",
+          "type": "file",
+          "bytes": 2000
+        }
+      ]
+    },
+    {
+      "name": "08 sweety silver pants 1 detik",
+      "slug": "08-sweety-silver-pants-1-detik",
+      "file_count": 3,
+      "assets": [
+        {
+          "name": "cover.jpg",
+          "path": "danifpradana-portfolio/projects/08-sweety-silver-pants-1-detik/cover.jpg",
+          "url": "portfolio-assets/danifpradana-portfolio/projects/08-sweety-silver-pants-1-detik/cover.jpg",
+          "type": "image",
+          "bytes": 149566
+        },
+        {
+          "name": "video-01.mp4",
+          "path": "danifpradana-portfolio/projects/08-sweety-silver-pants-1-detik/video-01.mp4",
+          "url": "portfolio-assets/danifpradana-portfolio/projects/08-sweety-silver-pants-1-detik/video-01.mp4",
+          "type": "video",
+          "bytes": 11894180
+        },
+        {
+          "name": "index.html",
+          "path": "danifpradana-portfolio/projects/08-sweety-silver-pants-1-detik/index.html",
+          "url": "portfolio-assets/danifpradana-portfolio/projects/08-sweety-silver-pants-1-detik/index.html",
+          "type": "file",
+          "bytes": 2229
+        }
+      ]
+    },
+    {
+      "name": "09 bca finhacks 2019 dinda kirana dirantai cowok idaman",
+      "slug": "09-bca-finhacks-2019-dinda-kirana-dirantai-cowok-idaman",
+      "file_count": 3,
+      "assets": [
+        {
+          "name": "cover.jpg",
+          "path": "danifpradana-portfolio/projects/09-bca-finhacks-2019-dinda-kirana-dirantai-cowok-idaman/cover.jpg",
+          "url": "portfolio-assets/danifpradana-portfolio/projects/09-bca-finhacks-2019-dinda-kirana-dirantai-cowok-idaman/cover.jpg",
+          "type": "image",
+          "bytes": 161446
+        },
+        {
+          "name": "video-01.mp4",
+          "path": "danifpradana-portfolio/projects/09-bca-finhacks-2019-dinda-kirana-dirantai-cowok-idaman/video-01.mp4",
+          "url": "portfolio-assets/danifpradana-portfolio/projects/09-bca-finhacks-2019-dinda-kirana-dirantai-cowok-idaman/video-01.mp4",
+          "type": "video",
+          "bytes": 55394954
+        },
+        {
+          "name": "index.html",
+          "path": "danifpradana-portfolio/projects/09-bca-finhacks-2019-dinda-kirana-dirantai-cowok-idaman/index.html",
+          "url": "portfolio-assets/danifpradana-portfolio/projects/09-bca-finhacks-2019-dinda-kirana-dirantai-cowok-idaman/index.html",
+          "type": "file",
+          "bytes": 2522
+        }
+      ]
+    },
+    {
+      "name": "10 nutriclub be resilient",
+      "slug": "10-nutriclub-be-resilient",
+      "file_count": 3,
+      "assets": [
+        {
+          "name": "cover.jpg",
+          "path": "danifpradana-portfolio/projects/10-nutriclub-be-resilient/cover.jpg",
+          "url": "portfolio-assets/danifpradana-portfolio/projects/10-nutriclub-be-resilient/cover.jpg",
+          "type": "image",
+          "bytes": 130941
+        },
+        {
+          "name": "video-01.mp4",
+          "path": "danifpradana-portfolio/projects/10-nutriclub-be-resilient/video-01.mp4",
+          "url": "portfolio-assets/danifpradana-portfolio/projects/10-nutriclub-be-resilient/video-01.mp4",
+          "type": "video",
+          "bytes": 14643149
+        },
+        {
+          "name": "index.html",
+          "path": "danifpradana-portfolio/projects/10-nutriclub-be-resilient/index.html",
+          "url": "portfolio-assets/danifpradana-portfolio/projects/10-nutriclub-be-resilient/index.html",
+          "type": "file",
+          "bytes": 2379
+        }
+      ]
+    },
+    {
+      "name": "11 loreal indonesia berani matahari",
+      "slug": "11-loreal-indonesia-berani-matahari",
+      "file_count": 6,
+      "assets": [
+        {
+          "name": "cover.png",
+          "path": "danifpradana-portfolio/projects/11-loreal-indonesia-berani-matahari/cover.png",
+          "url": "portfolio-assets/danifpradana-portfolio/projects/11-loreal-indonesia-berani-matahari/cover.png",
+          "type": "image",
+          "bytes": 518675
+        },
+        {
+          "name": "video-01.mp4",
+          "path": "danifpradana-portfolio/projects/11-loreal-indonesia-berani-matahari/video-01.mp4",
+          "url": "portfolio-assets/danifpradana-portfolio/projects/11-loreal-indonesia-berani-matahari/video-01.mp4",
+          "type": "video",
+          "bytes": 17385475
+        },
+        {
+          "name": "video-02.mp4",
+          "path": "danifpradana-portfolio/projects/11-loreal-indonesia-berani-matahari/video-02.mp4",
+          "url": "portfolio-assets/danifpradana-portfolio/projects/11-loreal-indonesia-berani-matahari/video-02.mp4",
+          "type": "video",
+          "bytes": 14204127
+        },
+        {
+          "name": "video-03.mp4",
+          "path": "danifpradana-portfolio/projects/11-loreal-indonesia-berani-matahari/video-03.mp4",
+          "url": "portfolio-assets/danifpradana-portfolio/projects/11-loreal-indonesia-berani-matahari/video-03.mp4",
+          "type": "video",
+          "bytes": 10565320
+        },
+        {
+          "name": "video-04.mp4",
+          "path": "danifpradana-portfolio/projects/11-loreal-indonesia-berani-matahari/video-04.mp4",
+          "url": "portfolio-assets/danifpradana-portfolio/projects/11-loreal-indonesia-berani-matahari/video-04.mp4",
+          "type": "video",
+          "bytes": 10078846
+        },
+        {
+          "name": "index.html",
+          "path": "danifpradana-portfolio/projects/11-loreal-indonesia-berani-matahari/index.html",
+          "url": "portfolio-assets/danifpradana-portfolio/projects/11-loreal-indonesia-berani-matahari/index.html",
+          "type": "file",
+          "bytes": 3114
+        }
+      ]
+    },
+    {
+      "name": "12 sambal indofood social media",
+      "slug": "12-sambal-indofood-social-media",
+      "file_count": 34,
+      "assets": [
+        {
+          "name": "cover.png",
+          "path": "danifpradana-portfolio/projects/12-sambal-indofood-social-media/cover.png",
+          "url": "portfolio-assets/danifpradana-portfolio/projects/12-sambal-indofood-social-media/cover.png",
+          "type": "image",
+          "bytes": 382384
+        },
+        {
+          "name": "video-01-poster.jpg",
+          "path": "danifpradana-portfolio/projects/12-sambal-indofood-social-media/video-01-poster.jpg",
+          "url": "portfolio-assets/danifpradana-portfolio/projects/12-sambal-indofood-social-media/video-01-poster.jpg",
+          "type": "image",
+          "bytes": 65290
+        },
+        {
+          "name": "video-02-poster.jpg",
+          "path": "danifpradana-portfolio/projects/12-sambal-indofood-social-media/video-02-poster.jpg",
+          "url": "portfolio-assets/danifpradana-portfolio/projects/12-sambal-indofood-social-media/video-02-poster.jpg",
+          "type": "image",
+          "bytes": 57866
+        },
+        {
+          "name": "video-03-poster.jpg",
+          "path": "danifpradana-portfolio/projects/12-sambal-indofood-social-media/video-03-poster.jpg",
+          "url": "portfolio-assets/danifpradana-portfolio/projects/12-sambal-indofood-social-media/video-03-poster.jpg",
+          "type": "image",
+          "bytes": 56852
+        },
+        {
+          "name": "video-04-poster.jpg",
+          "path": "danifpradana-portfolio/projects/12-sambal-indofood-social-media/video-04-poster.jpg",
+          "url": "portfolio-assets/danifpradana-portfolio/projects/12-sambal-indofood-social-media/video-04-poster.jpg",
+          "type": "image",
+          "bytes": 71180
+        },
+        {
+          "name": "video-05-poster.jpg",
+          "path": "danifpradana-portfolio/projects/12-sambal-indofood-social-media/video-05-poster.jpg",
+          "url": "portfolio-assets/danifpradana-portfolio/projects/12-sambal-indofood-social-media/video-05-poster.jpg",
+          "type": "image",
+          "bytes": 40414
+        },
+        {
+          "name": "video-06-poster.jpg",
+          "path": "danifpradana-portfolio/projects/12-sambal-indofood-social-media/video-06-poster.jpg",
+          "url": "portfolio-assets/danifpradana-portfolio/projects/12-sambal-indofood-social-media/video-06-poster.jpg",
+          "type": "image",
+          "bytes": 46514
+        },
+        {
+          "name": "video-07-poster.jpg",
+          "path": "danifpradana-portfolio/projects/12-sambal-indofood-social-media/video-07-poster.jpg",
+          "url": "portfolio-assets/danifpradana-portfolio/projects/12-sambal-indofood-social-media/video-07-poster.jpg",
+          "type": "image",
+          "bytes": 35373
+        },
+        {
+          "name": "video-08-poster.jpg",
+          "path": "danifpradana-portfolio/projects/12-sambal-indofood-social-media/video-08-poster.jpg",
+          "url": "portfolio-assets/danifpradana-portfolio/projects/12-sambal-indofood-social-media/video-08-poster.jpg",
+          "type": "image",
+          "bytes": 26145
+        },
+        {
+          "name": "video-09-poster.jpg",
+          "path": "danifpradana-portfolio/projects/12-sambal-indofood-social-media/video-09-poster.jpg",
+          "url": "portfolio-assets/danifpradana-portfolio/projects/12-sambal-indofood-social-media/video-09-poster.jpg",
+          "type": "image",
+          "bytes": 33531
+        },
+        {
+          "name": "video-10-poster.jpg",
+          "path": "danifpradana-portfolio/projects/12-sambal-indofood-social-media/video-10-poster.jpg",
+          "url": "portfolio-assets/danifpradana-portfolio/projects/12-sambal-indofood-social-media/video-10-poster.jpg",
+          "type": "image",
+          "bytes": 26162
+        },
+        {
+          "name": "video-11-poster.jpg",
+          "path": "danifpradana-portfolio/projects/12-sambal-indofood-social-media/video-11-poster.jpg",
+          "url": "portfolio-assets/danifpradana-portfolio/projects/12-sambal-indofood-social-media/video-11-poster.jpg",
+          "type": "image",
+          "bytes": 35833
+        },
+        {
+          "name": "video-12-poster.jpg",
+          "path": "danifpradana-portfolio/projects/12-sambal-indofood-social-media/video-12-poster.jpg",
+          "url": "portfolio-assets/danifpradana-portfolio/projects/12-sambal-indofood-social-media/video-12-poster.jpg",
+          "type": "image",
+          "bytes": 43260
+        },
+        {
+          "name": "video-13-poster.jpg",
+          "path": "danifpradana-portfolio/projects/12-sambal-indofood-social-media/video-13-poster.jpg",
+          "url": "portfolio-assets/danifpradana-portfolio/projects/12-sambal-indofood-social-media/video-13-poster.jpg",
+          "type": "image",
+          "bytes": 62437
+        },
+        {
+          "name": "video-14-poster.jpg",
+          "path": "danifpradana-portfolio/projects/12-sambal-indofood-social-media/video-14-poster.jpg",
+          "url": "portfolio-assets/danifpradana-portfolio/projects/12-sambal-indofood-social-media/video-14-poster.jpg",
+          "type": "image",
+          "bytes": 35425
+        },
+        {
+          "name": "video-15-poster.jpg",
+          "path": "danifpradana-portfolio/projects/12-sambal-indofood-social-media/video-15-poster.jpg",
+          "url": "portfolio-assets/danifpradana-portfolio/projects/12-sambal-indofood-social-media/video-15-poster.jpg",
+          "type": "image",
+          "bytes": 38501
+        },
+        {
+          "name": "video-16-poster.jpg",
+          "path": "danifpradana-portfolio/projects/12-sambal-indofood-social-media/video-16-poster.jpg",
+          "url": "portfolio-assets/danifpradana-portfolio/projects/12-sambal-indofood-social-media/video-16-poster.jpg",
+          "type": "image",
+          "bytes": 28343
+        },
+        {
+          "name": "video-01.mp4",
+          "path": "danifpradana-portfolio/projects/12-sambal-indofood-social-media/video-01.mp4",
+          "url": "portfolio-assets/danifpradana-portfolio/projects/12-sambal-indofood-social-media/video-01.mp4",
+          "type": "video",
+          "bytes": 1849138
+        },
+        {
+          "name": "video-02.mp4",
+          "path": "danifpradana-portfolio/projects/12-sambal-indofood-social-media/video-02.mp4",
+          "url": "portfolio-assets/danifpradana-portfolio/projects/12-sambal-indofood-social-media/video-02.mp4",
+          "type": "video",
+          "bytes": 2134850
+        },
+        {
+          "name": "video-03.mp4",
+          "path": "danifpradana-portfolio/projects/12-sambal-indofood-social-media/video-03.mp4",
+          "url": "portfolio-assets/danifpradana-portfolio/projects/12-sambal-indofood-social-media/video-03.mp4",
+          "type": "video",
+          "bytes": 2596057
+        },
+        {
+          "name": "video-04.mp4",
+          "path": "danifpradana-portfolio/projects/12-sambal-indofood-social-media/video-04.mp4",
+          "url": "portfolio-assets/danifpradana-portfolio/projects/12-sambal-indofood-social-media/video-04.mp4",
+          "type": "video",
+          "bytes": 2537410
+        },
+        {
+          "name": "video-05.mp4",
+          "path": "danifpradana-portfolio/projects/12-sambal-indofood-social-media/video-05.mp4",
+          "url": "portfolio-assets/danifpradana-portfolio/projects/12-sambal-indofood-social-media/video-05.mp4",
+          "type": "video",
+          "bytes": 1048302
+        },
+        {
+          "name": "video-06.mp4",
+          "path": "danifpradana-portfolio/projects/12-sambal-indofood-social-media/video-06.mp4",
+          "url": "portfolio-assets/danifpradana-portfolio/projects/12-sambal-indofood-social-media/video-06.mp4",
+          "type": "video",
+          "bytes": 2964369
+        },
+        {
+          "name": "video-07.mp4",
+          "path": "danifpradana-portfolio/projects/12-sambal-indofood-social-media/video-07.mp4",
+          "url": "portfolio-assets/danifpradana-portfolio/projects/12-sambal-indofood-social-media/video-07.mp4",
+          "type": "video",
+          "bytes": 3436985
+        },
+        {
+          "name": "video-08.mp4",
+          "path": "danifpradana-portfolio/projects/12-sambal-indofood-social-media/video-08.mp4",
+          "url": "portfolio-assets/danifpradana-portfolio/projects/12-sambal-indofood-social-media/video-08.mp4",
+          "type": "video",
+          "bytes": 2935733
+        },
+        {
+          "name": "video-09.mp4",
+          "path": "danifpradana-portfolio/projects/12-sambal-indofood-social-media/video-09.mp4",
+          "url": "portfolio-assets/danifpradana-portfolio/projects/12-sambal-indofood-social-media/video-09.mp4",
+          "type": "video",
+          "bytes": 2255515
+        },
+        {
+          "name": "video-10.mp4",
+          "path": "danifpradana-portfolio/projects/12-sambal-indofood-social-media/video-10.mp4",
+          "url": "portfolio-assets/danifpradana-portfolio/projects/12-sambal-indofood-social-media/video-10.mp4",
+          "type": "video",
+          "bytes": 2196753
+        },
+        {
+          "name": "video-11.mp4",
+          "path": "danifpradana-portfolio/projects/12-sambal-indofood-social-media/video-11.mp4",
+          "url": "portfolio-assets/danifpradana-portfolio/projects/12-sambal-indofood-social-media/video-11.mp4",
+          "type": "video",
+          "bytes": 4578674
+        },
+        {
+          "name": "video-12.mp4",
+          "path": "danifpradana-portfolio/projects/12-sambal-indofood-social-media/video-12.mp4",
+          "url": "portfolio-assets/danifpradana-portfolio/projects/12-sambal-indofood-social-media/video-12.mp4",
+          "type": "video",
+          "bytes": 2261557
+        },
+        {
+          "name": "video-13.mp4",
+          "path": "danifpradana-portfolio/projects/12-sambal-indofood-social-media/video-13.mp4",
+          "url": "portfolio-assets/danifpradana-portfolio/projects/12-sambal-indofood-social-media/video-13.mp4",
+          "type": "video",
+          "bytes": 4008064
+        },
+        {
+          "name": "video-14.mp4",
+          "path": "danifpradana-portfolio/projects/12-sambal-indofood-social-media/video-14.mp4",
+          "url": "portfolio-assets/danifpradana-portfolio/projects/12-sambal-indofood-social-media/video-14.mp4",
+          "type": "video",
+          "bytes": 5666368
+        },
+        {
+          "name": "video-15.mp4",
+          "path": "danifpradana-portfolio/projects/12-sambal-indofood-social-media/video-15.mp4",
+          "url": "portfolio-assets/danifpradana-portfolio/projects/12-sambal-indofood-social-media/video-15.mp4",
+          "type": "video",
+          "bytes": 3381049
+        },
+        {
+          "name": "video-16.mp4",
+          "path": "danifpradana-portfolio/projects/12-sambal-indofood-social-media/video-16.mp4",
+          "url": "portfolio-assets/danifpradana-portfolio/projects/12-sambal-indofood-social-media/video-16.mp4",
+          "type": "video",
+          "bytes": 3453237
+        },
+        {
+          "name": "index.html",
+          "path": "danifpradana-portfolio/projects/12-sambal-indofood-social-media/index.html",
+          "url": "portfolio-assets/danifpradana-portfolio/projects/12-sambal-indofood-social-media/index.html",
+          "type": "file",
+          "bytes": 4902
+        }
+      ]
+    },
+    {
+      "name": "13 bmj paper pack",
+      "slug": "13-bmj-paper-pack",
+      "file_count": 12,
+      "assets": [
+        {
+          "name": "cover.png",
+          "path": "danifpradana-portfolio/projects/13-bmj-paper-pack/cover.png",
+          "url": "portfolio-assets/danifpradana-portfolio/projects/13-bmj-paper-pack/cover.png",
+          "type": "image",
+          "bytes": 1437028
+        },
+        {
+          "name": "image-01.png",
+          "path": "danifpradana-portfolio/projects/13-bmj-paper-pack/image-01.png",
+          "url": "portfolio-assets/danifpradana-portfolio/projects/13-bmj-paper-pack/image-01.png",
+          "type": "image",
+          "bytes": 1381595
+        },
+        {
+          "name": "image-02.jpg",
+          "path": "danifpradana-portfolio/projects/13-bmj-paper-pack/image-02.jpg",
+          "url": "portfolio-assets/danifpradana-portfolio/projects/13-bmj-paper-pack/image-02.jpg",
+          "type": "image",
+          "bytes": 616099
+        },
+        {
+          "name": "image-03.jpg",
+          "path": "danifpradana-portfolio/projects/13-bmj-paper-pack/image-03.jpg",
+          "url": "portfolio-assets/danifpradana-portfolio/projects/13-bmj-paper-pack/image-03.jpg",
+          "type": "image",
+          "bytes": 719276
+        },
+        {
+          "name": "image-04.jpg",
+          "path": "danifpradana-portfolio/projects/13-bmj-paper-pack/image-04.jpg",
+          "url": "portfolio-assets/danifpradana-portfolio/projects/13-bmj-paper-pack/image-04.jpg",
+          "type": "image",
+          "bytes": 792790
+        },
+        {
+          "name": "image-05.png",
+          "path": "danifpradana-portfolio/projects/13-bmj-paper-pack/image-05.png",
+          "url": "portfolio-assets/danifpradana-portfolio/projects/13-bmj-paper-pack/image-05.png",
+          "type": "image",
+          "bytes": 3635606
+        },
+        {
+          "name": "image-06.png",
+          "path": "danifpradana-portfolio/projects/13-bmj-paper-pack/image-06.png",
+          "url": "portfolio-assets/danifpradana-portfolio/projects/13-bmj-paper-pack/image-06.png",
+          "type": "image",
+          "bytes": 2150815
+        },
+        {
+          "name": "image-07.png",
+          "path": "danifpradana-portfolio/projects/13-bmj-paper-pack/image-07.png",
+          "url": "portfolio-assets/danifpradana-portfolio/projects/13-bmj-paper-pack/image-07.png",
+          "type": "image",
+          "bytes": 3175909
+        },
+        {
+          "name": "image-08.png",
+          "path": "danifpradana-portfolio/projects/13-bmj-paper-pack/image-08.png",
+          "url": "portfolio-assets/danifpradana-portfolio/projects/13-bmj-paper-pack/image-08.png",
+          "type": "image",
+          "bytes": 834154
+        },
+        {
+          "name": "image-09.png",
+          "path": "danifpradana-portfolio/projects/13-bmj-paper-pack/image-09.png",
+          "url": "portfolio-assets/danifpradana-portfolio/projects/13-bmj-paper-pack/image-09.png",
+          "type": "image",
+          "bytes": 771114
+        },
+        {
+          "name": "video-01.mp4",
+          "path": "danifpradana-portfolio/projects/13-bmj-paper-pack/video-01.mp4",
+          "url": "portfolio-assets/danifpradana-portfolio/projects/13-bmj-paper-pack/video-01.mp4",
+          "type": "video",
+          "bytes": 53730068
+        },
+        {
+          "name": "index.html",
+          "path": "danifpradana-portfolio/projects/13-bmj-paper-pack/index.html",
+          "url": "portfolio-assets/danifpradana-portfolio/projects/13-bmj-paper-pack/index.html",
+          "type": "file",
+          "bytes": 5246
+        }
+      ]
+    },
+    {
+      "name": "14 teman rakyat unboxingcaleg",
+      "slug": "14-teman-rakyat-unboxingcaleg",
+      "file_count": 18,
+      "assets": [
+        {
+          "name": "cover.png",
+          "path": "danifpradana-portfolio/projects/14-teman-rakyat-unboxingcaleg/cover.png",
+          "url": "portfolio-assets/danifpradana-portfolio/projects/14-teman-rakyat-unboxingcaleg/cover.png",
+          "type": "image",
+          "bytes": 1165521
+        },
+        {
+          "name": "image-01.png",
+          "path": "danifpradana-portfolio/projects/14-teman-rakyat-unboxingcaleg/image-01.png",
+          "url": "portfolio-assets/danifpradana-portfolio/projects/14-teman-rakyat-unboxingcaleg/image-01.png",
+          "type": "image",
+          "bytes": 2438861
+        },
+        {
+          "name": "image-02.png",
+          "path": "danifpradana-portfolio/projects/14-teman-rakyat-unboxingcaleg/image-02.png",
+          "url": "portfolio-assets/danifpradana-portfolio/projects/14-teman-rakyat-unboxingcaleg/image-02.png",
+          "type": "image",
+          "bytes": 841957
+        },
+        {
+          "name": "image-03.png",
+          "path": "danifpradana-portfolio/projects/14-teman-rakyat-unboxingcaleg/image-03.png",
+          "url": "portfolio-assets/danifpradana-portfolio/projects/14-teman-rakyat-unboxingcaleg/image-03.png",
+          "type": "image",
+          "bytes": 741431
+        },
+        {
+          "name": "image-04.png",
+          "path": "danifpradana-portfolio/projects/14-teman-rakyat-unboxingcaleg/image-04.png",
+          "url": "portfolio-assets/danifpradana-portfolio/projects/14-teman-rakyat-unboxingcaleg/image-04.png",
+          "type": "image",
+          "bytes": 753143
+        },
+        {
+          "name": "image-05.png",
+          "path": "danifpradana-portfolio/projects/14-teman-rakyat-unboxingcaleg/image-05.png",
+          "url": "portfolio-assets/danifpradana-portfolio/projects/14-teman-rakyat-unboxingcaleg/image-05.png",
+          "type": "image",
+          "bytes": 802494
+        },
+        {
+          "name": "image-06.png",
+          "path": "danifpradana-portfolio/projects/14-teman-rakyat-unboxingcaleg/image-06.png",
+          "url": "portfolio-assets/danifpradana-portfolio/projects/14-teman-rakyat-unboxingcaleg/image-06.png",
+          "type": "image",
+          "bytes": 719798
+        },
+        {
+          "name": "image-07.png",
+          "path": "danifpradana-portfolio/projects/14-teman-rakyat-unboxingcaleg/image-07.png",
+          "url": "portfolio-assets/danifpradana-portfolio/projects/14-teman-rakyat-unboxingcaleg/image-07.png",
+          "type": "image",
+          "bytes": 103534
+        },
+        {
+          "name": "image-08.png",
+          "path": "danifpradana-portfolio/projects/14-teman-rakyat-unboxingcaleg/image-08.png",
+          "url": "portfolio-assets/danifpradana-portfolio/projects/14-teman-rakyat-unboxingcaleg/image-08.png",
+          "type": "image",
+          "bytes": 3534621
+        },
+        {
+          "name": "video-01-poster.jpg",
+          "path": "danifpradana-portfolio/projects/14-teman-rakyat-unboxingcaleg/video-01-poster.jpg",
+          "url": "portfolio-assets/danifpradana-portfolio/projects/14-teman-rakyat-unboxingcaleg/video-01-poster.jpg",
+          "type": "image",
+          "bytes": 19181
+        },
+        {
+          "name": "video-02-poster.jpg",
+          "path": "danifpradana-portfolio/projects/14-teman-rakyat-unboxingcaleg/video-02-poster.jpg",
+          "url": "portfolio-assets/danifpradana-portfolio/projects/14-teman-rakyat-unboxingcaleg/video-02-poster.jpg",
+          "type": "image",
+          "bytes": 12750
+        },
+        {
+          "name": "video-03-poster.jpg",
+          "path": "danifpradana-portfolio/projects/14-teman-rakyat-unboxingcaleg/video-03-poster.jpg",
+          "url": "portfolio-assets/danifpradana-portfolio/projects/14-teman-rakyat-unboxingcaleg/video-03-poster.jpg",
+          "type": "image",
+          "bytes": 19164
+        },
+        {
+          "name": "video-04-poster.jpg",
+          "path": "danifpradana-portfolio/projects/14-teman-rakyat-unboxingcaleg/video-04-poster.jpg",
+          "url": "portfolio-assets/danifpradana-portfolio/projects/14-teman-rakyat-unboxingcaleg/video-04-poster.jpg",
+          "type": "image",
+          "bytes": 32683
+        },
+        {
+          "name": "video-01.mp4",
+          "path": "danifpradana-portfolio/projects/14-teman-rakyat-unboxingcaleg/video-01.mp4",
+          "url": "portfolio-assets/danifpradana-portfolio/projects/14-teman-rakyat-unboxingcaleg/video-01.mp4",
+          "type": "video",
+          "bytes": 5999306
+        },
+        {
+          "name": "video-02.mp4",
+          "path": "danifpradana-portfolio/projects/14-teman-rakyat-unboxingcaleg/video-02.mp4",
+          "url": "portfolio-assets/danifpradana-portfolio/projects/14-teman-rakyat-unboxingcaleg/video-02.mp4",
+          "type": "video",
+          "bytes": 6988732
+        },
+        {
+          "name": "video-03.mp4",
+          "path": "danifpradana-portfolio/projects/14-teman-rakyat-unboxingcaleg/video-03.mp4",
+          "url": "portfolio-assets/danifpradana-portfolio/projects/14-teman-rakyat-unboxingcaleg/video-03.mp4",
+          "type": "video",
+          "bytes": 8263748
+        },
+        {
+          "name": "video-04.mp4",
+          "path": "danifpradana-portfolio/projects/14-teman-rakyat-unboxingcaleg/video-04.mp4",
+          "url": "portfolio-assets/danifpradana-portfolio/projects/14-teman-rakyat-unboxingcaleg/video-04.mp4",
+          "type": "video",
+          "bytes": 7174699
+        },
+        {
+          "name": "index.html",
+          "path": "danifpradana-portfolio/projects/14-teman-rakyat-unboxingcaleg/index.html",
+          "url": "portfolio-assets/danifpradana-portfolio/projects/14-teman-rakyat-unboxingcaleg/index.html",
+          "type": "file",
+          "bytes": 6715
+        }
+      ]
+    },
+    {
+      "name": "assets",
+      "slug": "assets",
+      "file_count": 1,
+      "assets": [
+        {
+          "name": "style.css",
+          "path": "danifpradana-portfolio/assets/style.css",
+          "url": "portfolio-assets/danifpradana-portfolio/assets/style.css",
+          "type": "file",
+          "bytes": 2211
+        }
+      ]
+    },
+    {
+      "name": "Other Work",
+      "slug": "Other Work",
+      "file_count": 1,
+      "assets": [
+        {
+          "name": "index.html",
+          "path": "danifpradana-portfolio/index.html",
+          "url": "portfolio-assets/danifpradana-portfolio/index.html",
+          "type": "file",
+          "bytes": 4494
+        }
+      ]
+    }
+  ]
+}
