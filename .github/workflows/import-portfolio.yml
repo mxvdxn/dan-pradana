@@ -1,0 +1,66 @@
+name: Import Dan Pradana portfolio ZIP
+
+on:
+  release:
+    types: [published]
+  workflow_dispatch:
+    inputs:
+      release_tag:
+        description: "Release tag with the original ZIP attached"
+        required: true
+        type: string
+
+permissions:
+  contents: write
+
+concurrency:
+  group: dan-pradana-portfolio-import
+  cancel-in-progress: false
+
+jobs:
+  import:
+    if: github.event_name == 'workflow_dispatch' || startsWith(github.event.release.tag_name, 'portfolio-')
+    runs-on: ubuntu-latest
+    timeout-minutes: 55
+    steps:
+      - name: Checkout ONLY Dan Pradana
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - name: Download ZIP attached to GitHub release
+        env:
+          GH_TOKEN: ${{ github.token }}
+          RELEASE_TAG: ${{ github.event.inputs.release_tag || github.event.release.tag_name }}
+        shell: bash
+        run: |
+          mkdir -p "$RUNNER_TEMP/dan-zip"
+          gh release download "$RELEASE_TAG" --repo "$GITHUB_REPOSITORY" --pattern '*.zip' --dir "$RUNNER_TEMP/dan-zip"
+          test "$(find "$RUNNER_TEMP/dan-zip" -type f -name '*.zip' | wc -l)" -eq 1
+
+      - name: Extract archive preserving folders and generate portfolio manifest
+        env:
+          ARCHIVE_DIR: ${{ runner.temp }}/dan-zip
+        run: python3 scripts/import_portfolio.py "$ARCHIVE_DIR"
+
+      - name: Use Git LFS for files over 90 MB
+        shell: bash
+        run: |
+          git lfs install --local
+          while IFS= read -r -d '' big_file; do
+            git lfs track "$big_file"
+          done < <(find portfolio-assets -type f -size +90M -print0)
+
+      - name: Commit original files and generated manifest
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add portfolio-assets .gitattributes
+          if git diff --cached --quiet; then
+            echo "No file changes needed."
+            exit 0
+          fi
+          git commit -m "Import original Dan Pradana advertising portfolio and assets"
+          git push origin HEAD:main
