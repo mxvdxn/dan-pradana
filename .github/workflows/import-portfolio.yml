@@ -12,6 +12,7 @@ on:
 
 permissions:
   contents: write
+  pages: write
 
 concurrency:
   group: dan-pradana-portfolio-import
@@ -57,10 +58,19 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add portfolio-assets .gitattributes
+          git add portfolio-assets
+          if test -f .gitattributes; then git add .gitattributes; fi
           if git diff --cached --quiet; then
             echo "No file changes needed."
             exit 0
           fi
           git commit -m "Import original Dan Pradana advertising portfolio and assets"
           git push origin HEAD:main
+
+      - name: Request a GitHub Pages rebuild after import
+        if: success()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          gh api --method POST "repos/$GITHUB_REPOSITORY/pages/builds" || echo "Pages may require a rebuild from repository Settings."
