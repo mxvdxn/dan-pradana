@@ -1,793 +1,135 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="color-scheme" content="light">
-  <meta name="theme-color" content="#f1efe8">
-  <meta name="description" content="Dan Pradana creates original worlds and micro-dramas with generative AI. A copywriter by background, a storyteller by instinct. Creator of MXVDXN Studio.">
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="Dan Pradana | Ideas First. Stories Always.">
-  <meta property="og:description" content="Original IP, AI micro-dramas and creative ideas from Dan Pradana and MXVDXN Studio.">
-  <title>Dan Pradana | Storyteller, Creative Thinker &amp; Gen AI Filmmaker</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
-  <style>
-    :root{--paper:#f1efe8;--cream:#e9e6dc;--ink:#232522;--faint:#bdbbb1;--muted:#74766e;--orange:#d74f33;--line:rgba(35,37,34,.18);--serif:'Instrument Serif',Georgia,serif;--sans:'DM Sans',Arial,sans-serif;--gut:clamp(22px,5.4vw,90px)}
-    *,*::before,*::after{box-sizing:border-box}
-    html{scroll-behavior:smooth;scroll-padding-top:90px}
-    body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);-webkit-font-smoothing:antialiased}
-    ::selection{background:var(--orange);color:white}
-    a{color:inherit;text-decoration:none}
-    button{font:inherit}
-    a:focus-visible,button:focus-visible{outline:2px solid var(--orange);outline-offset:5px}
-    .skip{position:absolute;left:10px;top:-90px;padding:12px 18px;background:var(--ink);color:white;z-index:50}
-    .skip:focus{top:10px}
-    .container{width:min(100%,1680px);padding-inline:var(--gut);margin-inline:auto}
-    .eyebrow{font-size:10px;font-weight:700;letter-spacing:.16em;text-transform:uppercase}
-    .serif{font-family:var(--serif);font-weight:400}
-    .rule{border-top:1px solid var(--line)}
-    .muted{color:var(--muted)}
-    .arrow{display:inline-block;transition:transform .25s}
-    a:hover .arrow{transform:translate(3px,-3px)}
-    .text-link{display:inline-flex;align-items:center;justify-content:space-between;gap:24px;padding-bottom:9px;border-bottom:1px solid currentColor;font-size:12px;font-weight:700;letter-spacing:.01em}
-    .text-link:hover{color:var(--orange)}
-
-    /* Masthead */
-    .masthead{height:88px;border-bottom:1px solid var(--line);position:relative;z-index:20}
-    .masthead .container{height:100%;display:flex;align-items:center;justify-content:space-between;gap:30px}
-    .wordmark{font-size:20px;letter-spacing:-.075em;font-weight:700;white-space:nowrap}
-    .wordmark b{color:var(--orange);font-family:var(--serif);font-size:29px;font-weight:400}
-    .desktop-nav{display:flex;align-items:center;gap:clamp(20px,3.1vw,52px)}
-    .desktop-nav a{font-size:12px;font-weight:600;transition:color .2s}
-    .desktop-nav a:hover{color:var(--orange)}
-    .masthead-side{font-size:10px;color:var(--muted);letter-spacing:.15em;text-transform:uppercase;white-space:nowrap}
-    .menu-toggle{display:none;padding:10px;border:0;background:none;cursor:pointer;color:var(--ink)}
-    .menu-toggle span{display:block;width:25px;height:1.5px;background:currentColor;margin:6px 0}
-
-    /* Hero */
-    .hero{padding-top:clamp(55px,7.5vw,120px);padding-bottom:clamp(74px,10vw,165px)}
-    .hero-top{display:flex;justify-content:space-between;gap:12px;align-items:center;padding-bottom:clamp(42px,6vw,93px)}
-    .hero-top p{margin:0}
-    .hero-top .eyebrow:last-child{color:var(--muted)}
-    .hero-layout{display:grid;grid-template-columns:1.45fr .55fr;gap:4vw;align-items:end}
-    .hero-title{font-size:clamp(76px,10.6vw,181px);font-weight:600;letter-spacing:-.092em;line-height:.81;margin:0;max-width:1170px}
-    .hero-title span{display:block}
-    .hero-title .last{white-space:nowrap}
-    .hero-title em{font-size:1.1em;color:var(--orange);letter-spacing:-.065em;font-style:italic}
-    .hero-aside{padding:0 0 5px 15px;max-width:360px;justify-self:end}
-    .hero-aside .index{display:block;margin-bottom:25px;color:var(--orange)}
-    .hero-aside p{font-size:clamp(16px,1.33vw,19px);line-height:1.75;letter-spacing:-.015em;margin:0 0 31px}
-    .hero-floor{margin-top:clamp(75px,10vw,160px);border-top:1px solid var(--line);padding-top:22px;display:flex;justify-content:space-between;align-items:center;gap:20px}
-    .hero-floor span{font-size:10px;letter-spacing:.13em;font-weight:700;text-transform:uppercase;color:var(--muted)}
-    .scroll-mark{display:flex;align-items:center;gap:15px}
-    .scroll-mark::after{content:"↘";font-size:24px;color:var(--orange);font-weight:400}
-
-    /* Pause / Statement */
-    .statement{background:var(--ink);color:var(--paper);padding-block:clamp(95px,12vw,195px)}
-    .statement-layout{display:grid;grid-template-columns:1fr 2.2fr;gap:clamp(25px,5vw,90px)}
-    .statement .eyebrow{color:#aaaca4;padding-top:14px}
-    .statement h2{font-size:clamp(50px,7.5vw,120px);letter-spacing:-.073em;line-height:1.06;font-weight:500;max-width:1190px;margin:0}
-    .statement h2 em{color:#eba48e;letter-spacing:-.04em}
-    .statement p{color:#c7c8c1;line-height:1.9;font-size:14px;margin:50px 0 0;max-width:600px}
-
-    /* Work */
-    .work{padding-block:clamp(90px,10vw,164px)}
-    .section-header{display:flex;align-items:flex-end;justify-content:space-between;gap:24px;margin-bottom:48px}
-    .section-header h2{font-size:clamp(54px,7vw,112px);line-height:.95;font-weight:500;letter-spacing:-.075em;margin:16px 0 0}
-    .section-header h2 em{font-size:1.06em;color:var(--orange)}
-    .section-header .note{font-size:13px;line-height:1.7;color:var(--muted);max-width:270px;margin:0 0 7px}
-    .projects{display:grid;grid-template-columns:1fr 1fr;gap:16px}
-    .project{min-width:0;display:block}
-    .project-image{position:relative;aspect-ratio:1.24;overflow:hidden;display:flex;align-items:center;justify-content:center;isolation:isolate;transition:filter .3s}
-    .project:hover .project-image{filter:saturate(1.1)}
-    .project-image::before{content:"";position:absolute;inset:0;z-index:-1;transition:transform .7s cubic-bezier(.2,.7,.2,1)}
-    .project:hover .project-image::before{transform:scale(1.045)}
-    .project-topline{position:absolute;top:27px;left:30px;right:30px;display:flex;align-items:start;justify-content:space-between;gap:15px;font-size:10px;font-weight:700;letter-spacing:.15em;text-transform:uppercase}
-    .project-bottomline{position:absolute;left:30px;right:30px;bottom:24px;display:flex;justify-content:space-between;gap:15px;font-size:10px;letter-spacing:.13em;font-weight:700;text-transform:uppercase}
-    .project-title{font-size:clamp(57px,7vw,120px);font-weight:700;letter-spacing:-.09em;line-height:.86;text-align:center;transition:transform .5s}
-    .project:hover .project-title{transform:translateY(-6px)}
-    .sari{color:#f2f2de;background:#17233a}
-    .sari::before{background:radial-gradient(circle at 80% 14%,#c16850 0%,transparent 29%),radial-gradient(circle at 12% 82%,#32566e 0%,transparent 40%),linear-gradient(145deg,#121d33,#293a4a 48%,#161d2e)}
-    .sari .project-title{font-size:clamp(56px,7vw,122px);text-shadow:0 3px 20px #050e2360}
-    .sari .project-title small{display:block;font-family:var(--serif);font-weight:400;font-size:.3em;letter-spacing:0;margin:22px 0}
-    .days{background:#ffc6cb;color:#922e49}
-    .days::before{background:radial-gradient(circle at 18% 10%,#fbe3dc,transparent 43%),radial-gradient(circle at 86% 89%,#ed8fa4,transparent 43%),linear-gradient(135deg,#ffcdcb,#f3afc6)}
-    .days .project-title{font-family:var(--serif);font-size:clamp(78px,9vw,157px);font-style:italic;font-weight:400;letter-spacing:-.07em;transform:rotate(-7deg)}
-    .project:hover .days .project-title{transform:rotate(-4deg) translateY(-6px)}
-    .days .flower{position:absolute;font-size:clamp(110px,20vw,330px);font-weight:400;top:4%;right:-4%;opacity:.2;line-height:1;font-family:var(--serif)}
-    .nails{background:#241f1e;color:#e7ded6}
-    .nails::before{background:radial-gradient(circle at 53% 60%,#5b2b28,transparent 55%),linear-gradient(140deg,#101112,#382523)}
-    .nails .project-title{font-size:clamp(72px,10vw,177px);line-height:.85;letter-spacing:-.095em}
-    .nails .project-title span{display:block;font-family:var(--serif);font-weight:400;color:#d87161;font-size:.25em;letter-spacing:.05em;margin-top:18px}
-    .more{background:#dad8cb;color:#53584d}
-    .more::before{background:radial-gradient(ellipse at 70% 70%,#c5c5b6,transparent 46%),linear-gradient(145deg,#ddddd3,#cbcec1)}
-    .more .project-title{font-family:var(--serif);font-size:clamp(65px,8.5vw,145px);font-style:italic;font-weight:400}
-    .project-info{display:flex;justify-content:space-between;gap:15px;align-items:flex-start;padding:22px 2px 37px;border-bottom:1px solid var(--line)}
-    .project-info h3{font-size:20px;margin:0 0 8px;letter-spacing:-.045em}
-    .project-info p{margin:0;color:var(--muted);font-size:12px;line-height:1.7}
-    .project-info .project-go{font-size:23px;color:var(--orange)}
-    .project:nth-child(n+3){margin-top:37px}
-    .work-foot{display:flex;align-items:center;justify-content:space-between;gap:20px;margin-top:58px}
-    .work-foot p{margin:0;color:var(--muted);font-size:12px;max-width:410px;line-height:1.7}
-
-
-    /* Advertising portfolio  /  grounded in Dan's published campaigns */
-    .advertising{padding-block:clamp(84px,10vw,160px);border-bottom:1px solid var(--line)}
-    .ads-intro{display:flex;justify-content:space-between;align-items:end;gap:36px;margin-bottom:44px}
-    .ads-intro h2{font-size:clamp(54px,7vw,110px);line-height:.96;letter-spacing:-.075em;font-weight:500;margin:16px 0 0}
-    .ads-intro h2 em{font-size:1.08em;color:var(--orange)}
-    .ads-intro p:last-child{max-width:340px;color:var(--muted);font-size:13px;line-height:1.8}
-    .ads-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:42px 17px}
-    .ad-card{display:block;min-width:0}
-    .ad-art{aspect-ratio:1.15;position:relative;overflow:hidden;display:flex;align-items:center;justify-content:center;background:#dedbd3;color:#2b2b29;isolation:isolate}
-    .ad-art img{width:100%;height:100%;object-fit:cover;position:absolute;inset:0;transition:transform .6s ease}
-    .ad-card:hover img{transform:scale(1.045)}
-    .ad-art:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.23),transparent 30%,transparent 70%,rgba(0,0,0,.23));pointer-events:none}
-    .ad-label{position:absolute;top:18px;left:20px;right:20px;z-index:1;color:white;font-size:10px;letter-spacing:.15em;text-transform:uppercase;font-weight:700;display:flex;justify-content:space-between;gap:10px;text-shadow:0 1px 5px #0006}
-    .ad-typographic{padding:30px;flex-direction:column;text-align:center}
-    .ad-typographic strong{font-size:clamp(34px,4vw,71px);letter-spacing:-.08em;line-height:1;font-weight:700;max-width:95%}
-    .ad-typographic .serif{font-size:1.05em}
-    .ad-kd{background:linear-gradient(140deg,#f4f8f8,#bbebea);color:#0e807e}
-    .ad-nutri{background:linear-gradient(145deg,#1b3b69,#32669a 60%,#86b8d2);color:#f0f7ff}
-    .ad-loreal{background:linear-gradient(135deg,#f4b680,#da6248 60%,#a62b3f);color:#fff1df}
-    .ad-banners{background:linear-gradient(145deg,#e0eaf0,#9ed0db);color:#23536a}
-    .ad-sweety{background:#141917}
-    .ad-getcontact{background:#e5edfa;color:#1b3969}.ad-sweety{color:#ede9d9}.ad-fallback{font-size:clamp(32px,4vw,65px);line-height:1.04;letter-spacing:-.075em;text-align:center;position:relative;z-index:0}
-    .ad-copy{padding:20px 1px 20px;border-bottom:1px solid var(--line);min-height:132px;display:flex;justify-content:space-between;gap:18px}
-    .ad-copy h3{font-size:clamp(18px,1.55vw,23px);line-height:1.2;letter-spacing:-.045em;margin:0 0 9px;font-weight:700}
-    .ad-copy p{font-size:12px;line-height:1.65;color:var(--muted);margin:0;max-width:330px}
-    .ad-arrow{color:var(--orange);font-size:23px;flex-shrink:0}
-    .ads-end{margin-top:40px;display:flex;align-items:center;justify-content:space-between;gap:24px;color:var(--muted);font-size:12px;line-height:1.7}
-    .ads-end p{margin:0;max-width:660px}
-    @media(max-width:1050px){.ads-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
-    @media(max-width:720px){.ads-intro,.ads-end{display:block}.ads-intro p:last-child{max-width:580px;margin-top:25px}.ads-grid{grid-template-columns:1fr;gap:29px}.ad-art{aspect-ratio:1.27}.ad-typographic strong{font-size:clamp(55px,11vw,95px)}.ads-end a{display:inline-block;margin-top:12px}}
-
-
-    /* Original ZIP portfolio: no Behance dependency, all assets served locally */
-    .archive-panel{display:none;margin-bottom:58px}
-    .ads-grid[hidden],.ads-end[hidden]{display:none!important}
-    .archive-panel.ready{display:block}
-    .archive-counter{font-size:12px;color:var(--muted);margin:0 0 25px}
-    .archive-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:65px 18px}
-    .archive-item{min-width:0}
-    .archive-cover{aspect-ratio:1.34;background:#ddd9d0;position:relative;display:flex;align-items:center;justify-content:center;overflow:hidden;color:var(--ink)}
-    .archive-cover img,.archive-cover video{width:100%;height:100%;object-fit:cover;display:block;transition:transform .5s}
-    .archive-cover:hover img{transform:scale(1.025)}
-    .archive-cover-fallback{font-family:var(--serif);font-size:clamp(34px,5vw,83px);font-style:italic;text-align:center;letter-spacing:-.04em;line-height:1}
-    .archive-cover-number{position:absolute;left:22px;top:20px;font-size:10px;letter-spacing:.15em;text-transform:uppercase;font-weight:700;background:var(--paper);padding:9px 11px}
-    .archive-item-head{display:flex;justify-content:space-between;gap:12px;padding:19px 0 15px}
-    .archive-item-head h3{font-size:clamp(21px,2.1vw,32px);letter-spacing:-.05em;font-weight:600;line-height:1.15;margin:0}
-    .archive-item-head .archive-cta{font-size:11px;color:var(--orange);white-space:nowrap;margin-top:5px;font-weight:700;border-bottom:1px solid currentColor;padding-bottom:4px}
-    .archive-title-link:hover h3{color:var(--orange);transition:color .25s}
-    .archive-details{border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
-    .archive-details summary{list-style:none;cursor:pointer;font-size:12px;font-weight:700;padding:15px 0;display:flex;justify-content:space-between}
-    .archive-details summary::-webkit-details-marker{display:none}
-    .archive-details summary::after{content:"+";color:var(--orange)}
-    .archive-details[open] summary::after{content:"−"}
-    .archive-assets{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;padding:8px 0 25px}
-    .archive-asset{min-width:0;text-decoration:none;background:var(--cream);display:flex;flex-direction:column}
-    .archive-asset img,.archive-asset video{width:100%;aspect-ratio:1.2;object-fit:cover;display:block}
-    .archive-asset-icon{aspect-ratio:1.2;display:flex;align-items:center;justify-content:center;font-family:var(--serif);font-style:italic;font-size:30px;background:#d8d2c5}
-    .archive-asset span:last-child{font-size:10px;line-height:1.45;overflow-wrap:anywhere;padding:9px 10px}
-    .archive-note{margin-top:26px;font-size:12px;color:var(--muted)}
-    @media(max-width:720px){.archive-list{grid-template-columns:1fr;gap:38px}.archive-assets{grid-template-columns:repeat(2,minmax(0,1fr))}}
-
-    /* The practice */
-    .practice{background:var(--cream);padding-block:clamp(88px,10vw,160px)}
-    .practice-top{display:grid;grid-template-columns:1fr 2fr;gap:45px;padding-bottom:clamp(80px,8vw,130px)}
-    .practice-top h2{margin:0;font-size:clamp(46px,6.2vw,100px);font-weight:500;line-height:1.03;letter-spacing:-.069em}
-    .practice-top h2 em{color:var(--orange)}
-    .practice-grid{display:grid;grid-template-columns:1fr 1fr;border-top:1px solid var(--line)}
-    .practice-item{padding:44px clamp(22px,4vw,70px) 18px 0}
-    .practice-item+.practice-item{border-left:1px solid var(--line);padding-left:clamp(22px,4vw,70px)}
-    .practice-item .eyebrow{color:var(--orange)}
-    .practice-item h3{font-size:clamp(34px,3.6vw,59px);font-weight:500;line-height:1.07;letter-spacing:-.06em;margin:43px 0 25px}
-    .practice-item p{font-size:14px;line-height:1.9;max-width:480px;color:#64675e;margin:0 0 45px}
-    .tags{display:flex;flex-wrap:wrap;gap:9px}
-    .tags span{font-size:10px;letter-spacing:.07em;text-transform:uppercase;border:1px solid #bcbdb3;padding:10px 13px;border-radius:50px}
-
-    /* About */
-    .about{padding-block:clamp(92px,11vw,175px)}
-    .about-grid{display:grid;grid-template-columns:1fr 1.6fr;gap:clamp(40px,12vw,220px)}
-    .about-left{display:flex;flex-direction:column;justify-content:space-between;gap:120px}
-    .about-monogram{font-family:var(--serif);font-style:italic;color:var(--orange);font-size:clamp(170px,22vw,365px);line-height:.75;letter-spacing:-.13em;transform:translateX(-.08em)}
-    .about-left small{color:var(--muted);font-size:11px;line-height:1.8}
-    .about-right .eyebrow{color:var(--orange)}
-    .about-right h2{font-size:clamp(50px,6.2vw,99px);line-height:1.03;font-weight:500;letter-spacing:-.07em;margin:28px 0 42px}
-    .about-right h2 em{color:var(--orange)}
-    .about-copy{max-width:670px}
-    .about-copy p{font-size:clamp(15px,1.4vw,18px);line-height:1.9;margin:0 0 23px;color:#454740}
-    .about-copy p:first-child{color:var(--ink)}
-    .about-aside{display:flex;align-items:center;justify-content:space-between;gap:20px;margin-top:52px;padding-top:22px;border-top:1px solid var(--line)}
-
-    /* Contact */
-    .contact{background:var(--orange);color:#fff4ed;padding-block:clamp(88px,10vw,160px)}
-    .contact .eyebrow{color:#ffd8c8}
-    .contact h2{font-weight:500;letter-spacing:-.08em;line-height:.9;font-size:clamp(74px,10vw,167px);margin:48px 0 53px;max-width:1300px}
-    .contact h2 em{color:#3b2824}
-    .contact-footer{display:flex;justify-content:space-between;align-items:end;gap:30px;border-top:1px solid rgba(255,255,255,.4);padding-top:25px}
-    .contact-footer p{font-size:13px;line-height:1.8;max-width:460px;margin:0}
-    .contact-links{display:flex;gap:28px;flex-wrap:wrap}
-    .contact-links a{font-size:12px;font-weight:700;border-bottom:1px solid rgba(255,255,255,.7);padding-bottom:5px}
-    .site-footer{background:#1b1d1a;color:#f1efe8}
-    .site-footer .container{display:flex;align-items:center;justify-content:space-between;gap:30px;padding-block:28px}
-    .site-footer p{margin:0;font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:#a6aaa1}
-    .site-footer a:hover{color:#e7a18b}
-
-    @media(max-width:1050px){
-      .masthead-side{display:none}
-      .hero-layout{grid-template-columns:1fr}
-      .hero-aside{justify-self:start;max-width:560px;padding:40px 0 0}
-      .hero-aside .index{margin-bottom:14px}
-      .hero-title{font-size:clamp(80px,12vw,150px)}
-      .hero-title .last{white-space:normal}
-      .statement-layout{grid-template-columns:1fr;gap:24px}
-      .statement h2{max-width:900px}
-      .practice-top{grid-template-columns:1fr 2fr}
-      .about-grid{gap:6vw}
-    }
-    @media(max-width:720px){
-      .masthead{height:75px}
-      .menu-toggle{display:block;position:relative;z-index:22}
-      .desktop-nav{display:none;position:absolute;left:0;right:0;top:75px;background:var(--paper);padding:24px var(--gut) 30px;border-bottom:1px solid var(--line);box-shadow:0 12px 22px #2325220e;flex-direction:column;align-items:flex-start;gap:25px}
-      .desktop-nav.open{display:flex}
-      .desktop-nav a{font-size:19px}
-      .hero{padding-top:42px}
-      .hero-top{padding-bottom:55px}
-      .hero-top .eyebrow{font-size:9px}
-      .hero-title{font-size:clamp(62px,14.7vw,108px)}
-      .hero-floor{margin-top:85px}
-      .hero-floor span{font-size:9px}
-      .section-header{align-items:start;flex-direction:column}
-      .section-header .note{max-width:430px}
-      .projects{grid-template-columns:1fr;gap:8px}
-      .project:nth-child(n+3){margin-top:0}
-      .project-image{aspect-ratio:1.25}
-      .project-title,.sari .project-title{font-size:clamp(70px,12vw,110px)}
-      .days .project-title{font-size:clamp(85px,16vw,145px)}
-      .nails .project-title{font-size:clamp(100px,19vw,165px)}
-      .more .project-title{font-size:clamp(77px,14vw,125px)}
-      .work-foot{align-items:start;flex-direction:column}
-      .practice-top,.practice-grid,.about-grid{grid-template-columns:1fr}
-      .practice-top{padding-bottom:55px;gap:30px}
-      .practice-grid{border-bottom:1px solid var(--line)}
-      .practice-item{padding:42px 0}
-      .practice-item+.practice-item{border-left:0;border-top:1px solid var(--line);padding-left:0}
-      .practice-item h3{margin-top:24px}
-      .about-left{display:none}
-      .about-right h2{margin-top:22px}
-      .contact h2{font-size:clamp(68px,13vw,110px)}
-      .contact-footer{flex-direction:column;align-items:start}
-      .site-footer .container{align-items:start;flex-direction:column;gap:14px}
-    }
-    @media(max-width:410px){
-      .hero-title{font-size:14.5vw}
-      .project-topline,.project-bottomline{left:17px;right:17px}
-      .project-topline{top:17px}.project-bottomline{bottom:17px}
-      .sari .project-title{font-size:14vw}
-      .contact h2{font-size:14vw}
-      .hero-top .eyebrow:last-child{display:none}
-    }
-    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition:none!important;animation:none!important}}
-  
-/* OCT 2026: Creator-led narrative homepage, original ads archive preserved */
-.creator-hero{padding-top:clamp(40px,7vw,110px);padding-bottom:30px;overflow:hidden}
-.hero-meta,.creator-foot{display:flex;justify-content:space-between;align-items:center;gap:20px;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);font-weight:700}
-.hero-meta{padding-bottom:clamp(45px,7vw,110px)}.creator-hero-grid{display:grid;grid-template-columns:1.75fr .55fr;gap:clamp(22px,5vw,95px);align-items:end}
-.eyebrow-accent{color:var(--orange)}.creator-hero-title{margin:25px 0 0;font-size:clamp(85px,11.5vw,194px);line-height:.8;font-weight:600;letter-spacing:-.10em}
-.creator-hero-title span{display:block}.creator-hero-title em{display:block;margin-top:9px;font-family:var(--serif);font-weight:400;font-size:clamp(79px,9.1vw,156px);letter-spacing:-.066em;color:var(--orange);line-height:1.04;font-style:italic;white-space:nowrap}.hero-stop{display:inline!important;color:var(--orange)}
-.creator-aside{padding-bottom:14px}.creator-aside-mark{color:var(--orange);font:400 clamp(65px,7vw,110px)/.9 var(--serif);display:block;margin-bottom:20px}
-.creator-aside p{font-size:clamp(14px,1.25vw,18px);line-height:1.8;margin:0 0 28px;max-width:355px}
-.creator-foot{border-top:1px solid var(--line);padding-block:24px;margin-top:clamp(80px,11vw,170px)}
-.creator-impact{background:#20221f;color:#f6f2ea;padding-block:clamp(88px,10vw,165px)}
-.impact-layout{display:grid;grid-template-columns:1fr 1fr;gap:clamp(40px,7vw,120px)}.impact-kicker .eyebrow{color:#e6ab98}
-.impact-kicker h2{font-size:clamp(54px,6vw,105px);line-height:.98;font-weight:500;letter-spacing:-.075em;margin:35px 0 30px}
-.impact-kicker p{font-size:clamp(14px,1.25vw,18px);line-height:1.9;color:#c1c1b9;max-width:640px;margin:0 0 30px}
-.impact-link{display:inline-flex;gap:45px;border-bottom:1px solid #d8a395;padding-bottom:10px;font-weight:700;font-size:12px;color:#f4c1af}
-.impact-number{border-top:1px solid #686c64;border-bottom:1px solid #686c64;padding-block:30px;display:flex;flex-direction:column;justify-content:space-between}
-.impact-value{display:block;font-weight:600;letter-spacing:-.12em;line-height:.9;font-size:clamp(110px,15vw,260px);white-space:nowrap}
-.impact-value span{font:italic clamp(70px,8vw,145px)/1 var(--serif);color:#e59f89;vertical-align:top;letter-spacing:-.06em}
-.impact-caption{display:block;font-size:clamp(17px,2.1vw,32px);letter-spacing:-.035em;font-weight:500;margin-top:25px}
-.impact-caveat{color:#aeb1a8;font-size:12px;max-width:340px;line-height:1.8;margin:40px 0 0}
-.creator-worlds{padding-block:clamp(90px,10vw,165px)}.worlds-heading{display:flex;gap:32px;justify-content:space-between;align-items:end;margin-bottom:clamp(45px,6vw,90px)}
-.worlds-heading h2{font-weight:500;font-size:clamp(68px,8.8vw,152px);letter-spacing:-.08em;line-height:.92;margin:25px 0 0}
-.worlds-heading h2 em{font-family:var(--serif);font-weight:400;color:var(--orange)}
-.worlds-heading p{font-size:clamp(13px,1.2vw,17px);color:var(--muted);line-height:1.8;max-width:385px;margin-bottom:8px}
-.worlds-heading p a{color:var(--ink);border-bottom:1px solid var(--orange);font-weight:600}
-.story-project-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:20px;row-gap:clamp(46px,6vw,90px)}
-.story-project{min-width:0}.story-project-lead{grid-column:1/-1}.project-art{position:relative;display:flex;aspect-ratio:1.36;overflow:hidden;isolation:isolate;padding:26px;flex-direction:column;justify-content:space-between;transition:filter .3s}.story-project-lead .project-art{aspect-ratio:2.1;min-height:475px}
-.project-art:hover{filter:brightness(1.045)}.project-art:before{content:"";position:absolute;inset:0;z-index:-1;transition:transform .6s ease}.project-art:hover:before{transform:scale(1.035)}
-.project-art-top,.project-art-bottom{display:flex;justify-content:space-between;gap:16px;font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.16em;position:relative;z-index:1}
-.project-art-sari{background:#14243a;color:#e9e8d8}
-.project-art-sari:before{background:radial-gradient(circle at 76% 20%,#bf654d 0%,transparent 32%),radial-gradient(ellipse at 16% 75%,#31587e 0%,transparent 48%),repeating-linear-gradient(126deg,transparent,transparent 65px,#ffffff08 66px,#ffffff08 67px),linear-gradient(135deg,#15243a,#273d53)}
-.sari-poster{display:flex;justify-content:center;align-items:center;flex-direction:column;padding:16px 0;text-align:center}.sari-rule{font-family:var(--serif);font-style:italic;font-size:clamp(16px,1.9vw,29px);color:#cdd2d0;letter-spacing:.02em}
-.sari-poster strong{font-size:clamp(115px,16vw,270px);line-height:.73;letter-spacing:-.10em;font-weight:700;text-shadow:0 8px 35px #09102288;margin:25px 0}
-.sari-poster strong i{font-family:var(--serif);font-size:.6em;font-weight:400;letter-spacing:-.08em;color:#e2a18d}.sari-period{color:#e2a18d}
-.sari-foot{font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:#c5cbd0}
-.project-art-nails{background:#21191b;color:#eee5dc}.project-art-nails:before{background:radial-gradient(circle at 75% 65%,#683a38 0%,transparent 44%),repeating-linear-gradient(0deg,transparent,transparent 4px,#ffffff04 5px),linear-gradient(140deg,#101319,#332024)}
-.nails-poster{display:flex;align-items:center;justify-content:center;flex-direction:column;position:relative;text-align:center;gap:13px}
-.nails-poster strong{font-size:clamp(100px,11vw,185px);letter-spacing:-.105em;line-height:.7}.nails-poster>span:last-child{font:italic clamp(18px,1.8vw,29px)/1.3 var(--serif);color:#dc9d89;margin-top:14px}.nails-glyph{font:normal 60px/1 var(--serif);color:#b76458;transform:rotate(16deg)}
-.project-art-days{background:#ebabc1;color:#943f57}.project-art-days:before{background:radial-gradient(circle at 15% 16%,#f9e7df,transparent 44%),radial-gradient(circle at 83% 85%,#cf708a,transparent 45%),linear-gradient(145deg,#f8ced1,#e79cbd)}
-.days-poster{display:flex;align-items:center;justify-content:center;flex-direction:column;gap:10px;position:relative}.days-poster strong{font:italic clamp(95px,11vw,192px)/.75 var(--serif);letter-spacing:-.055em;text-align:center;transform:rotate(-5deg)}
-.days-poster strong i{font-style:italic}.days-poster>span:last-child{font-size:12px;letter-spacing:.03em;margin-top:20px}.days-cloud{position:absolute;font-size:clamp(130px,15vw,260px);opacity:.15;right:10%;top:-30%;pointer-events:none}
-.project-art-viral{background:#d74f33;color:#fff3e4}.project-art-viral:before{background:radial-gradient(circle at 80% 80%,#efaa75 0%,transparent 39%),repeating-linear-gradient(-19deg,transparent,transparent 37px,#ffffff16 39px),linear-gradient(145deg,#b32c29,#d74f33)}
-.viral-poster{display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center}.viral-poster strong{font-size:clamp(95px,10.5vw,180px);font-weight:700;line-height:.75;letter-spacing:-.095em}.viral-poster strong em{font:italic 1em/.8 var(--serif);letter-spacing:-.045em;color:#301e1c}.viral-poster>span{font:italic clamp(23px,2.7vw,42px)/1.1 var(--serif);margin-top:30px}
-.story-project-description{display:flex;align-items:start;justify-content:space-between;gap:25px;border-bottom:1px solid var(--line);padding:25px 2px 42px}.story-project-description h3{margin:12px 0;font-size:clamp(24px,2.6vw,42px);letter-spacing:-.055em;line-height:1.1}.story-project-description p{margin:0;font-size:14px;line-height:1.8;color:var(--muted);max-width:680px}.story-project-action{font-size:12px;font-weight:700;white-space:nowrap;padding:8px 0;border-bottom:1px solid var(--orange)}
-.creator-perspective{background:var(--cream);padding-block:clamp(95px,11vw,175px)}.perspective-layout{display:grid;grid-template-columns:1fr 1fr;gap:clamp(40px,9vw,150px)}
-.perspective-layout h2{font-size:clamp(54px,6.7vw,114px);font-weight:500;line-height:1.03;letter-spacing:-.07em;margin:26px 0 0}.perspective-layout h2 em{font-family:var(--serif);font-weight:400;color:var(--orange)}.perspective-copy>p{font-size:clamp(17px,1.7vw,24px);line-height:1.75;letter-spacing:-.015em;margin:0 0 28px}.partner-note{border-top:1px solid var(--line);padding-top:32px;margin-top:55px}.partner-note .eyebrow{color:var(--orange)}.partner-note p{font-size:14px;line-height:1.85;color:#65675f;margin:18px 0 0}
-.advertising{padding-top:clamp(95px,10vw,170px);padding-bottom:clamp(100px,11vw,180px)}.ads-intro h2{font-size:clamp(53px,6.6vw,118px);line-height:1;letter-spacing:-.076em}.ads-intro p:last-child{max-width:390px}.archive-counter{font-size:12px!important;letter-spacing:.08em;text-transform:uppercase}.archive-list{row-gap:65px}.archive-cover{aspect-ratio:1.55}.archive-item-head h3{font-size:clamp(22px,2vw,33px)}
-.creator-about{padding-block:clamp(110px,13vw,205px);display:grid;grid-template-columns:.9fr 1.1fr;gap:clamp(50px,9vw,150px)}.creator-about-art{display:flex;flex-direction:column;justify-content:space-between}.about-round{font:italic clamp(190px,22vw,370px)/.76 var(--serif);letter-spacing:-.14em;color:var(--orange)}.about-round span{color:var(--ink)}.creator-about-art small{font-size:11px;letter-spacing:.1em;color:var(--muted);line-height:1.6;text-transform:uppercase;margin-top:90px}
-.creator-about-text h2{font-size:clamp(50px,6.6vw,105px);line-height:1.04;letter-spacing:-.075em;font-weight:500;margin:24px 0 40px}.creator-about-text h2 em{font-family:var(--serif);font-weight:400;color:var(--orange)}.creator-about-text p{font-size:clamp(15px,1.4vw,19px);line-height:1.9;color:#474b45;max-width:690px;margin:0 0 23px}.creator-about-text .text-link{margin-top:25px}
-.creator-contact{background:var(--orange);color:#fff4ec;padding-block:clamp(90px,10vw,160px)}.creator-contact .eyebrow{color:#ffddd0}.creator-contact h2{font-size:clamp(75px,10vw,178px);line-height:.92;letter-spacing:-.085em;font-weight:500;max-width:1400px;margin:42px 0 70px}.creator-contact h2 em{font-family:var(--serif);font-weight:400;color:#462a24}.creator-contact-bottom{border-top:1px solid #ffffff78;display:flex;justify-content:space-between;align-items:start;gap:30px;padding-top:28px}.creator-contact-bottom p{font-size:14px;line-height:1.75;max-width:490px;margin:0}.creator-contact-bottom>div{display:flex;gap:25px;flex-wrap:wrap}.creator-contact-bottom a{font-size:12px;font-weight:700;border-bottom:1px solid #ffffffaa;padding-bottom:8px}
-@media(max-width:1050px){.creator-hero-grid{grid-template-columns:1fr;gap:32px}.creator-hero-title{font-size:clamp(83px,12vw,150px)}.creator-hero-title em{font-size:clamp(80px,11.2vw,135px)}.creator-aside{display:grid;grid-template-columns:90px 1fr;align-items:center;gap:12px 22px}.creator-aside .text-link{grid-column:2;width:max-content}.creator-aside p{max-width:600px;margin:0}.creator-aside-mark{margin:0}.story-project-lead .project-art{aspect-ratio:1.8}.sari-poster strong{font-size:clamp(100px,15vw,180px)}.impact-value{font-size:clamp(115px,13vw,165px)}}
-@media(max-width:720px){.hero-meta span:last-child{display:none}.creator-hero{padding-top:46px}.creator-hero-title{font-size:clamp(64px,15vw,110px)}.creator-hero-title em{font-size:clamp(52px,11.5vw,86px);white-space:normal}.creator-aside{grid-template-columns:55px 1fr;gap:18px}.creator-aside-mark{font-size:70px}.creator-aside .text-link{grid-column:1/-1}.creator-foot{margin-top:90px;align-items:start}.creator-foot span:last-child{display:none}.impact-layout,.perspective-layout,.creator-about{grid-template-columns:1fr;gap:65px}.impact-value{font-size:clamp(120px,23vw,175px)}.impact-number{min-height:255px}.worlds-heading{display:block}.worlds-heading p{margin:32px 0 0}.worlds-heading h2{font-size:clamp(70px,13vw,110px)}.story-project-grid{grid-template-columns:1fr;row-gap:48px}.story-project-lead{grid-column:auto}.project-art,.story-project-lead .project-art{aspect-ratio:1.1;min-height:350px;padding:18px}.project-art-top,.project-art-bottom{font-size:9px;letter-spacing:.07em}.sari-poster strong{font-size:clamp(86px,17vw,140px)}.sari-rule{font-size:18px}.sari-foot{font-size:9px;letter-spacing:.08em}.nails-poster strong{font-size:clamp(100px,19vw,165px)}.days-poster strong{font-size:clamp(95px,18vw,160px)}.viral-poster strong{font-size:clamp(92px,17vw,155px)}.story-project-description{display:block}.story-project-action{display:inline-block;margin-top:20px}.creator-about-art small{margin-top:30px}.about-round{font-size:230px}.creator-contact-bottom{display:block}.creator-contact-bottom>div{margin-top:25px}.creator-contact h2{font-size:clamp(70px,14vw,116px)}.ads-intro h2{font-size:clamp(55px,11vw,92px)}.archive-cover{aspect-ratio:1.3}}
-@media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;transition:none!important}}
-
-
-    /* Show the local Dead Mall performance image when it is imported to GitHub. */
-    .dead-mall-case-link{display:inline-flex;gap:12px;margin-top:16px;font-size:12px;font-weight:700;border-bottom:1px solid var(--orange);padding-bottom:8px}
-    .impact-number .impact-value{font-size:clamp(100px,12vw,215px)}
-
-    /* The Dead Mall: full editorial feature directly in the main homepage */
-    .featured-mall{background:#171e25;color:#f4f1e9;padding-block:clamp(85px,10vw,165px)}
-    .mall-overline{display:flex;justify-content:space-between;gap:24px;border-top:1px solid #52616e;padding-top:20px;color:#d6a398}
-    .mall-heading{display:flex;justify-content:space-between;align-items:end;gap:clamp(28px,5vw,85px);margin:45px 0 clamp(48px,7vw,104px)}
-    .mall-heading>div{flex:1.5}.mall-heading>p{flex:.5;font-size:clamp(16px,1.36vw,21px);color:#b7c4cd;line-height:1.8;max-width:370px;margin:0 0 12px}
-    .mall-accent{color:#eca189}
-    .mall-heading h2{font-size:clamp(57px,7.4vw,132px);font-weight:600;letter-spacing:-.082em;line-height:.94;margin:23px 0 0}
-    .mall-heading h2 em{color:#ec9d82;font-family:var(--serif);font-style:italic;font-weight:400;letter-spacing:-.065em;font-size:1.05em}
-    .mall-image{margin:0;background:#071019;overflow:hidden}
-    .mall-image img{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:cover}
-    .mall-image figcaption{display:flex;justify-content:space-between;gap:20px;background:#101720;font-size:10px;letter-spacing:.13em;text-transform:uppercase;color:#a1b2bd;padding:17px 21px}
-    .mall-metrics{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));border-top:1px solid #50616e;border-bottom:1px solid #50616e;margin-block:clamp(60px,8vw,126px) clamp(80px,9vw,145px)}
-    .mall-metrics>div{padding:32px 18px 36px;min-width:0;border-right:1px solid #50616e}
-    .mall-metrics>div:first-child{padding-left:0}.mall-metrics>div:last-child{border:0}
-    .mall-metric-name{display:block;text-transform:uppercase;letter-spacing:.14em;font-size:10px;color:#b9c4ca;margin-bottom:18px}
-    .mall-metrics strong{font-size:clamp(35px,4.1vw,73px);font-weight:600;line-height:1;letter-spacing:-.065em}
-    .mall-story{display:grid;grid-template-columns:1fr 1fr;gap:clamp(50px,9vw,160px)}
-    .mall-story-heading h3{font-size:clamp(49px,5.9vw,100px);font-weight:500;letter-spacing:-.07em;line-height:1.06;margin:20px 0 50px}
-    .mall-story-heading h3 em{font-family:var(--serif);color:#ec9d82;font-weight:400;font-style:italic}
-    .mall-meta{border-top:1px solid #52616e;padding-top:25px;display:flex;flex-direction:column;gap:15px;color:#b9c4ca;font-size:11px;letter-spacing:.11em;text-transform:uppercase}
-    .mall-copy p{font-size:clamp(16px,1.45vw,20px);line-height:1.9;color:#c7d0d3;margin:0 0 28px}
-    .mall-copy strong{color:white;font-weight:700}.mall-copy em{color:#efbcaa}
-    .mall-copy blockquote{font:italic clamp(29px,3vw,48px)/1.25 var(--serif);letter-spacing:-.025em;color:#f1b8a5;border-left:3px solid #eb937b;padding-left:25px;margin:43px 0}
-    .mall-action{display:inline-flex;align-items:center;justify-content:space-between;gap:45px;color:#f2b6a3;border-bottom:1px solid currentColor;padding:0 0 13px;font-size:13px;font-weight:700}
-    @media(max-width:960px){.mall-heading{display:block}.mall-heading>p{margin-top:32px;max-width:700px}.mall-story{grid-template-columns:1fr;gap:50px}.mall-story-heading h3{margin-bottom:30px}.mall-meta{flex-direction:row;flex-wrap:wrap;gap:15px 25px}}
-    @media(max-width:650px){.mall-overline span:last-child,.mall-image figcaption span:last-child{display:none}.mall-heading h2{font-size:clamp(55px,10.5vw,80px)}.mall-metrics{grid-template-columns:repeat(2,minmax(0,1fr))}.mall-metrics>div{border-bottom:1px solid #50616e}.mall-metrics>div:nth-child(even){border-right:0}.mall-metrics>div:nth-last-child(-n+2){border-bottom:0}.mall-metrics>div:nth-child(odd){padding-left:0}.mall-metrics strong{font-size:clamp(39px,8vw,62px)}.mall-heading{margin-bottom:48px}.mall-story-heading h3{font-size:clamp(50px,9.5vw,74px)}}
-
-
-    /* No Saints: second full-length editorial case study, following The Dead Mall. */
-    .featured-saints{background:#1d161e;color:#f8edf2;border-top:1px solid #55404b}
-    .featured-saints .mall-overline{border-top-color:#604653;color:#ffb5d8}
-    .featured-saints .mall-accent{color:#ff9fd0}
-    .featured-saints .mall-heading h2 em{color:#ff9fc9}
-    .featured-saints .mall-heading>p{color:#d5c2ce}
-    .featured-saints .mall-image{background:#08070a}
-    .featured-saints .mall-image figcaption{background:#120f16;color:#d1b9c7}
-    .featured-saints .mall-meta{border-top-color:#644f5b;color:#d6c0ce}
-    .featured-saints .mall-copy p{color:#e1d1da}
-    .featured-saints .mall-copy strong{color:#fff}
-    .featured-saints .mall-copy em{color:#ffb2d6}
-    .featured-saints .mall-copy blockquote{color:#ffb2d6;border-color:#ed70af}
-    .featured-saints .mall-action{color:#ffb2d6}
-
-
-    /* Creative practice, not an AI product landing page: minimalist editorial system. */
-    :root{
-      --paper:#f6f7f5;--cream:#edf0ef;--ink:#16202a;--muted:#64717a;
-      --orange:#2858c6;--line:rgba(22,32,42,.14);
-      --mono:'IBM Plex Mono',ui-monospace,SFMono-Regular,Consolas,monospace;
-      --gut:clamp(22px,5.2vw,88px);
-    }
-    body{background:var(--paper)}
-    .eyebrow,.hero-meta,.creator-foot,.masthead-side,
-    .mall-overline,.mall-image figcaption,.mall-meta,
-    .world-no,.worlds-heading .eyebrow,.ads-toggle-meta,
-    .archive-counter,.archive-standalone-link,.studio-outlink{
-      font-family:var(--mono);font-weight:500;letter-spacing:.07em;
-    }
-    .masthead{height:74px;background:var(--paper);border-bottom:1px solid var(--line)}
-    .wordmark{font-size:18px;letter-spacing:-.045em}
-    .wordmark b{color:var(--orange)}
-    .desktop-nav{gap:clamp(15px,2.2vw,35px)}
-    .desktop-nav a{font-size:11px;font-weight:600}
-    .masthead-side{font-size:9px}
-    .creator-hero{min-height:clamp(570px,78vh,860px);display:flex;flex-direction:column;justify-content:space-between;padding-top:30px;padding-bottom:26px}
-    .hero-meta{padding-bottom:clamp(55px,8vw,124px)}
-    .creator-hero-grid{grid-template-columns:minmax(0,1.6fr) minmax(235px,.55fr);gap:clamp(32px,6vw,98px);align-items:end}
-    .creator-hero-title{font-size:clamp(74px,8.6vw,146px);letter-spacing:-.088em;line-height:.9;margin-top:29px}
-    .creator-hero-title em{font:inherit;display:block;color:var(--ink);font-size:clamp(62px,6.3vw,109px);letter-spacing:-.07em;line-height:1.05;white-space:normal;margin-top:10px}
-    .creator-hero-title .hero-stop{color:var(--orange)}
-    .creator-aside{max-width:420px;align-self:end}
-    .creator-aside-mark{font-family:var(--mono);font-size:11px;letter-spacing:.12em;color:var(--orange);margin:0 0 40px;display:block}
-    .creator-aside p{font-size:clamp(15px,1.24vw,18px);line-height:1.75}
-    .creator-aside .text-link{font-size:12px}
-    .creator-foot{margin-top:clamp(70px,10vw,150px);border-top:1px solid var(--line);padding-top:19px}
-    .creator-foot i{color:var(--orange);font-style:normal;padding-inline:8px}
-    .featured-mall{padding-block:clamp(75px,8vw,122px)}
-    .mall-heading{margin:42px 0 clamp(38px,5vw,75px)}
-    .mall-heading h2{font-size:clamp(60px,6.4vw,106px)}
-    .mall-heading>p{font-size:clamp(15px,1.22vw,18px)}
-    .mall-story{gap:clamp(40px,7vw,115px)}
-    .mall-story-heading h3{font-size:clamp(46px,4.9vw,78px)}
-    .mall-copy p{font-size:clamp(15px,1.23vw,18px);line-height:1.83}
-    .featured-saints{border-top:1px solid #5b4654}
-    .creator-worlds{padding-block:clamp(80px,9vw,138px)}
-    .worlds-heading{align-items:end;margin-bottom:46px}
-    .worlds-heading h2{font-size:clamp(48px,5.5vw,86px);line-height:1.06;letter-spacing:-.07em;margin-top:21px}
-    .worlds-heading p{font-size:14px;max-width:365px}
-    .world-period{color:var(--orange)}
-    .world-index{border-top:1px solid var(--line)}
-    .world-row{display:grid;grid-template-columns:205px minmax(180px,.85fr) minmax(215px,1fr) 30px;gap:clamp(15px,2vw,42px);align-items:center;padding:30px 0;border-bottom:1px solid var(--line);transition:background-color .2s}
-    .world-row:hover{background:rgba(40,88,198,.035)}
-    .world-no{color:var(--muted);font-size:10px;text-transform:uppercase}
-    .world-row strong{font-size:clamp(21px,2.4vw,36px);letter-spacing:-.048em;font-weight:600;line-height:1.08}
-    .world-desc{font-size:13px;line-height:1.7;color:var(--muted)}
-    .world-arrow{color:var(--orange);font-size:23px;justify-self:end}
-    .studio-outlink{display:inline-flex;gap:24px;margin-top:26px;padding-bottom:9px;border-bottom:1px solid var(--ink);font-size:11px}
-    .creator-perspective{padding-block:clamp(75px,8.5vw,135px)}
-    .perspective-layout h2{font-size:clamp(47px,5.8vw,93px)}
-    .perspective-copy>p{font-size:clamp(16px,1.5vw,21px)}
-    .partner-note{margin-top:38px}
-    .advertising{padding-block:clamp(65px,8vw,120px);border-top:1px solid var(--line)}
-    .ads-intro{align-items:center;gap:50px;margin-bottom:34px}
-    .ads-intro h2{font-size:clamp(35px,4.6vw,70px);line-height:1.12;letter-spacing:-.058em;margin-top:18px}
-    .ads-intro p:last-child{font-size:14px;line-height:1.85;max-width:420px}
-    .ads-disclosure{border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
-    .ads-toggle{list-style:none;display:flex;align-items:center;justify-content:space-between;gap:18px;padding:24px 0;cursor:pointer;font-size:15px;font-weight:600}
-    .ads-toggle::-webkit-details-marker{display:none}
-    .ads-toggle-meta{font-size:10px;color:var(--muted);display:flex;gap:25px;align-items:center;text-transform:uppercase}
-    .ads-toggle-icon{font-size:23px;color:var(--orange);line-height:1}
-    .ads-disclosure[open] .ads-toggle-icon{transform:rotate(45deg)}
-    .ads-inside{padding:23px 0 32px}
-    .archive-panel{margin-bottom:12px}
-    .archive-list{grid-template-columns:repeat(2,minmax(0,1fr));gap:0 34px}
-    .archive-item{display:grid;grid-template-columns:100px minmax(0,1fr);grid-template-rows:auto auto;column-gap:16px;align-content:start;border-top:1px solid var(--line);padding:18px 0;min-width:0}
-    .archive-cover{width:100px;height:80px;aspect-ratio:auto;grid-row:1/3;border-radius:2px}
-    .archive-cover-number{display:none}
-    .archive-item-head{align-items:start;min-width:0;gap:12px;padding:0 0 6px}
-    .archive-item-head h3{font-size:clamp(14px,1.23vw,18px);letter-spacing:-.024em;font-weight:600;line-height:1.35}
-    .archive-item-head .archive-cta{font-size:10px;white-space:nowrap}
-    .archive-details{grid-column:2;align-self:start;border:0}
-    .archive-details summary{font-size:10px;font-weight:500;color:var(--muted);padding:7px 0}
-    .archive-assets{grid-template-columns:repeat(2,minmax(0,1fr))}
-    .archive-counter{font-size:10px!important;letter-spacing:.02em}
-    .archive-note{font-size:11px}
-    .archive-standalone-link{display:inline-flex;gap:14px;margin-top:22px;color:var(--muted);font-size:10px;text-decoration:underline;text-underline-offset:5px}
-    .creator-about{padding-block:clamp(80px,9vw,145px);grid-template-columns:minmax(200px,.55fr) 1fr}
-    .about-round{font-size:clamp(120px,14vw,205px);letter-spacing:-.13em}
-    .creator-about-art small{margin-top:40px}
-    .creator-about-text h2{font-size:clamp(49px,5.3vw,83px)}
-    .creator-about-text p{font-size:clamp(15px,1.24vw,18px)}
-    .creator-contact{background:#17232f;color:#f1f4f6;padding-block:clamp(78px,8vw,130px)}
-    .creator-contact .eyebrow{color:#aabecf}
-    .creator-contact h2{font-size:clamp(64px,7.6vw,116px);margin:35px 0 56px}
-    .creator-contact h2 em{color:#90b3ff}
-    @media(max-width:1150px){.masthead-side{display:none}}
-    @media(max-width:960px){
-      .creator-hero-grid{grid-template-columns:1fr;gap:45px}
-      .creator-hero{min-height:0}
-      .creator-hero-title{font-size:clamp(72px,11vw,120px)}
-      .creator-hero-title em{font-size:clamp(58px,9.6vw,100px)}
-      .creator-aside{max-width:640px;justify-self:start}
-      .creator-aside-mark{display:none}
-      .world-row{grid-template-columns:155px minmax(130px,.8fr) 1fr 22px}
-    }
-    @media(max-width:720px){
-      .masthead{height:70px}
-      .hero-meta{padding-bottom:70px}
-      .creator-hero-grid{gap:36px}
-      .creator-hero-title{font-size:clamp(59px,13.5vw,93px)}
-      .creator-hero-title em{font-size:clamp(52px,11vw,80px)}
-      .creator-aside{display:block}
-      .creator-aside p{max-width:600px}
-      .creator-foot{margin-top:84px;align-items:start}
-      .creator-foot span:first-child{line-height:1.9}
-      .mall-heading h2{font-size:clamp(49px,9.7vw,75px)}
-      .worlds-heading h2{font-size:clamp(45px,10vw,70px)}
-      .world-row{grid-template-columns:1fr 32px;gap:10px;padding:22px 0}
-      .world-no,.world-row strong,.world-desc{grid-column:1}
-      .world-no{grid-row:1}
-      .world-row strong{grid-row:2;font-size:29px}
-      .world-desc{grid-row:3}
-      .world-arrow{grid-column:2;grid-row:1/4;align-self:center}
-      .ads-intro{display:block}
-      .ads-intro p:last-child{margin-top:20px}
-      .archive-list{grid-template-columns:1fr}
-      .archive-item-head h3{font-size:16px}
-      .ads-toggle{font-size:13px}
-      .ads-toggle-meta{gap:10px}
-      .creator-about{grid-template-columns:1fr;gap:32px}
-      .creator-about-art{display:none}
-      .creator-contact h2{font-size:clamp(55px,10vw,83px)}
-    }
-    @media(max-width:410px){
-      .archive-item{grid-template-columns:76px 1fr;gap:12px}
-      .archive-cover{width:76px;height:68px}
-      .archive-item-head{display:block}
-      .archive-item-head .archive-cta{display:inline-block;margin-top:8px}
-      .hero-meta{font-size:9px}
-    }
-
-</style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#101512">
+<meta name="description" content="Dan Pradana is a writer and independent storyteller working across advertising, original IP and generative filmmaking. Explore his films, creative practice and campaign work.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Dan Pradana | Writer, Storyteller, Creative Practice">
+<meta property="og:description" content="Writing, original stories, generative filmmaking and the systems behind them.">
+<title>Dan Pradana | Stories, Systems & Creative Practice</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/creative-practice-v2.css">
 </head>
 <body>
-  <a href="#main" class="skip">Skip to content</a>
-  <header class="masthead">
-    <div class="container">
-      <a class="wordmark" href="#top" aria-label="Dan Pradana, back to top">dan pradana<b>.</b></a>
-      <nav class="desktop-nav" id="nav" aria-label="Main navigation">
-<a href="#dead-mall">Selected work</a><a href="#practice">Approach</a><a href="#advertising">Advertising</a><a href="#about">About</a><a href="#contact">Contact</a></nav>
-      <div class="masthead-side">Creative practice / Jakarta</div>
-      <button class="menu-toggle" id="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="nav"><span></span><span></span></button>
-    </div>
-  </header>
-
-  <main id="main">
-<section class="creator-hero container" id="top" aria-labelledby="hero-heading">
-  <div class="hero-meta"><span>Dan Pradana / Creative practice</span><span>Jakarta, Indonesia / Est. in ideas</span></div>
-  <div class="creator-hero-grid">
-    <div>
-      <p class="eyebrow eyebrow-accent">Copywriter. Storyteller. Curious about what comes next.</p>
-      <h1 class="creator-hero-title" id="hero-heading"><span>Ideas</span><span>first<span class="hero-stop">.</span></span><em>Stories always.</em></h1>
-    </div>
-    <div class="creator-aside"><span class="creator-aside-mark" aria-hidden="true">01 / 01</span><p>Dan is a writer and independent storyteller whose work moves between advertising, original narratives and generative filmmaking. Different mediums, one instinct: start with an idea worth making.</p><a href="#dead-mall" class="text-link">Explore selected work <span class="arrow" aria-hidden="true">↗</span></a></div>
-  </div>
-  <div class="creator-foot"><span>Concept &amp; writing <i>·</i> Storytelling <i>·</i> Generative filmmaking</span><span>Selected work ↓</span></div>
+<a class="skip" href="#main">Skip to content</a>
+<header class="mobile-bar"><a href="#top"><strong>dan pr<i>_</i></strong></a><button class="menu-btn" id="menu-btn" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="nav">MENU +</button></header>
+<div class="shade" id="shade" hidden></div>
+<div class="layout">
+<aside class="rail" id="rail">
+<a class="logo" href="#top">dan pr<i>_</i></a>
+<div class="rail-info">DAN PRADANA<br>PERSONAL PRACTICE<br>JAKARTA / INDONESIA</div>
+<div class="rail-tag">DIRECTORY / INDEX</div>
+<nav class="rail-nav" id="nav" aria-label="Main navigation">
+<a class="nav-item" href="#top"><span class="num">00</span>Overview</a>
+<a class="nav-item" href="#capabilities"><span class="num">01</span>Capabilities</a>
+<a class="nav-item" href="#selected"><span class="num">02</span>Selected work</a>
+<a class="nav-item" href="#worlds"><span class="num">03</span>Original worlds</a>
+<a class="nav-item" href="#process"><span class="num">04</span>Process notes</a>
+<a class="nav-item" href="#advertising"><span class="num">05</span>Advertising</a>
+<a class="nav-item" href="#about"><span class="num">06</span>About</a>
+<a class="nav-item" href="#contact"><span class="num">07</span>Contact</a>
+</nav>
+<div class="rail-foot"><p><span class="dot"></span>INDEPENDENT CREATIVE PRACTICE</p><p>WRITING / FILM / WORKFLOWS</p><p>IDEAS FIRST. STORIES ALWAYS.</p></div>
+</aside>
+<main class="main" id="main">
+<div class="topbar"><span>DP / HOME <b>●</b> CURRENT PRACTICE</span><span>PERSONAL SITE / SELECTED WORK</span></div>
+<section class="hero wrap" id="top" aria-labelledby="hero-title">
+<div class="hero-top"><span class="kicker"><span class="dot"></span>WRITER / STORYTELLER / CREATIVE TECHNOLOGY</span><span class="overline">JKT / ID</span></div>
+<div class="hero-panel">
+<div><span class="kicker">DAN PRADANA / PERSONAL SITE</span>
+<h1 id="hero-title"><span>Writing</span><span class="ghost">stories.</span><span>Building</span><span>worlds<span class="underscore">_</span></span></h1>
+<div class="chips"><span class="chip">NARRATIVE</span><span class="chip">GENERATIVE FILM</span><span class="chip">CONTINUITY</span><span class="chip">CREATIVE SYSTEMS</span></div></div>
+<div class="hero-note"><span class="kicker">ABOUT THIS PRACTICE / 001</span><p>Dan spent most of his career writing for brands. These days, he also makes his own films and develops ongoing stories with generative tools. The writing comes first. The technology helps him take the work further.</p></div>
+</div>
+<div class="hero-bottom"><span>AN ADVERTISING BACKGROUND. A MUCH BIGGER CREATIVE PLAYGROUND.</span><span><b>EXPLORE ↓</b></span></div>
 </section>
-<section class="featured-mall" id="dead-mall" aria-labelledby="dead-mall-heading">
-  <div class="container">
-    <div class="mall-overline"><span class="eyebrow">001 / Featured generative film</span><span class="eyebrow">Original short film / May 2026</span></div>
-    <div class="mall-heading">
-      <div><p class="eyebrow mall-accent">Dan Pradana / MXVDXN Studio</p><h2 id="dead-mall-heading">We found<br>something in...<br><em>[The Dead Mall]</em></h2></div>
-      <p>At two in the morning, a gang of Jakarta scooter girls enters an abandoned mall. The night gets a lot stranger than anyone bargained for.</p>
-    </div>
-    <figure class="mall-image">
-      <img id="mall-performance-graphic" src="assets/dead-mall-performance.png" alt="The Dead Mall original cinematic 16:9 X performance infographic" loading="lazy" decoding="async">
-      <figcaption><span>Original post analytics / May 1, 2026</span><span>Infographic / Dan Pradana</span></figcaption>
-    </figure>
-    <div class="mall-story" aria-label="The Dead Mall creative case study">
-      <div class="mall-story-heading"><span class="eyebrow mall-accent">The thinking behind it</span><h3>Freedom to make<br><em>strange things.</em></h3><div class="mall-meta"><span>Format / Short film</span><span>Technology / Seedance 2.0</span><span>Platform / Runway</span></div></div>
-      <div class="mall-copy">
-        <p>Generative AI gave Dan Pradana something conventional production rarely can: <strong>creative independence.</strong> Not just the freedom to make things faster, but the room to experiment with provocative, unusual and culturally specific stories that might never find their way through mainstream development.</p>
-        <p>One of those experiments became <strong>WE FOUND SOMETHING IN... [THE DEAD MALL]</strong>. Set in Jakarta, the short film follows a fictional gang of scooter-riding girls, loosely inspired by <em>cabe-cabean</em>, an Indonesian slang term associated with young women in street-motorcycle culture. It's a distinctly local starting point for a story that quickly goes somewhere unexpected.</p>
-        <p>At 2 a.m., the gang wanders into an abandoned shopping mall and discovers something that has no business being there. Instead of running, they stay. What follows is a chaotic mix of urban horror, absurd comedy and unapologetically Indonesian youth culture.</p>
-        <p>Created using <strong>Seedance 2.0 through Runway</strong>, the film became an independent breakout moment on X. Its reception showed that an unusual, culturally specific story could find an audience without following the conventions of mainstream production.</p>
-        <blockquote>The most interesting stories aren't always the ones that get approved. Sometimes, they're the ones you finally have the freedom to make.</blockquote>
-        <a class="mall-action" href="https://x.com/mxvdxn/status/2050214441539768688" target="_blank" rel="noopener noreferrer">Watch the original film on X <span aria-hidden="true">↗</span></a>
-      </div>
-    </div>
-  </div>
+<section class="section wrap" id="capabilities" aria-labelledby="cap-title">
+<div class="section-head"><span class="kicker">01 / PRACTICE</span><div><h2 id="cap-title">What the work involves.</h2><p>A film is only the finished piece. The harder part is making the characters, the world and the production process hold together over time. That is where much of Dan's work happens.</p></div></div>
+<div class="skills">
+<div class="skill"><small>01 / SERIAL STORYTELLING</small><h3>Micro-drama that keeps going</h3><p>Writing and developing episodic stories with recurring characters, evolving relationships and a consistent tone, rather than treating every video as a one-off experiment.</p></div>
+<div class="skill"><small>02 / WORLDBUILDING</small><h3>Characters with somewhere to live</h3><p>Creating original IP with its own locations, histories and rules. The detail matters because each new scene has to feel like it belongs to the same world.</p></div>
+<div class="skill"><small>03 / VISUAL EXECUTION</small><h3>Making it feel like a film</h3><p>Directing generative shots with attention to natural performances, believable lighting, camera behavior and the small details that often give synthetic footage away.</p></div>
+<div class="skill"><small>04 / WORKFLOW DESIGN</small><h3>Systems behind the scenes</h3><p>Building repeatable workflows for references, prompts, shot planning and continuity, so a story can grow without starting from scratch every time.</p></div>
+</div>
 </section>
-
-<section class="featured-mall featured-saints" id="high-school-no-saints" aria-labelledby="saints-heading">
-  <div class="container">
-    <div class="mall-overline"><span class="eyebrow">002 / Featured Gen AI narrative</span><span class="eyebrow">Independent short-form storytelling / Instagram</span></div>
-    <div class="mall-heading">
-      <div>
-        <p class="eyebrow mall-accent">Dan Pradana / MXVDXN Studio</p>
-        <h2 id="saints-heading">High School<br><em>No Saints.</em></h2>
-      </div>
-      <p>Some lessons are never taught in class. At this Indonesian high school, reputation, loyalty and power matter just as much as grades.</p>
-    </div>
-    <figure class="mall-image">
-      <img src="assets/high-school-no-saints-performance.png" alt="High School No Saints original 16:9 Instagram creator performance infographic, featuring a school scene and the post's engagement analytics" width="1672" height="941" loading="lazy" decoding="async">
-      <figcaption><span>Original Instagram creator performance / MXVDXN</span><span>Infographic / Dan Pradana</span></figcaption>
-    </figure>
-    <div class="mall-story" aria-label="High School No Saints creative case study">
-      <div class="mall-story-heading">
-        <span class="eyebrow mall-accent">The thinking behind it</span>
-        <h3>The real drama<br><em>isn't on the syllabus.</em></h3>
-        <div class="mall-meta"><span>Format / Short-form narrative</span><span>Technology / Seedance 2.0</span><span>Distribution / Instagram</span></div>
-      </div>
-      <div class="mall-copy">
-        <p>With <strong>HIGH SCHOOL NO SAINTS</strong>, Dan Pradana takes the creative independence offered by generative AI into another familiar Indonesian setting: high school. Rather than telling a conventional coming-of-age story, he explores the unwritten rules that shape life behind the uniform.</p>
-        <p>The scene follows a fictional school world where feared girls command their own social hierarchy. Reputation travels fast, loyalty is tested and influence can matter more than what happens inside the classroom. The result is deliberately sharp, a little provocative and unmistakably rooted in local youth culture.</p>
-        <p>Made with <strong>Seedance 2.0</strong>, the project shows how Dan uses emerging filmmaking tools to turn a pointed cultural observation into short-form entertainment. It doesn't soften the idea to fit a traditional pitch. It gives the characters, tension and attitude room to play out on screen.</p>
-        <p>Its response on Instagram suggests that a distinctive, locally grounded premise can find an audience well beyond its immediate context. For Dan, the bigger takeaway is still creative freedom: the ability to make unconventional stories without waiting for the approval of conventional production.</p>
-        <blockquote>Behind the uniforms is another curriculum entirely.</blockquote>
-        <a class="mall-action" href="https://www.instagram.com/p/DZpVrSkS0ga/" target="_blank" rel="noopener noreferrer">Watch the original post on Instagram <span aria-hidden="true">↗</span></a>
-      </div>
-    </div>
-  </div>
+<section class="section wrap" id="selected" aria-labelledby="selected-title">
+<div class="section-head"><span class="kicker">02 / SELECTED WORK</span><div><h2 id="selected-title">Unusual ideas, made real.</h2><p>Two independently made short-form experiments. Both begin in recognizably Indonesian settings and push their stories somewhere less predictable.</p></div></div>
+<article class="feature" id="dead-mall" aria-labelledby="dead-title">
+<div class="feature-head"><span>01 / GENERATIVE SHORT FILM</span><span>SEEDANCE 2.0 / RUNWAY / X</span></div>
+<div class="feature-grid"><figure><img src="assets/dead-mall-performance.png" alt="The Dead Mall cinematic 16:9 infographic with original X post analytics" loading="lazy" decoding="async"><figcaption class="caption"><span>WE FOUND SOMETHING IN... [THE DEAD MALL]</span><span>PERFORMANCE / X</span></figcaption></figure>
+<div class="feature-write"><span class="overline">DAN PRADANA / MXVDXN STUDIO</span><h3 id="dead-title">We Found Something in... [The Dead Mall]</h3><p>A group of Jakarta scooter girls wanders into an abandoned mall late at night and finds something they never expected to see. The film moves between urban horror, dark comedy and a very local kind of chaos.</p><p>For Dan, it was a chance to follow an idea that might have been difficult to pitch through a conventional production process.</p><a href="https://x.com/mxvdxn/status/2050214441539768688" target="_blank" rel="noopener noreferrer">WATCH THE ORIGINAL FILM ON X ↗</a></div></div>
+<details class="detail"><summary><span>READ THE PROJECT NOTES / THE THINKING BEHIND THE FILM</span><em aria-hidden="true">+</em></summary>
+<div class="detail-body"><div class="kicker">CREATIVE CONTEXT</div><div><p>Dan has spent years working in advertising, where even an interesting idea needs a budget, a production plan and somebody willing to approve it. Generative filmmaking introduced a different way of working. He could write something unusual and begin exploring it for himself.</p><p><strong>WE FOUND SOMETHING IN... [THE DEAD MALL]</strong> follows a fictional gang of scooter-riding girls, loosely inspired by the Indonesian <i>cabe-cabean</i> reference, into an abandoned shopping mall at 2 a.m. Once inside, they discover something that should not be there. Rather than leave, they get drawn further into trouble.</p><p>The appeal was the freedom to mix local youth culture with absurd comedy and horror without sanding off the idea's rougher edges. Created with Seedance 2.0 through Runway, the film found a wide audience on X. The post analytics appear in the infographic above.</p><p>What matters to Dan is that these tools make room for stories he would otherwise have struggled to produce independently. The idea still has to be worth watching.</p></div></div></details>
+</article>
+<article class="feature" id="high-school-no-saints" aria-labelledby="saints-title">
+<div class="feature-head"><span>02 / SHORT-FORM NARRATIVE</span><span>SEEDANCE 2.0 / INSTAGRAM</span></div>
+<div class="feature-grid"><figure><img src="assets/high-school-no-saints-performance.png" alt="High School No Saints original cinematic Instagram performance infographic" loading="lazy" decoding="async"><figcaption class="caption"><span>HIGH SCHOOL NO SAINTS</span><span>PERFORMANCE / INSTAGRAM</span></figcaption></figure>
+<div class="feature-write"><span class="overline">DAN PRADANA / MXVDXN STUDIO</span><h3 id="saints-title">High School No Saints</h3><p>Behind the ordinary routines of an Indonesian high school is a different set of rules. Reputation and loyalty shape the social hierarchy, and some students have more influence than any teacher would like.</p><p>The scene is intentionally provocative, but it is still built around an observation about how people behave.</p><a href="https://www.instagram.com/p/DZpVrSkS0ga/" target="_blank" rel="noopener noreferrer">WATCH THE ORIGINAL POST ON INSTAGRAM ↗</a></div></div>
+<details class="detail"><summary><span>READ THE PROJECT NOTES / THE THINKING BEHIND THE SCENE</span><em aria-hidden="true">+</em></summary>
+<div class="detail-body"><div class="kicker">CREATIVE CONTEXT</div><div><p>With <strong>HIGH SCHOOL NO SAINTS</strong>, Dan uses generative filmmaking to explore a familiar setting from a sharper angle. Instead of a conventional coming-of-age scene, the story looks at the unwritten rules of status, loyalty and power among a fictional group of high school girls.</p><p>It draws on recognizable Indonesian school culture while pushing the attitude and tension toward something more heightened. The intention was not to produce a polished advertisement or make the characters agreeable. It was to see how far a distinct point of view could go in a short scene.</p><p>Made with Seedance 2.0, the post reached an audience on Instagram well beyond the initial experiment. The infographic above includes the performance data. As with <i>The Dead Mall</i>, the more interesting outcome is the room these tools give Dan to develop ideas on his own terms.</p></div></div></details>
+</article>
 </section>
-
-<section class="creator-worlds container" id="work" aria-labelledby="work-heading">
-  <div class="worlds-heading">
-    <div><span class="eyebrow eyebrow-accent">003 / Original worlds</span><h2 id="work-heading">Other stories<span class="world-period">.</span></h2></div>
-    <p>Selected worlds developed through <a href="https://mxvdxn.xyz" target="_blank" rel="noopener noreferrer">MXVDXN Studio ↗</a>. For the full series catalogue, head to the studio.</p>
-  </div>
-  <div class="world-index" aria-label="Original stories by Dan Pradana">
-    <a class="world-row" href="https://x.com/mxvdxn/status/2089653967190097969" target="_blank" rel="noopener noreferrer">
-      <span class="world-no">01 / Original action universe</span>
-      <strong>SARI &amp; PLOY</strong>
-      <span class="world-desc">Two operatives. Conspiracies, loyalties and offbeat Southeast Asian action, now spanning multiple seasons.</span>
-      <span class="world-arrow" aria-hidden="true">↗</span>
-    </a>
-    <a class="world-row" href="https://x.com/mxvdxn/status/2109296416636207385" target="_blank" rel="noopener noreferrer">
-      <span class="world-no">02 / Supernatural micro-drama</span>
-      <strong>9 NAILS</strong>
-      <span class="world-desc">Indonesian everyday life collides with folklore, dark comedy and a deliberately lo-fi sensibility.</span>
-      <span class="world-arrow" aria-hidden="true">↗</span>
-    </a>
-    <a class="world-row" href="https://x.com/mxvdxn/status/2113658552250429497" target="_blank" rel="noopener noreferrer">
-      <span class="world-no">03 / Coming-of-age micro-drama</span>
-      <strong>BETWEEN DAYS</strong>
-      <span class="world-desc">Friendship, after-school detours and the small moments that stay with people.</span>
-      <span class="world-arrow" aria-hidden="true">↗</span>
-    </a>
-  </div>
-  <a class="studio-outlink" href="https://mxvdxn.xyz" target="_blank" rel="noopener noreferrer">Explore the full MXVDXN Studio universe <span aria-hidden="true">↗</span></a>
+<section class="section wrap" id="worlds" aria-labelledby="worlds-title">
+<div class="section-head"><span class="kicker">03 / ORIGINAL IP</span><div><h2 id="worlds-title">Stories that extend beyond a single scene.</h2><p>Dan develops original series through MXVDXN Studio. They differ in tone and genre, but all rely on recurring characters, a coherent world and enough narrative room to keep exploring.</p></div></div>
+<div class="series">
+<a class="series-item" href="https://x.com/mxvdxn/status/2089653967190097969" target="_blank" rel="noopener noreferrer"><small>01 / SERIALIZED ACTION</small><h3>SARI &amp; PLOY</h3><p>An ongoing Southeast Asian action universe built around two operatives, their relationships and a growing web of conspiracies.</p><b>EXPLORE SERIES ↗</b></a>
+<a class="series-item" href="https://x.com/mxvdxn/status/2109296416636207385" target="_blank" rel="noopener noreferrer"><small>02 / SUPERNATURAL COMEDY</small><h3>9 NAILS</h3><p>Everyday Indonesian life meets the supernatural, with deliberately rough edges and a strange sense of humor.</p><b>EXPLORE SERIES ↗</b></a>
+<a class="series-item" href="https://x.com/mxvdxn/status/2113658552250429497" target="_blank" rel="noopener noreferrer"><small>03 / COMING OF AGE</small><h3>BETWEEN DAYS</h3><p>A quieter series about friendship and the ordinary moments of growing up in Jakarta.</p><b>EXPLORE SERIES ↗</b></a>
+</div>
+<a class="series-foot" href="https://mxvdxn.xyz" target="_blank" rel="noopener noreferrer">VISIT MXVDXN STUDIO FOR THE FULL SERIES CATALOGUE ↗</a>
 </section>
-<section class="creator-perspective" id="practice" aria-labelledby="practice-heading">
-  <div class="container perspective-layout">
-    <div><span class="eyebrow">004 / The practice</span><h2 id="practice-heading">Different tools.<br>Same <em>instinct.</em></h2></div>
-    <div class="perspective-copy"><p>It started in advertising, finding the idea that makes a brief worth paying attention to. That same skill now shapes original characters, dialogue, world-building and short-form cinema.</p><p>Generative AI didn't replace the writing. It gave the writing a camera, a cast and a much bigger playground.</p><div class="partner-note"><span class="eyebrow">Beyond the independent work / Creative partnerships</span><p>Alongside independent releases, Dan participates in creative partnership programs (CPPs) with AI platforms, exploring what's possible with emerging filmmaking tools while keeping the stories his own.</p></div></div>
-  </div>
+<section class="section wrap process" id="process" aria-labelledby="process-title">
+<div class="section-head"><span class="kicker">04 / HOW IT'S MADE</span><div><h2 id="process-title">Good stories need a working process.</h2></div></div>
+<div class="process-grid"><div class="process-intro"><p>Anyone can generate an interesting image. Sustaining a character, a setting and a believable performance across multiple scenes is a different problem. Dan's work combines writing with a growing set of practical production workflows.</p><p>This section leaves room for more detailed breakdowns of how those workflows are built and used.</p></div>
+<div class="process-box">
+<div class="workflow-head"><span>WORKFLOW / FIELD NOTES</span><span>OVERVIEW / 01</span></div>
+<div class="workflow-step"><small>INPUT 01</small><div><h3>Start with the story</h3><p>Write the scene, the character intent and the visual logic before deciding which tool should make the shot.</p></div></div>
+<div class="workflow-step"><small>SYSTEM 02</small><div><h3>Build reference and continuity rules</h3><p>Keep track of faces, wardrobe, locations, scale, lighting and camera direction so successive shots belong together.</p></div></div>
+<div class="workflow-step"><small>OUTPUT 03</small><div><h3>Refine what the audience sees</h3><p>Pay attention to performance, motion, pacing and the little mistakes that can interrupt an otherwise convincing scene.</p></div></div>
+<div class="workflow-end"><span>MORE DETAILED WORKFLOW BREAKDOWNS</span><span>TO BE ADDED</span></div>
+</div></div></section>
+<section class="section wrap ads" id="advertising" aria-labelledby="ads-title">
+<div class="section-head"><span class="kicker">05 / EXPERIENCE ARCHIVE</span><div><h2 id="ads-title">Advertising is part of the story, too.</h2><p>Dan's background is in agency writing and creative development. The archive below keeps that experience visible without letting it dominate the page. Each small thumbnail opens the original case study, including its media and credits.</p></div></div>
+<div class="ads-grid"><a class="ad-row" href="portfolio-assets/danifpradana-portfolio/projects/01-jagasehatmu-bersama-klikdokter/index.html" target="_blank" rel="noopener noreferrer" aria-label="Open case study: #JagaSehatmu bersama KlikDokter"><img src="portfolio-assets/danifpradana-portfolio/projects/01-jagasehatmu-bersama-klikdokter/cover.png" alt="#JagaSehatmu bersama KlikDokter campaign thumbnail" loading="lazy" decoding="async"><div><span class="ad-num">01 / ARCHIVE</span><h3>#JagaSehatmu bersama KlikDokter</h3><p>Healthcare campaign and creative work.</p></div><span class="ad-arrow" aria-hidden="true">↗</span></a>
+<a class="ad-row" href="portfolio-assets/danifpradana-portfolio/projects/02-dicuekin-nana-mirdad-para-penyakit-curhat/index.html" target="_blank" rel="noopener noreferrer" aria-label="Open case study: Dicuekin Nana Mirdad"><img src="portfolio-assets/danifpradana-portfolio/projects/02-dicuekin-nana-mirdad-para-penyakit-curhat/cover.jpg" alt="Dicuekin Nana Mirdad campaign thumbnail" loading="lazy" decoding="async"><div><span class="ad-num">02 / ARCHIVE</span><h3>Dicuekin Nana Mirdad</h3><p>Character-led healthcare storytelling.</p></div><span class="ad-arrow" aria-hidden="true">↗</span></a>
+<a class="ad-row" href="portfolio-assets/danifpradana-portfolio/projects/03-maxicorn-product-launch/index.html" target="_blank" rel="noopener noreferrer" aria-label="Open case study: Maxicorn Product Launch"><img src="portfolio-assets/danifpradana-portfolio/projects/03-maxicorn-product-launch/cover.png" alt="Maxicorn Product Launch campaign thumbnail" loading="lazy" decoding="async"><div><span class="ad-num">03 / ARCHIVE</span><h3>Maxicorn Product Launch</h3><p>Product launch communication.</p></div><span class="ad-arrow" aria-hidden="true">↗</span></a>
+<a class="ad-row" href="portfolio-assets/danifpradana-portfolio/projects/04-klikdokter-gdn-facebook-instagram-banner/index.html" target="_blank" rel="noopener noreferrer" aria-label="Open case study: KlikDokter / GDN &amp; Social"><img src="portfolio-assets/danifpradana-portfolio/projects/04-klikdokter-gdn-facebook-instagram-banner/cover.jpg" alt="KlikDokter / GDN &amp; Social campaign thumbnail" loading="lazy" decoding="async"><div><span class="ad-num">04 / ARCHIVE</span><h3>KlikDokter / GDN &amp; Social</h3><p>Digital banners and social creative.</p></div><span class="ad-arrow" aria-hidden="true">↗</span></a>
+<a class="ad-row" href="portfolio-assets/danifpradana-portfolio/projects/05-getcontact-ketahui-siapa-sebelum-sapa/index.html" target="_blank" rel="noopener noreferrer" aria-label="Open case study: Getcontact / Ketahui Siapa Sebelum Sapa"><img src="portfolio-assets/danifpradana-portfolio/projects/05-getcontact-ketahui-siapa-sebelum-sapa/cover.png" alt="Getcontact / Ketahui Siapa Sebelum Sapa campaign thumbnail" loading="lazy" decoding="async"><div><span class="ad-num">05 / ARCHIVE</span><h3>Getcontact / Ketahui Siapa Sebelum Sapa</h3><p>A campaign about identifying a caller.</p></div><span class="ad-arrow" aria-hidden="true">↗</span></a>
+<a class="ad-row" href="portfolio-assets/danifpradana-portfolio/projects/06-p-g-maafibudihidupku/index.html" target="_blank" rel="noopener noreferrer" aria-label="Open case study: P&amp;G / #MaafIbuDiHidupku"><img src="portfolio-assets/danifpradana-portfolio/projects/06-p-g-maafibudihidupku/cover.png" alt="P&amp;G / #MaafIbuDiHidupku campaign thumbnail" loading="lazy" decoding="async"><div><span class="ad-num">06 / ARCHIVE</span><h3>P&amp;G / #MaafIbuDiHidupku</h3><p>An emotion-led campaign concept.</p></div><span class="ad-arrow" aria-hidden="true">↗</span></a>
+<a class="ad-row" href="portfolio-assets/danifpradana-portfolio/projects/07-sweety-silver-pants-little-monster-case-study/index.html" target="_blank" rel="noopener noreferrer" aria-label="Open case study: Sweety / Little Monster"><img src="portfolio-assets/danifpradana-portfolio/projects/07-sweety-silver-pants-little-monster-case-study/cover.jpeg" alt="Sweety / Little Monster campaign thumbnail" loading="lazy" decoding="async"><div><span class="ad-num">07 / ARCHIVE</span><h3>Sweety / Little Monster</h3><p>Character-led product storytelling.</p></div><span class="ad-arrow" aria-hidden="true">↗</span></a>
+<a class="ad-row" href="portfolio-assets/danifpradana-portfolio/projects/08-sweety-silver-pants-1-detik/index.html" target="_blank" rel="noopener noreferrer" aria-label="Open case study: Sweety / 1 Detik"><img src="portfolio-assets/danifpradana-portfolio/projects/08-sweety-silver-pants-1-detik/cover.jpg" alt="Sweety / 1 Detik campaign thumbnail" loading="lazy" decoding="async"><div><span class="ad-num">08 / ARCHIVE</span><h3>Sweety / 1 Detik</h3><p>Short-form brand communication.</p></div><span class="ad-arrow" aria-hidden="true">↗</span></a>
+<a class="ad-row" href="portfolio-assets/danifpradana-portfolio/projects/09-bca-finhacks-2019-dinda-kirana-dirantai-cowok-idaman/index.html" target="_blank" rel="noopener noreferrer" aria-label="Open case study: BCA Finhacks 2019"><img src="portfolio-assets/danifpradana-portfolio/projects/09-bca-finhacks-2019-dinda-kirana-dirantai-cowok-idaman/cover.jpg" alt="BCA Finhacks 2019 campaign thumbnail" loading="lazy" decoding="async"><div><span class="ad-num">09 / ARCHIVE</span><h3>BCA Finhacks 2019</h3><p>Campaign work around a technology event.</p></div><span class="ad-arrow" aria-hidden="true">↗</span></a>
+<a class="ad-row" href="portfolio-assets/danifpradana-portfolio/projects/10-nutriclub-be-resilient/index.html" target="_blank" rel="noopener noreferrer" aria-label="Open case study: Nutriclub / Be Resilient"><img src="portfolio-assets/danifpradana-portfolio/projects/10-nutriclub-be-resilient/cover.jpg" alt="Nutriclub / Be Resilient campaign thumbnail" loading="lazy" decoding="async"><div><span class="ad-num">10 / ARCHIVE</span><h3>Nutriclub / Be Resilient</h3><p>Parenting and resilience campaign.</p></div><span class="ad-arrow" aria-hidden="true">↗</span></a>
+<a class="ad-row" href="portfolio-assets/danifpradana-portfolio/projects/11-loreal-indonesia-berani-matahari/index.html" target="_blank" rel="noopener noreferrer" aria-label="Open case study: L’Oréal / Berani Matahari"><img src="portfolio-assets/danifpradana-portfolio/projects/11-loreal-indonesia-berani-matahari/cover.png" alt="L’Oréal / Berani Matahari campaign thumbnail" loading="lazy" decoding="async"><div><span class="ad-num">11 / ARCHIVE</span><h3>L’Oréal / Berani Matahari</h3><p>Beauty brand campaign creative.</p></div><span class="ad-arrow" aria-hidden="true">↗</span></a>
+<a class="ad-row" href="portfolio-assets/danifpradana-portfolio/projects/12-sambal-indofood-social-media/index.html" target="_blank" rel="noopener noreferrer" aria-label="Open case study: Sambal Indofood / Social"><img src="portfolio-assets/danifpradana-portfolio/projects/12-sambal-indofood-social-media/cover.png" alt="Sambal Indofood / Social campaign thumbnail" loading="lazy" decoding="async"><div><span class="ad-num">12 / ARCHIVE</span><h3>Sambal Indofood / Social</h3><p>Social content and digital executions.</p></div><span class="ad-arrow" aria-hidden="true">↗</span></a>
+<a class="ad-row" href="portfolio-assets/danifpradana-portfolio/projects/13-bmj-paper-pack/index.html" target="_blank" rel="noopener noreferrer" aria-label="Open case study: BMJ / Paper Pack"><img src="portfolio-assets/danifpradana-portfolio/projects/13-bmj-paper-pack/cover.png" alt="BMJ / Paper Pack campaign thumbnail" loading="lazy" decoding="async"><div><span class="ad-num">13 / ARCHIVE</span><h3>BMJ / Paper Pack</h3><p>Packaging and brand communication.</p></div><span class="ad-arrow" aria-hidden="true">↗</span></a>
+<a class="ad-row" href="portfolio-assets/danifpradana-portfolio/projects/14-teman-rakyat-unboxingcaleg/index.html" target="_blank" rel="noopener noreferrer" aria-label="Open case study: Teman Rakyat / #UnboxingCaleg"><img src="portfolio-assets/danifpradana-portfolio/projects/14-teman-rakyat-unboxingcaleg/cover.png" alt="Teman Rakyat / #UnboxingCaleg campaign thumbnail" loading="lazy" decoding="async"><div><span class="ad-num">14 / ARCHIVE</span><h3>Teman Rakyat / #UnboxingCaleg</h3><p>Locally rooted campaign creative.</p></div><span class="ad-arrow" aria-hidden="true">↗</span></a></div>
+<p class="archive-footer">14 ORIGINAL ADVERTISING CASE STUDIES / <a href="portfolio-assets/danifpradana-portfolio/index.html" target="_blank" rel="noopener noreferrer">OPEN THE FULL ARCHIVE ↗</a></p>
 </section>
-
-<section class="advertising container" id="advertising" aria-labelledby="ads-heading">
-  <div class="ads-intro">
-    <div><p class="eyebrow muted">005 / Another part of the practice</p><h2 id="ads-heading">Also, advertising<span class="world-period">.</span></h2></div>
-    <p>Dan's background is in writing, concepts and campaigns. The work is still here, from brand films to digital ideas, with the original case studies, credits and media intact.</p>
-  </div>
-  <details class="ads-disclosure">
-    <summary class="ads-toggle"><span>Explore the advertising work</span><span class="ads-toggle-meta">14 case studies <span class="ads-toggle-icon" aria-hidden="true">+</span></span></summary>
-    <div class="ads-inside">
-      <div id="original-portfolio" class="archive-panel" aria-live="polite">
-        <p id="archive-counter" class="archive-counter"></p>
-        <div id="archive-list" class="archive-list"></div>
-        <p class="archive-note">Complete campaign concepts, films, creative credits and original project materials are hosted in this repository.</p>
-      </div>
-      <div class="ads-grid" id="temporary-ad-grid" hidden></div>
-      <div class="ads-end" id="original-archive-note"><p>All advertising projects are preserved in the full archive.</p><a href="portfolio-assets/danifpradana-portfolio/index.html" class="text-link">Open the advertising archive <span class="arrow" aria-hidden="true">↗</span></a></div>
-    </div>
-  </details>
-  <a class="archive-standalone-link" href="portfolio-assets/danifpradana-portfolio/index.html" target="_blank" rel="noopener noreferrer">Or visit the complete advertising archive <span aria-hidden="true">↗</span></a>
+<section class="section wrap" id="about" aria-labelledby="about-title">
+<div class="about"><div><span class="kicker">06 / BACKGROUND</span><h2 id="about-title">A writer who kept finding new ways to make things.</h2></div>
+<div><p>Dan Pradana is a Jakarta-based copywriter and independent storyteller. He began his career in advertising agencies and now works on the corporate side of a global payments technology company.</p><p>Outside his day job, he runs MXVDXN Studio, where he writes and develops original projects including <strong>SARI &amp; PLOY</strong>, <strong>9 NAILS</strong> and <strong>BETWEEN DAYS</strong>. Generative filmmaking has given him a way to put those stories on screen without needing a conventional production setup for every idea.</p><p>His interests increasingly sit at the intersection of writing, visual direction and creative technology. He also participates in creative partnership programs with AI platforms, using the opportunity to test emerging tools in real storytelling projects.</p><p>He isn't interested in technology as a substitute for having something to say. He is interested in what it makes possible when the story is already there.</p>
+<div class="about-meta"><div><small>BACKGROUND</small><p>Advertising, copywriting and creative development</p></div><div><small>CURRENT PRACTICE</small><p>Generative filmmaking, micro-drama, worldbuilding and workflows</p></div></div></div></div>
 </section>
-
-<section class="creator-about container" id="about" aria-labelledby="about-heading">
-  <div class="creator-about-art"><span class="about-round">dp<span>.</span></span><small>Still writing.<br>Just in more dimensions.</small></div>
-  <div class="creator-about-text"><span class="eyebrow eyebrow-accent">006 / The person</span><h2 id="about-heading">A little<br><em>context.</em></h2>
-  <p>Dan Pradana is a Jakarta-based copywriter and independent storyteller with a background in advertising agencies and a current role at a global payments technology company.</p>
-  <p>Outside his professional work, he creates original stories through MXVDXN Studio, from the action universe of SARI &amp; PLOY to the supernatural absurdity of 9 NAILS and the gentler world of BETWEEN DAYS.</p>
-  <p>The creative habit has always been the same: notice something interesting, find the angle, write the story and keep experimenting until it feels alive. The tools just happen to be changing faster than ever.</p>
-  <a href="https://mxvdxn.xyz" target="_blank" rel="noopener noreferrer" class="text-link">Visit MXVDXN Studio <span class="arrow" aria-hidden="true">↗</span></a></div>
-</section>
-<section class="creator-contact" id="contact" aria-labelledby="contact-heading"><div class="container">
-<span class="eyebrow">007 / Keep the conversation going</span>
-<h2 id="contact-heading">Have an idea<br>worth <em>making?</em></h2>
-<div class="creator-contact-bottom"><p>For creative partnerships, storytelling projects, or a really good conversation about what comes next.</p><div><a href="https://x.com/mxvdxn" target="_blank" rel="noopener noreferrer">Follow the work on X ↗</a><a href="https://mxvdxn.xyz" target="_blank" rel="noopener noreferrer">Explore MXVDXN Studio ↗</a></div></div></div></section>
-</main>
-  <footer class="site-footer">
-    <div class="container"><a class="wordmark" href="#top" aria-label="Back to top">dan pradana<b>.</b></a><p>Ideas first. Stories always.</p><p>© <span id="year">2026</span> Dan Pradana</p></div>
-  </footer>
-  <script>
-    (function(){
-      var toggle=document.getElementById('menu-toggle');
-      var nav=document.getElementById('nav');
-      toggle.addEventListener('click',function(){
-        var isOpen=nav.classList.toggle('open');
-        toggle.setAttribute('aria-expanded',String(isOpen));
-        toggle.setAttribute('aria-label',isOpen?'Close navigation':'Open navigation');
-      });
-      Array.prototype.forEach.call(nav.querySelectorAll('a'),function(link){
-        link.addEventListener('click',function(){nav.classList.remove('open');toggle.setAttribute('aria-expanded','false');toggle.setAttribute('aria-label','Open navigation')});
-      });
-      document.addEventListener('keydown',function(e){if(e.key==='Escape'){nav.classList.remove('open');toggle.setAttribute('aria-expanded','false');toggle.setAttribute('aria-label','Open navigation')}});
-      document.getElementById('year').textContent=String(new Date().getFullYear());
-    }());
-  </script>
-
-  <script>
-    /* Use the original portfolio ZIP as the canonical advertising collection. */
-    (async function(){
-      var panel=document.getElementById('original-portfolio');
-      var list=document.getElementById('archive-list');
-      var cards=document.getElementById('temporary-ad-grid');
-      var oldNote=document.getElementById('original-archive-note');
-      var count=document.getElementById('archive-counter');
-      if(!panel||!list)return;
-      function node(tag,className,text){
-        var e=document.createElement(tag);
-        if(className)e.className=className;
-        if(text!==undefined)e.textContent=text;
-        return e;
-      }
-      var projectTitles={
-        '01-jagasehatmu-bersama-klikdokter':'#JagaSehatmu bersama KlikDokter',
-        '02-dicuekin-nana-mirdad-para-penyakit-curhat':'Dicuekin Nana Mirdad, Para Penyakit Curhat',
-        '03-maxicorn-product-launch':'Maxicorn Product Launch',
-        '04-klikdokter-gdn-facebook-instagram-banner':'KlikDokter  /  GDN, Facebook, Instagram, Banner',
-        '05-getcontact-ketahui-siapa-sebelum-sapa':'Getcontact  /  Ketahui Siapa Sebelum Sapa',
-        '06-p-g-maafibudihidupku':'P&G  /  #MaafIbuDiHidupku',
-        '07-sweety-silver-pants-little-monster-case-study':'Sweety Silver Pants  /  Little Monster',
-        '08-sweety-silver-pants-1-detik':'Sweety Silver Pants  /  1 Detik',
-        '09-bca-finhacks-2019-dinda-kirana-dirantai-cowok-idaman':'BCA Finhacks 2019  /  Dinda Kirana',
-        '10-nutriclub-be-resilient':'Nutriclub  /  Be Resilient!',
-        '11-loreal-indonesia-berani-matahari':"L’Oréal Indonesia  /  Berani Matahari",
-        '12-sambal-indofood-social-media':'Sambal Indofood  /  Social Media',
-        '13-bmj-paper-pack':'BMJ Paper Pack',
-        '14-teman-rakyat-unboxingcaleg':'Teman Rakyat  /  #UnboxingCaleg'
-      };
-      try {
-        var response=await fetch('portfolio-assets/manifest.json',{cache:'no-store'});
-        if(!response.ok)throw new Error('Manifest unavailable');
-        var manifest=await response.json();
-        var projects=(manifest.projects||[]).filter(function(project){
-          return (project.assets||[]).some(function(asset){
-            return asset.name==='index.html' && asset.path.indexOf('/projects/')!==-1;
-          });
-        });
-        if(!projects.length)throw new Error('No imported projects');
-        projects.forEach(function(project,i){
-          var assets=project.assets||[];
-          var title=projectTitles[project.slug]||project.name;
-          var caseStudy=assets.find(function(asset){return asset.name==='index.html';});
-          var cover=assets.find(function(asset){return /^cover\./i.test(asset.name)&&asset.type==='image';})
-            ||assets.find(function(asset){return asset.type==='image';});
-          var article=node('article','archive-item');
-          var visual=node('a','archive-cover');
-          visual.href=caseStudy.url;
-          visual.target='_blank';
-          visual.rel='noopener noreferrer';
-          visual.setAttribute('aria-label','View '+title+' case study');
-          if(cover){
-            var img=node('img');
-            img.src=cover.url;img.alt=title+' campaign cover';
-            img.loading='lazy';img.decoding='async';
-            visual.appendChild(img);
-          }else{
-            visual.appendChild(node('span','archive-cover-fallback',title));
-          }
-          visual.appendChild(node('span','archive-cover-number',String(i+1).padStart(2,'0')+' / Advertising'));
-          article.appendChild(visual);
-
-          var header=node('div','archive-item-head');
-          var titleLink=node('a','archive-title-link');
-          titleLink.href=caseStudy.url;
-          titleLink.target='_blank';
-          titleLink.rel='noopener noreferrer';
-          titleLink.appendChild(node('h3','',title));
-          header.appendChild(titleLink);
-          var view=node('a','archive-cta','Case study ↗');
-          view.href=caseStudy.url;
-          view.target='_blank';
-          view.rel='noopener noreferrer';
-          header.appendChild(view);
-          article.appendChild(header);
-
-          var details=node('details','archive-details');
-          var downloadable=assets.filter(function(asset){return asset.name!=='index.html';});
-          details.appendChild(node('summary','','Browse '+String(downloadable.length)+' original media files'));
-          var thumbnails=node('div','archive-assets');
-          downloadable.forEach(function(asset){
-            var link=node('a','archive-asset');
-            link.href=asset.url;link.target='_blank';link.rel='noopener noreferrer';
-            if(asset.type==='image'){
-              var thumb=node('img');
-              thumb.src=asset.url;thumb.alt=asset.name;thumb.loading='lazy';
-              thumb.decoding='async';link.appendChild(thumb);
-            }else link.appendChild(node('span','archive-asset-icon',asset.type==='video'?'▶':'↗'));
-            link.appendChild(node('span','',asset.name));
-            thumbnails.appendChild(link);
-          });
-          details.appendChild(thumbnails);
-          article.appendChild(details);
-          list.appendChild(article);
-        });
-        count.textContent=String(projects.length)+' advertising case studies · '+String(manifest.file_count)+' original files imported and hosted on GitHub.';
-        panel.classList.add('ready');
-        if(cards)cards.hidden=true;
-        if(oldNote)oldNote.hidden=true;
-      }catch(error){
-        /* The temporary curated layout remains until the source ZIP is available. */
-      }
-    }());
-  </script>
-
-  
-</body>
-</html>
+<section class="contact wrap" id="contact" aria-labelledby="contact-title"><span class="kicker">07 / CONNECT</span><h2 id="contact-title">Have something interesting in mind?</h2><p>For creative partnerships, narrative projects or conversations about the tools changing how stories get made.</p>
+<div class="contact-links"><a href="https://x.com/mxvdxn" target="_blank" rel="noopener noreferrer">X / @MXVDXN ↗</a><a href="https://mxvdxn.xyz" target="_blank" rel="noopener noreferrer">MXVDXN STUDIO ↗</a><a href="#top">BACK TO TOP ↑</a></div></section>
+<footer class="bottom-bar"><span>© <span id="year">2026</span> DAN PRADANA</span><span>IDEAS FIRST. STORIES ALWAYS.</span></footer>
+</main></div>
+<script>
+(function(){
+var y=document.getElementById('year');if(y)y.textContent=String(new Date().getFullYear());
+var r=document.getElementById('rail'),b=document.getElementById('menu-btn'),s=document.getElementById('shade');
+function menu(show){if(!r||!b||!s)return;r.classList.toggle('open',show);s.classList.toggle('show',show);s.hidden=!show;b.setAttribute('aria-expanded',String(show));b.setAttribute('aria-label',show?'Close navigation':'Open navigation');b.textContent=show?'CLOSE ×':'MENU +'}
+if(b)b.addEventListener('click',function(){menu(!r.classList.contains('open'))});
+if(s)s.addEventListener('click',function(){menu(false)});
+var nav=Array.prototype.slice.call(document.querySelectorAll('.rail-nav a'));
+nav.forEach(function(a){a.addEventListener('click',function(){menu(false)})});
+document.addEventListener('keydown',function(e){if(e.key==='Escape')menu(false)});
+if('IntersectionObserver' in window){var sections=nav.map(function(a){return document.getElementById(a.getAttribute('href').substring(1))}).filter(Boolean);var observer=new IntersectionObserver(function(entries){var active=entries.filter(function(e){return e.isIntersecting}).sort(function(a,b){return b.intersectionRatio-a.intersectionRatio});if(active.length){var id=active[0].target.id;nav.forEach(function(a){var selected=a.getAttribute('href')==='#'+id;a.classList.toggle('active',selected);if(selected)a.setAttribute('aria-current','location');else a.removeAttribute('aria-current')})}},{rootMargin:'-15% 0px -60% 0px',threshold:[0,.05,.2]});sections.forEach(function(section){observer.observe(section)})}
+})();
+</script>
+</body></html>
