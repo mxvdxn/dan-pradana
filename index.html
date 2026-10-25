@@ -12,25 +12,47 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/creative-practice-v2.css?v=impact-20261025-2">
+<link rel="stylesheet" href="assets/creative-practice-v2.css?v=impact-headline-20261025-3">
 <style>
-/* Critical film-performance styles are embedded so headline numbers always render correctly, even with a cached stylesheet. */
-.performance--impact{padding:clamp(25px,3vw,47px);background:#151d17}
-.performance--impact .performance-heading{display:flex;justify-content:space-between;gap:15px;margin:0 0 clamp(24px,3vw,44px);padding-bottom:17px;border-bottom:1px solid #4c604c}
-.performance--impact .impact-primary{display:grid;grid-template-columns:minmax(240px,1fr) minmax(220px,.75fr);gap:clamp(24px,4vw,65px);align-items:end;padding-bottom:clamp(27px,3.5vw,50px);border-bottom:1px solid #364339}
-.performance--impact .impact-big{display:flex;flex-direction:column;align-items:flex-start;gap:3px;min-width:0}
-.performance--impact .impact-big strong{display:block;font:600 clamp(72px,8.1vw,154px)/1.02 'Space Grotesk',Arial,sans-serif;letter-spacing:-.10em;color:#d4f879;white-space:nowrap}
-.performance--impact .impact-big>span{display:block;font:600 clamp(12px,1.1vw,16px)/1.65 'IBM Plex Mono',monospace;letter-spacing:.07em;color:#f1f4ec;margin-top:9px}
-.performance--impact .impact-big>small{display:block;font:10px/1.8 'IBM Plex Mono',monospace;color:#839787;margin-top:6px}
-.performance--impact .impact-primary>p{font-size:clamp(16px,1.25vw,20px);line-height:1.78;color:#d4dfd0;margin:0;max-width:520px;min-width:0}
-.performance--impact .metric-grid--support{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin-top:21px}
-.performance--impact .metric-grid--support .metric{border:0;border-right:1px solid #4c604c;padding:9px 16px 10px 0;min-width:0}
-.performance--impact .metric-grid--support .metric:last-child{border-right:0}
-.performance--impact .metric-grid--support .metric strong{display:block;font:500 clamp(24px,2.5vw,41px)/1.15 'Space Grotesk',Arial,sans-serif;letter-spacing:-.06em}
-.performance--impact .metric-secondary{border-top:1px solid #4c604c;padding-top:18px;margin-top:23px}
-@media(max-width:1150px){.performance--impact .impact-primary{grid-template-columns:1fr;gap:20px}.performance--impact .impact-big strong{font-size:clamp(74px,11vw,136px)}}
-@media(max-width:700px){.performance--impact{padding:22px 18px}.performance--impact .impact-big strong{font-size:clamp(69px,15vw,109px)}.performance--impact .impact-primary>p{font-size:15px}.performance--impact .metric-grid--support{grid-template-columns:repeat(3,minmax(0,1fr))}.performance--impact .metric-grid--support .metric{padding:7px 9px}.performance--impact .metric-grid--support .metric:first-child{padding-left:0}.performance--impact .metric-grid--support .metric strong{font-size:clamp(19px,4.5vw,30px)}}
-@media(max-width:440px){.performance--impact .impact-big strong{font-size:clamp(64px,15vw,87px)}.performance--impact .metric-grid--support{grid-template-columns:1fr}.performance--impact .metric-grid--support .metric{border-right:0;border-bottom:1px solid #364339;padding:11px 0}.performance--impact .metric-grid--support .metric strong{font-size:31px}}
+
+/* Film social reach: intentionally oversized, full-width graphic headline. */
+#selected .performance--impact {padding:clamp(26px,4vw,58px);background:#151d17}
+#selected .performance--impact .performance-heading {display:flex;justify-content:space-between;gap:20px;border-bottom:1px solid #49614d;padding-bottom:20px;margin:0 0 clamp(32px,4vw,65px);color:#d4f879;font:500 11px/1.5 'IBM Plex Mono',monospace}
+#selected .performance--impact .performance-heading span:last-child {color:#829585}
+#selected .performance--impact .impact-primary {display:flex;flex-direction:column;align-items:flex-start;gap:clamp(29px,3vw,53px);border-bottom:1px solid #364339;padding-bottom:clamp(30px,4vw,64px);min-width:0}
+#selected .performance--impact .impact-primary .impact-big {display:flex;flex-direction:column;align-items:flex-start;width:100%;gap:15px;min-width:0}
+#selected .performance--impact .impact-primary .impact-big strong {display:block;font-family:'Space Grotesk',Arial,sans-serif;font-weight:600;font-size:clamp(105px,16vw,260px);line-height:.9;letter-spacing:-.10em;color:#d4f879;white-space:nowrap;max-width:100%;margin:0;padding:0}
+#selected .performance--impact .impact-primary .impact-big>span {display:block;font-family:'Space Grotesk',Arial,sans-serif;font-weight:500;font-size:clamp(22px,2.9vw,44px);line-height:1.1;letter-spacing:-.045em;color:#f1f4ec;margin:8px 0 0}
+#selected .performance--impact .impact-primary .impact-big>small {display:block;font:12px/1.7 'IBM Plex Mono',monospace;color:#829585;margin-top:0}
+#selected .performance--impact .impact-primary>p {font:400 clamp(15px,1.4vw,20px)/1.82 'Space Grotesk',Arial,sans-serif;max-width:780px;color:#cddbcc;margin:0}
+#selected .performance--impact .metric-grid--support {display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0;margin-top:27px}
+#selected .performance--impact .metric-grid--support .metric {border:0;border-right:1px solid #49614d;min-width:0;padding:13px 22px}
+#selected .performance--impact .metric-grid--support .metric:first-child {padding-left:0}
+#selected .performance--impact .metric-grid--support .metric:last-child {border-right:0}
+#selected .performance--impact .metric-grid--support .metric strong {display:block;font:500 clamp(28px,3.3vw,52px)/1.1 'Space Grotesk',Arial,sans-serif;letter-spacing:-.07em;color:#f1f4ec}
+#selected .performance--impact .metric-grid--support .metric span {display:block;font:11px/1.7 'IBM Plex Mono',monospace;color:#a9baa9;margin-top:10px}
+#selected .performance--impact .metric-secondary {border-top:1px solid #49614d;padding-top:21px;margin-top:29px;font:11px/1.85 'IBM Plex Mono',monospace;color:#829585}
+@media(max-width:900px) {
+#selected .performance--impact .impact-primary .impact-big strong {font-size:clamp(92px,18vw,155px)}
+#selected .performance--impact .impact-primary .impact-big>span {font-size:clamp(19px,4.1vw,32px)}
+}
+@media(max-width:700px) {
+#selected .performance--impact {padding:25px 18px}
+#selected .performance--impact .performance-heading {display:block;margin-bottom:33px}
+#selected .performance--impact .performance-heading span {display:block}
+#selected .performance--impact .performance-heading span:last-child {margin-top:7px;text-align:left}
+#selected .performance--impact .impact-primary .impact-big strong {font-size:clamp(80px,17vw,118px)}
+#selected .performance--impact .impact-primary .impact-big>span {font-size:clamp(19px,5.4vw,27px)}
+#selected .performance--impact .metric-grid--support .metric {padding:10px 12px}
+#selected .performance--impact .metric-grid--support .metric strong {font-size:clamp(20px,4.7vw,31px)}
+#selected .performance--impact .metric-grid--support .metric span {font-size:9px}
+}
+@media(max-width:430px) {
+#selected .performance--impact .metric-grid--support {grid-template-columns:1fr}
+#selected .performance--impact .metric-grid--support .metric {border-right:0;border-bottom:1px solid #364339;padding:12px 0}
+#selected .performance--impact .metric-grid--support .metric strong {font-size:32px}
+#selected .performance--impact .impact-primary .impact-big strong {font-size:clamp(73px,20vw,91px)}
+}
 </style>
 </head>
 <body>
