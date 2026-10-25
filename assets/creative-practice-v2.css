@@ -59,3 +59,49 @@
 .placeholder-meta{top:23px;left:24px}.placeholder-number{bottom:23px;right:24px}
 }
 @media(max-width:390px){.metric{padding:12px}.metric strong{font-size:21px}}
+
+/* Selected work: make social reach an editorial proof point rather than a footnote. */
+.section-head--impact{margin-bottom:clamp(32px,4vw,65px)}
+.section-head--impact p{max-width:850px}
+.impact-context{display:flex;align-items:center;gap:13px;margin-top:22px;color:var(--muted);font:10px/1.7 var(--mono);letter-spacing:.05em;text-transform:uppercase}
+.impact-marker{flex:0 0 7px;width:7px;height:7px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 4px #d4f87916}
+.performance--impact{padding:clamp(25px,3vw,47px)}
+.performance--impact .performance-heading{margin:0 0 clamp(24px,3vw,44px);padding-bottom:17px;border-bottom:1px solid #4c604c;font-size:11px}
+.impact-primary{display:grid;grid-template-columns:minmax(250px,1fr) minmax(230px,.75fr);align-items:end;gap:clamp(25px,4vw,70px);padding-bottom:clamp(28px,3.5vw,51px);border-bottom:1px solid var(--line)}
+.impact-big{display:flex;flex-direction:column;align-items:start;gap:2px;min-width:0}
+.impact-big strong{font:600 clamp(78px,8.3vw,154px)/.98 var(--sans);letter-spacing:-.108em;color:var(--accent);white-space:nowrap}
+.impact-big>span{font:600 clamp(12px,1.1vw,16px)/1.6 var(--mono);letter-spacing:.08em;color:var(--text);margin-top:10px}
+.impact-big small{font:10px/1.7 var(--mono);color:var(--muted);margin-top:7px;letter-spacing:.02em}
+.impact-primary>p{font-size:clamp(16px,1.25vw,20px);line-height:1.78;color:#d4dfd0;max-width:495px;margin:0 0 4px}
+.performance--impact .metric-grid--support{grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:21px}
+.performance--impact .metric{border:0;border-right:1px solid #4c604c;padding:9px clamp(12px,2vw,32px) 10px 0}
+.performance--impact .metric:last-child{border-right:0}
+.performance--impact .metric strong{font:500 clamp(25px,2.75vw,43px)/1.12 var(--sans);letter-spacing:-.07em;white-space:normal}
+.performance--impact .metric span{font-size:10px;margin-top:10px}
+.performance--impact .metric-secondary{margin-top:25px;padding-top:17px;border-top:1px solid #4c604c;font-size:10px;line-height:1.9}
+@media(max-width:1150px){
+.impact-primary{grid-template-columns:1fr;gap:20px}
+.impact-primary>p{max-width:780px}
+.impact-big strong{font-size:clamp(76px,11vw,142px)}
+}
+@media(max-width:700px){
+.impact-context{font-size:9px;align-items:start}
+.performance--impact{padding:22px 18px}
+.performance--impact .performance-heading{margin-bottom:21px}
+.impact-primary{gap:18px;padding-bottom:28px}
+.impact-big strong{font-size:clamp(76px,15vw,118px)}
+.impact-big>span{font-size:12px}
+.impact-primary>p{font-size:15px}
+.performance--impact .metric-grid--support{grid-template-columns:repeat(3,minmax(0,1fr));gap:0}
+.performance--impact .metric{padding:6px 11px 9px}
+.performance--impact .metric:first-child{padding-left:0}
+.performance--impact .metric strong{font-size:clamp(19px,4.5vw,30px)}
+.performance--impact .metric span{font-size:9px;overflow-wrap:anywhere}
+}
+@media(max-width:440px){
+.impact-big strong{font-size:clamp(65px,15vw,87px)}
+.performance--impact .metric-grid--support{grid-template-columns:1fr}
+.performance--impact .metric{border-right:0;border-bottom:1px solid var(--line);padding:12px 0}
+.performance--impact .metric:last-child{border:0}
+.performance--impact .metric strong{font-size:32px}
+}
