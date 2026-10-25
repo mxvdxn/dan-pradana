@@ -329,6 +329,34 @@
     /* Show the local Dead Mall performance image when it is imported to GitHub. */
     .dead-mall-case-link{display:inline-flex;gap:12px;margin-top:16px;font-size:12px;font-weight:700;border-bottom:1px solid var(--orange);padding-bottom:8px}
     .impact-number .impact-value{font-size:clamp(100px,12vw,215px)}
+
+    /* The Dead Mall: full editorial feature directly in the main homepage */
+    .featured-mall{background:#171e25;color:#f4f1e9;padding-block:clamp(85px,10vw,165px)}
+    .mall-overline{display:flex;justify-content:space-between;gap:24px;border-top:1px solid #52616e;padding-top:20px;color:#d6a398}
+    .mall-heading{display:flex;justify-content:space-between;align-items:end;gap:clamp(28px,5vw,85px);margin:45px 0 clamp(48px,7vw,104px)}
+    .mall-heading>div{flex:1.5}.mall-heading>p{flex:.5;font-size:clamp(16px,1.36vw,21px);color:#b7c4cd;line-height:1.8;max-width:370px;margin:0 0 12px}
+    .mall-accent{color:#eca189}
+    .mall-heading h2{font-size:clamp(57px,7.4vw,132px);font-weight:600;letter-spacing:-.082em;line-height:.94;margin:23px 0 0}
+    .mall-heading h2 em{color:#ec9d82;font-family:var(--serif);font-style:italic;font-weight:400;letter-spacing:-.065em;font-size:1.05em}
+    .mall-image{margin:0;background:#071019;overflow:hidden}
+    .mall-image img{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:cover}
+    .mall-image figcaption{display:flex;justify-content:space-between;gap:20px;background:#101720;font-size:10px;letter-spacing:.13em;text-transform:uppercase;color:#a1b2bd;padding:17px 21px}
+    .mall-metrics{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));border-top:1px solid #50616e;border-bottom:1px solid #50616e;margin-block:clamp(60px,8vw,126px) clamp(80px,9vw,145px)}
+    .mall-metrics>div{padding:32px 18px 36px;min-width:0;border-right:1px solid #50616e}
+    .mall-metrics>div:first-child{padding-left:0}.mall-metrics>div:last-child{border:0}
+    .mall-metric-name{display:block;text-transform:uppercase;letter-spacing:.14em;font-size:10px;color:#b9c4ca;margin-bottom:18px}
+    .mall-metrics strong{font-size:clamp(35px,4.1vw,73px);font-weight:600;line-height:1;letter-spacing:-.065em}
+    .mall-story{display:grid;grid-template-columns:1fr 1fr;gap:clamp(50px,9vw,160px)}
+    .mall-story-heading h3{font-size:clamp(49px,5.9vw,100px);font-weight:500;letter-spacing:-.07em;line-height:1.06;margin:20px 0 50px}
+    .mall-story-heading h3 em{font-family:var(--serif);color:#ec9d82;font-weight:400;font-style:italic}
+    .mall-meta{border-top:1px solid #52616e;padding-top:25px;display:flex;flex-direction:column;gap:15px;color:#b9c4ca;font-size:11px;letter-spacing:.11em;text-transform:uppercase}
+    .mall-copy p{font-size:clamp(16px,1.45vw,20px);line-height:1.9;color:#c7d0d3;margin:0 0 28px}
+    .mall-copy strong{color:white;font-weight:700}.mall-copy em{color:#efbcaa}
+    .mall-copy blockquote{font:italic clamp(29px,3vw,48px)/1.25 var(--serif);letter-spacing:-.025em;color:#f1b8a5;border-left:3px solid #eb937b;padding-left:25px;margin:43px 0}
+    .mall-action{display:inline-flex;align-items:center;justify-content:space-between;gap:45px;color:#f2b6a3;border-bottom:1px solid currentColor;padding:0 0 13px;font-size:13px;font-weight:700}
+    @media(max-width:960px){.mall-heading{display:block}.mall-heading>p{margin-top:32px;max-width:700px}.mall-story{grid-template-columns:1fr;gap:50px}.mall-story-heading h3{margin-bottom:30px}.mall-meta{flex-direction:row;flex-wrap:wrap;gap:15px 25px}}
+    @media(max-width:650px){.mall-overline span:last-child,.mall-image figcaption span:last-child{display:none}.mall-heading h2{font-size:clamp(55px,10.5vw,80px)}.mall-metrics{grid-template-columns:repeat(2,minmax(0,1fr))}.mall-metrics>div{border-bottom:1px solid #50616e}.mall-metrics>div:nth-child(even){border-right:0}.mall-metrics>div:nth-last-child(-n+2){border-bottom:0}.mall-metrics>div:nth-child(odd){padding-left:0}.mall-metrics strong{font-size:clamp(39px,8vw,62px)}.mall-heading{margin-bottom:48px}.mall-story-heading h3{font-size:clamp(50px,9.5vw,74px)}}
+
 </style>
 </head>
 <body>
@@ -337,7 +365,7 @@
     <div class="container">
       <a class="wordmark" href="#top" aria-label="Dan Pradana, back to top">dan pradana<b>.</b></a>
       <nav class="desktop-nav" id="nav" aria-label="Main navigation">
-<a href="#work">The stories</a><a href="#impact">Reach</a><a href="#practice">The thinking</a><a href="#advertising">Advertising archive</a><a href="#about">About</a></nav>
+<a href="#dead-mall">Featured film</a><a href="#work">Original worlds</a><a href="#practice">The thinking</a><a href="#advertising">Advertising archive</a><a href="#about">About</a></nav>
       <div class="masthead-side">Original IP / Generative filmmaking</div>
       <button class="menu-toggle" id="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="nav"><span></span><span></span></button>
     </div>
@@ -355,10 +383,34 @@
   </div>
   <div class="creator-foot"><span>Original worlds. Unusual ideas. A little chaos.</span><span>Scroll to explore ↓</span></div>
 </section>
-<section class="creator-impact" id="impact" aria-labelledby="impact-heading">
-  <div class="container impact-layout">
-    <div class="impact-kicker"><span class="eyebrow">A moment that travelled</span><h2 id="impact-heading">The internet<br>noticed.</h2><p>A single creative experiment can travel further than a traditional campaign ever planned to. X has become Dan's testing ground, where new visual ideas meet an international community of people pushing AI filmmaking forward.</p><a href="projects/dead-mall/index.html" class="impact-link">Read The Dead Mall case study <span aria-hidden="true">↗</span></a></div>
-    <div class="impact-number"><div><span class="impact-value">1.3M</span><span class="impact-caption">Impressions on The Dead Mall</span></div><p class="impact-caveat">Verified against Dan’s supplied X post analytics, alongside 62,403 video views and 6,490 engagements.</p></div>
+<section class="featured-mall" id="dead-mall" aria-labelledby="dead-mall-heading">
+  <div class="container">
+    <div class="mall-overline"><span class="eyebrow">001 / Featured generative film</span><span class="eyebrow">Original short film / May 2026</span></div>
+    <div class="mall-heading">
+      <div><p class="eyebrow mall-accent">Dan Pradana / MXVDXN Studio</p><h2 id="dead-mall-heading">We found<br>something in...<br><em>[The Dead Mall]</em></h2></div>
+      <p>At two in the morning, a gang of Jakarta scooter girls enters an abandoned mall. The night gets a lot stranger than anyone bargained for.</p>
+    </div>
+    <figure class="mall-image">
+      <img id="mall-performance-graphic" src="assets/dead-mall-performance.svg" alt="The Dead Mall X post performance infographic: 1.3 million impressions, 62,403 video views, 54,923 unique video views, 6,490 engagements, 3,460 detail expands, 880 profile visits, 847 likes, 81 reposts and 56 replies" loading="lazy" decoding="async">
+      <figcaption><span>Original post analytics / May 1, 2026</span><span>Infographic / Dan Pradana</span></figcaption>
+    </figure>
+    <div class="mall-metrics" aria-label="Original X post analytics">
+      <div><span class="mall-metric-name">Post impressions</span><strong>1.3M</strong></div>
+      <div><span class="mall-metric-name">Video views</span><strong>62,403</strong></div>
+      <div><span class="mall-metric-name">Engagements</span><strong>6,490</strong></div>
+      <div><span class="mall-metric-name">Unique video views</span><strong>54,923</strong></div>
+    </div>
+    <div class="mall-story" aria-label="The Dead Mall creative case study">
+      <div class="mall-story-heading"><span class="eyebrow mall-accent">The thinking behind it</span><h3>Freedom to make<br><em>strange things.</em></h3><div class="mall-meta"><span>Format / Short film</span><span>Technology / Seedance 2.0</span><span>Platform / Runway</span></div></div>
+      <div class="mall-copy">
+        <p>Generative AI gave Dan Pradana something conventional production rarely can: <strong>creative independence.</strong> Not just the freedom to make things faster, but the room to experiment with provocative, unusual and culturally specific stories that might never find their way through mainstream development.</p>
+        <p>One of those experiments became <strong>WE FOUND SOMETHING IN... [THE DEAD MALL]</strong>. Set in Jakarta, the short film follows a fictional gang of scooter-riding girls, loosely inspired by <em>cabe-cabean</em>, an Indonesian slang term associated with young women in street-motorcycle culture. It's a distinctly local starting point for a story that quickly goes somewhere unexpected.</p>
+        <p>At 2 a.m., the gang wanders into an abandoned shopping mall and discovers something that has no business being there. Instead of running, they stay. What follows is a chaotic mix of urban horror, absurd comedy and unapologetically Indonesian youth culture.</p>
+        <p>Created using <strong>Seedance 2.0 through Runway</strong>, the film reached <strong>1.3 million impressions and 62,403 video views</strong> on X. The response proved there was an audience for a strange, independently made story that didn't need to look or sound like a conventional production.</p>
+        <blockquote>The most interesting stories aren't always the ones that get approved. Sometimes, they're the ones you finally have the freedom to make.</blockquote>
+        <a class="mall-action" href="https://x.com/mxvdxn/status/2050214441539768688" target="_blank" rel="noopener noreferrer">Watch the original film on X <span aria-hidden="true">↗</span></a>
+      </div>
+    </div>
   </div>
 </section>
 <section class="creator-worlds container" id="work" aria-labelledby="work-heading">
@@ -388,14 +440,7 @@
       </a>
       <div class="story-project-description"><div><span class="eyebrow muted">Coming of age / Jakarta</span><h3>BETWEEN DAYS</h3><p>Friendship, after-school detours and all the little moments people remember. A softer, more intimate side of the same storytelling obsession.</p></div></div>
     </article>
-    <article class="story-project story-project-lab">
-      <a href="projects/dead-mall/index.html" class="project-art project-art-viral" aria-label="Read The Dead Mall Gen AI film case study">
-        <div class="project-art-top"><span>04 / Featured short film</span><span>Jakarta / Generative video</span></div>
-        <div class="viral-poster"><strong>THE<br>DEAD<br><em>MALL.</em></strong><span>1.3M impressions on X</span></div>
-        <div class="project-art-bottom"><span>Seedance 2.0 via Runway</span><span>Read the case study ↗</span></div>
-      </a>
-      <div class="story-project-description"><div><span class="eyebrow muted">Gen AI short film / Viral experiment</span><h3>WE FOUND SOMETHING IN... [THE DEAD MALL]</h3><p>A gang of Jakarta scooter girls enters an abandoned mall at 2 a.m. An unusual, provocative independent film that earned 1.3M impressions and 62,403 video views on X.</p></div><a class="story-project-action" href="projects/dead-mall/index.html">Read the case study ↗</a></div>
-    </article>
+    
   </div>
 </section>
 <section class="creator-perspective" id="practice" aria-labelledby="practice-heading">
@@ -558,6 +603,18 @@
         /* The temporary curated layout remains until the source ZIP is available. */
       }
     }());
+  </script>
+
+  <script>
+  (function(){
+    /* Load the approved original infographic from GitHub when available.
+       The locally hosted SVG remains visible otherwise. */
+    var slot=document.getElementById('mall-performance-graphic');
+    if(!slot)return;
+    var original=new Image();
+    original.onload=function(){if(original.naturalWidth>0)slot.src='assets/dead-mall-performance.png';};
+    original.src='assets/dead-mall-performance.png';
+  }());
   </script>
 </body>
 </html>
