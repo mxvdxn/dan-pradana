@@ -22,3 +22,40 @@
 @media(max-width:700px){.topbar{height:45px}.topbar span:last-child{display:none}.hero{min-height:0;padding-top:42px}.hero-panel{grid-template-columns:1fr;margin:48px 0 63px}.hero h1{font-size:clamp(50px,12.1vw,86px)}.hero-note{max-width:580px}.hero-note p{font-size:15px}.hero-bottom span:last-child{display:none}.section-head,.detail-body{grid-template-columns:1fr;gap:18px}.section-head h2{font-size:clamp(32px,8vw,51px)}.skills,.ads-grid,.about,.process-grid{grid-template-columns:1fr}.skill{min-height:0}.feature-write{padding:25px}.feature-write h3{font-size:clamp(28px,7vw,48px)}.series{grid-template-columns:1fr}.series-item{min-height:200px}.series-item h3{margin:30px 0 15px}.about-meta{grid-template-columns:1fr}.bottom-bar{display:block}.bottom-bar span{display:block;margin-bottom:9px}.caption{font-size:9px}}
 @media(max-width:400px){.ad-row{grid-template-columns:77px minmax(0,1fr) 10px;gap:10px}.ad-row img{width:77px;height:58px}.ad-row h3{font-size:13px}.ad-row p{font-size:10px}.workflow-step{grid-template-columns:1fr;gap:8px}.hero h1{font-size:clamp(44px,11vw,60px)}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{animation:none!important;transition:none!important}}
+
+/* Portfolio refinement: full name, replaceable stills, readable case details and data. */
+.logo{font-size:21px;letter-spacing:-.06em;white-space:nowrap}
+.mobile-bar strong{font-size:19px;letter-spacing:-.04em}
+.visual-placeholder{margin:0;background:#0b110d!important;align-self:start}
+.placeholder-stage{aspect-ratio:16/9;position:relative;display:flex;align-items:center;justify-content:center;padding:30px;overflow:hidden;background:radial-gradient(ellipse at 72% 35%,#294131 0%,transparent 48%),linear-gradient(135deg,#19241c,#0b110d 65%);border-bottom:1px solid var(--line)}
+.placeholder-stage:before{content:'';position:absolute;inset:0;opacity:.15;background-image:linear-gradient(90deg,transparent calc(100% - 1px),#8aab83 calc(100% - 1px)),linear-gradient(0deg,transparent calc(100% - 1px),#8aab83 calc(100% - 1px));background-size:32px 32px;pointer-events:none}
+.placeholder-stage:after{content:'';position:absolute;inset:16px;border:1px solid #758c6a44;pointer-events:none}
+.placeholder-meta,.placeholder-number{position:absolute;z-index:1;font:10px var(--mono);letter-spacing:.08em;color:var(--muted)}
+.placeholder-meta{top:31px;left:33px}.placeholder-number{bottom:31px;right:33px}
+.placeholder-inner{position:relative;z-index:1;display:flex;align-items:center;flex-direction:column;gap:10px;text-align:center;max-width:90%}
+.placeholder-crosshair{font:37px var(--mono);color:var(--accent);opacity:.8}
+.placeholder-inner strong{font:500 clamp(18px,2.5vw,31px)/1.15 var(--sans);letter-spacing:-.065em;max-width:360px}
+.placeholder-inner small{font:10px var(--mono);color:var(--muted);text-transform:uppercase;letter-spacing:.13em}
+.performance{padding:23px 25px 22px;border-top:1px solid var(--line);background:#151d17}
+.performance-heading{font:10px/1.6 var(--mono);display:flex;align-items:center;justify-content:space-between;gap:15px;color:var(--accent);margin-bottom:18px}
+.performance-heading span:last-child{color:var(--muted);text-align:right}
+.metric-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}
+.metric{border:1px solid #405043;padding:15px 16px;min-width:0}
+.metric strong{display:block;font:500 clamp(19px,2.15vw,35px)/1.15 var(--sans);letter-spacing:-.055em;overflow-wrap:anywhere}
+.metric span{display:block;font:10px/1.5 var(--mono);color:var(--sub);margin-top:7px}
+.metric-secondary{font:11px/1.8 var(--mono);color:var(--muted);margin:16px 0 0}
+.case-open{border-bottom:1px solid var(--line)}
+.case-open-head{font:10px/1.5 var(--mono);letter-spacing:.08em;color:var(--accent);padding:19px 24px 17px}
+.case-open .detail-body{border-top:1px solid var(--line)}
+.ad-row{min-height:115px}
+.ad-row p{font-size:12px;line-height:1.58;color:var(--sub)}
+@media(max-width:700px){
+.metric-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+.performance{padding:18px}
+.performance-heading{display:block}
+.performance-heading span{display:block}
+.performance-heading span:last-child{text-align:left;margin-top:4px}
+.placeholder-stage{padding:20px}
+.placeholder-meta{top:23px;left:24px}.placeholder-number{bottom:23px;right:24px}
+}
+@media(max-width:390px){.metric{padding:12px}.metric strong{font-size:21px}}
