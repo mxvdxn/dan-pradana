@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#f1efe8">
+<meta name="description" content="The Dead Mall, Dan Pradana's independent generative AI short film, reached 1.3M impressions and 62,403 video views on X.">
+<meta property="og:title" content="The Dead Mall | Dan Pradana">
+<meta property="og:description" content="An abandoned mall. A gang of scooter girls. A very strange night in Jakarta.">
+<title>The Dead Mall | Dan Pradana</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<style>
+:root{--paper:#f1efe8;--ink:#232522;--muted:#676b63;--coral:#d74f33;--line:#c9c8be;--sans:'DM Sans',Arial,sans-serif;--serif:'Instrument Serif',Georgia,serif}
+*,*:before,*:after{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);font-family:var(--sans);color:var(--ink);-webkit-font-smoothing:antialiased}a{color:inherit;text-decoration:none}a:focus-visible{outline:2px solid var(--coral);outline-offset:5px}.wrap{max-width:1620px;margin:auto;padding-inline:clamp(22px,5.4vw,90px)}
+header{border-bottom:1px solid var(--line)}header .wrap{display:flex;justify-content:space-between;align-items:center;min-height:88px;gap:20px}.brand{font-size:20px;font-weight:700;letter-spacing:-.075em}.brand b{font-family:var(--serif);font-weight:400;color:var(--coral);font-size:30px}.back{font-size:12px;border-bottom:1px solid var(--ink);padding-bottom:7px;font-weight:700}
+.kicker{font-size:10px;color:var(--coral);text-transform:uppercase;letter-spacing:.16em;font-weight:700}.hero{padding-top:clamp(68px,8vw,130px);padding-bottom:clamp(50px,7vw,110px)}.hero-top{display:flex;justify-content:space-between;gap:25px;margin-bottom:clamp(40px,5vw,80px)}h1{font-size:clamp(60px,9.9vw,169px);font-weight:600;letter-spacing:-.092em;line-height:.86;margin:0;max-width:1400px}h1 em{font-family:var(--serif);font-weight:400;color:var(--coral);font-style:italic;font-size:1.09em}.subhero{display:grid;grid-template-columns:1.1fr .9fr;gap:clamp(40px,10vw,190px);border-top:1px solid var(--line);padding-top:36px;margin-top:clamp(50px,7vw,100px);align-items:start}.lede{font-size:clamp(29px,3.7vw,61px);line-height:1.15;letter-spacing:-.05em;margin:0;font-weight:500}.subhero .short{font-size:clamp(15px,1.45vw,20px);color:var(--muted);line-height:1.85;margin:0}
+.feature{background:#111a23;color:#f7f6f1}.feature-inner{max-width:1700px;margin:auto;padding:clamp(18px,3vw,52px)}.original-infographic{display:none}.original-infographic.available{display:block}.original-infographic img{width:100%;height:auto;display:block;aspect-ratio:16/9;object-fit:contain}.original-infographic figcaption{color:#aebbc5;text-align:right;font-size:10px;letter-spacing:.14em;text-transform:uppercase;margin:12px 0 0}
+.editorial-fallback{aspect-ratio:16/9;min-height:400px;max-height:900px;position:relative;overflow:hidden;border:1px solid #38546c;background:radial-gradient(ellipse at 80% 26%,#334f69,transparent 49%),radial-gradient(ellipse at 23% 85%,#193f61,transparent 52%),linear-gradient(138deg,#071019,#172838 64%,#07121d);padding:clamp(25px,4vw,72px);display:flex;flex-direction:column;justify-content:space-between}.editorial-fallback.hidden{display:none}.dash-eyebrow{font-size:11px;letter-spacing:.26em;color:#b7cad7;text-transform:uppercase}.dash-title{font-size:clamp(60px,7.9vw,136px);font-weight:700;line-height:.83;letter-spacing:-.08em;margin:0}.dash-title span{display:block;color:#31b8e5}.dash-subtitle{font-size:clamp(15px,1.8vw,25px);color:#cedce5;line-height:1.5;margin:25px 0}.dash-metrics{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:clamp(7px,1.3vw,19px)}.dash-metric{padding:clamp(13px,2vw,29px);border:1px solid #3d5a77;background:#0e1e30bb;border-radius:12px}.dash-metric strong{display:block;font-size:clamp(23px,3.8vw,68px);line-height:1;font-weight:700;letter-spacing:-.06em}.dash-metric span{display:block;font-size:clamp(9px,1vw,14px);color:#b6cddd;margin-top:12px}
+.metrics{padding-block:clamp(90px,10vw,160px)}.metrics-head{display:flex;justify-content:space-between;align-items:end;gap:25px;margin-bottom:40px}.metrics h2,.story h2{font-size:clamp(49px,6vw,100px);font-weight:500;letter-spacing:-.075em;line-height:1.02;margin:14px 0 0}.metrics h2 em,.story h2 em{font-family:var(--serif);color:var(--coral);font-weight:400}.metrics-head p{color:var(--muted);font-size:13px;line-height:1.8;max-width:360px}.numbers{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line)}.number{background:var(--paper);padding:clamp(20px,3vw,53px)}.number strong{display:block;font-size:clamp(43px,5.2vw,90px);font-weight:600;letter-spacing:-.075em;line-height:1}.number span{font-size:12px;color:var(--muted);display:block;margin-top:15px}
+.story{padding-block:clamp(80px,11vw,175px);border-top:1px solid var(--line)}.story-grid{display:grid;grid-template-columns:.75fr 1.25fr;gap:clamp(50px,9vw,150px)}.story h2{margin-top:20px}.story-body{font-size:clamp(16px,1.4vw,20px);line-height:1.92;color:#4e534d}.story-body p{margin:0 0 26px}.story-body strong{color:var(--ink)}.story-body i{font-family:var(--serif);font-size:1.15em}.statement{font-family:var(--serif);font-style:italic;font-size:clamp(27px,3vw,49px);letter-spacing:-.03em;line-height:1.3;color:var(--ink);border-left:3px solid var(--coral);padding-left:28px;margin:48px 0!important}
+.view{background:var(--coral);color:white;padding:clamp(70px,10vw,160px) 0}.view h2{font-size:clamp(65px,9vw,154px);line-height:.9;letter-spacing:-.085em;font-weight:500;margin:22px 0 55px}.view h2 em{font-family:var(--serif);font-weight:400;color:#412923}.view a{display:inline-flex;gap:50px;justify-content:space-between;align-items:center;border-bottom:1px solid #ffdad0;padding-bottom:12px;font-size:16px;font-weight:700}.view p{font-size:13px;color:#ffdfd5;margin-top:35px}.sitefoot{background:#191c19;color:#ecece6;padding:28px 0}.sitefoot .wrap{display:flex;justify-content:space-between;gap:15px}.sitefoot span{font-size:10px;text-transform:uppercase;letter-spacing:.15em;color:#b3b9b0}
+@media(max-width:900px){.subhero,.story-grid{grid-template-columns:1fr;gap:25px}.editorial-fallback{aspect-ratio:1.6}.metrics-head{display:block}.metrics-head p{margin:22px 0 0}.hero-top{flex-wrap:wrap}}@media(max-width:680px){header .wrap{min-height:74px}.hero{padding-top:65px}.hero-top{gap:12px}.hero-top span:last-child{display:none}.dash-title{font-size:clamp(60px,14vw,96px)}.dash-metrics{grid-template-columns:repeat(2,1fr)}.editorial-fallback{aspect-ratio:auto;min-height:490px}.numbers{grid-template-columns:repeat(2,1fr)}.metrics h2,.story h2{font-size:clamp(50px,11vw,79px)}.sitefoot .wrap{display:block}.sitefoot span{display:block;margin-top:12px}}
+</style>
+</head>
+<body>
+<header><div class="wrap"><a class="brand" href="../../index.html">dan pradana<b>.</b></a><a href="../../index.html#work" class="back">← All original projects</a></div></header>
+<main>
+<section class="hero wrap">
+<div class="hero-top"><span class="kicker">Featured / Independent Gen AI short film</span><span class="kicker">2026 / Jakarta, Indonesia</span></div>
+<h1>We found<br>something in...<br><em>[The Dead Mall]</em></h1>
+<div class="subhero"><p class="lede">An abandoned mall. A gang of scooter girls. One very strange night in Jakarta.</p><p class="short">An independent short film by Dan Pradana, built with Seedance 2.0 through Runway. Part urban horror, part absurd comedy, and unmistakably Indonesian.</p></div>
+</section>
+<section class="feature" aria-label="Project performance infographic">
+<div class="feature-inner">
+<figure class="original-infographic" id="original-infographic"><img id="infographic-image" src="../../assets/dead-mall-performance.png" alt="X post performance infographic showing 1.3 million impressions, 62,403 video views, 54,923 unique video views and engagement metrics from The Dead Mall short film" decoding="async"><figcaption>Original post analytics / May 1, 2026</figcaption></figure>
+<div class="editorial-fallback" id="editorial-fallback"><span class="dash-eyebrow">The Dead Mall / Creator performance on X</span><div><h2 class="dash-title">A strange idea.<span>A big reaction.</span></h2><p class="dash-subtitle">Seedance 2.0 / Runway / May 1, 2026</p></div><div class="dash-metrics"><div class="dash-metric"><strong>1.3M</strong><span>Impressions</span></div><div class="dash-metric"><strong>62,403</strong><span>Video views</span></div><div class="dash-metric"><strong>6,490</strong><span>Engagements</span></div><div class="dash-metric"><strong>847</strong><span>Likes</span></div></div></div>
+</div>
+</section>
+<section class="metrics wrap" aria-labelledby="metrics-heading"><div class="metrics-head"><div><span class="kicker">01 / The response</span><h2 id="metrics-heading">A little chaos.<br><em>A lot of attention.</em></h2></div><p>Post analytics captured from X. Impressions represent post exposure, while video views are reported separately.</p></div>
+<div class="numbers"><div class="number"><strong>1.3M</strong><span>Post impressions</span></div><div class="number"><strong>62,403</strong><span>Video views</span></div><div class="number"><strong>54,923</strong><span>Unique video views</span></div><div class="number"><strong>6,490</strong><span>Engagements</span></div><div class="number"><strong>3,460</strong><span>Detail expands</span></div><div class="number"><strong>880</strong><span>Profile visits</span></div></div></section>
+<section class="story wrap" aria-labelledby="story-heading"><div class="story-grid"><div><span class="kicker">02 / Behind the story</span><h2 id="story-heading">Freedom to<br><em>make strange things.</em></h2></div><div class="story-body">
+<p>Generative AI gave Dan Pradana something that conventional production rarely can: <strong>creative independence.</strong> Not just the freedom to make things faster, but the room to experiment with unusual, provocative, and culturally specific stories that might never find their way through mainstream development.</p>
+<p>One of those experiments became <strong>WE FOUND SOMETHING IN... [THE DEAD MALL]</strong>. Set in Jakarta, it follows a fictional gang of scooter-riding girls, loosely inspired by the local <i>cabe-cabean</i> stereotype. The Indonesian slang evokes a particular world of young women and street-motorbike culture, lending the film its cheeky, distinctly local attitude.</p>
+<p>At 2 a.m., the gang enters an abandoned shopping mall. Inside, they stumble upon something that has no business being there. Instead of running away, they stay, and a reckless adventure turns into a collision of urban horror, absurd comedy, and total chaos.</p>
+<p>Created with <strong>Seedance 2.0 through Runway</strong>, the film found an audience on X, generating <strong>1.3 million impressions and 62,403 video views</strong> on the original post.</p>
+<p class="statement">The most interesting stories are not always the ones that get approved. Sometimes, they are the ones you finally have the freedom to make.</p>
+<p>For Dan, the appeal of generative AI lies in what it unlocks for the storyteller. It is a way to pursue an idea on its own terms, especially when that idea is too strange, too specific, or too much fun to explain in a conventional pitch.</p>
+</div></div></section>
+<section class="view"><div class="wrap"><span class="kicker" style="color:#ffddd0">03 / Watch the original film</span><h2>See what<br>they <em>found.</em></h2><a href="https://x.com/mxvdxn/status/2050214441539768688" target="_blank" rel="noopener noreferrer">Watch THE DEAD MALL on X <span>↗</span></a><p>Created by Dan Pradana / MXVDXN Studio / Seedance 2.0 via Runway</p></div></section>
+</main>
+<footer class="sitefoot"><div class="wrap"><a class="brand" href="../../index.html">dan pradana<b>.</b></a><span>Ideas first. Stories always.</span></div></footer>
+<script>
+(function(){
+var image=document.getElementById('infographic-image');
+var figure=document.getElementById('original-infographic');
+var fallback=document.getElementById('editorial-fallback');
+function loaded(){figure.classList.add('available');fallback.classList.add('hidden')}
+if(image.complete && image.naturalWidth>0){loaded()}else{image.addEventListener('load',loaded)}
+})();
+</script>
+</body></html>
