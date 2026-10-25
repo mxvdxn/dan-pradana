@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="ti de">
+<title id="ti">Dan Pradana, The Dead Mall, X post performance</title><desc id="de">1.3 million impressions, 62,403 video views, 54,923 unique views, 6,490 engagements, 3,460 detail expands, 880 profile visits, 847 likes, 81 reposts and 56 replies.</desc>
+<defs><linearGradient id="bg" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#050e18"/><stop offset=".52" stop-color="#122c45"/><stop offset="1" stop-color="#071019"/></linearGradient>
+<radialGradient id="glow"><stop stop-color="#164a72" stop-opacity=".85"/><stop offset="1" stop-color="#164a72" stop-opacity="0"/></radialGradient>
+<linearGradient id="bl" x1="0" x2="1"><stop stop-color="#2689ff"/><stop offset="1" stop-color="#27d5de"/></linearGradient>
+<linearGradient id="poster" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#263a4c"/><stop offset=".5" stop-color="#2f2534"/><stop offset="1" stop-color="#0b1a27"/></linearGradient>
+<filter id="shadow"><feGaussianBlur stdDeviation="18"/></filter>
+</defs>
+<rect width="1600" height="900" fill="url(#bg)"/><ellipse cx="950" cy="190" rx="780" ry="450" fill="url(#glow)"/><ellipse cx="1240" cy="760" rx="580" ry="200" fill="#061018" opacity=".8" filter="url(#shadow)"/>
+<g font-family="Arial, Helvetica, sans-serif">
+<text x="54" y="60" font-size="43" font-weight="700" fill="#f4f7fb">𝕏</text><text x="114" y="51" font-size="16" letter-spacing="5" fill="#b4c5cf">CREATOR PERFORMANCE</text>
+<text x="1260" y="52" font-size="13" letter-spacing="4" fill="#bdc9d2">MAY 1, 2026</text>
+<text x="54" y="171" font-size="106" letter-spacing="-7" font-weight="800" fill="#fbfdfe">X Post</text>
+<text x="54" y="272" font-size="91" letter-spacing="-6" font-weight="800" fill="url(#bl)">Performance</text>
+<text x="57" y="332" font-size="29" font-weight="700" fill="#f8f9fa">WE FOUND SOMETHING IN... [THE DEAD MALL]</text>
+<text x="57" y="370" font-size="25" fill="#dae5e9">Seedance 2.0 Omni-Reference</text>
+<rect x="56" y="397" width="5" height="70" fill="#17cce1"/><text x="79" y="422" font-size="20" fill="#cedbe3">Dan's post reached 1.3M impressions</text><text x="79" y="452" font-size="20" fill="#cedbe3">and 62,403 video views on X.</text>
+</g>
+<g transform="translate(895,108)">
+<rect width="650" height="394" rx="24" fill="url(#poster)" stroke="#7698a8" stroke-width="2"/>
+<g opacity=".3" stroke="#9dcce7" stroke-width="2"><path d="M30 360 L230 80 480 80 620 340" fill="none"/><path d="M45 80 L610 80 M80 115 L576 115 M250 80 L240 360 M400 80 L410 360" fill="none"/></g>
+<rect x="85" y="110" width="480" height="220" rx="3" fill="#020812" opacity=".65"/>
+<path d="M140 330 L200 125 M440 330 L490 125" stroke="#cee3ee" stroke-width="6" opacity=".35"/><path d="M200 125 L490 125" stroke="#c3dce9" stroke-width="4" opacity=".5"/>
+<g fill="#b2cfe0" opacity=".65"><circle cx="195" cy="228" r="30"/><circle cx="310" cy="230" r="30"/><circle cx="425" cy="228" r="30"/><path d="M150 333 Q190 247 236 333 M268 333 Q307 246 352 333 M380 333 Q425 245 468 333"/></g>
+<path d="M311 222 C273 207 268 330 288 354 L350 354 C370 310 341 211 311 222" fill="#111115"/>
+<path d="M295 260 L326 260 L355 354 L276 354 Z" fill="#c3c2bf" opacity=".8"/>
+<path d="M180 192 L168 125 M410 201 L433 124 M248 190 L257 140" stroke="#bde8fa" stroke-width="5"/><g fill="#f5fbff"><circle cx="168" cy="124" r="8"/><circle cx="433" cy="123" r="8"/><circle cx="257" cy="139" r="8"/></g>
+<text x="42" y="61" font-family="Arial" font-size="18" letter-spacing="5" fill="#a9d5eb">JAKARTA / 02:00 AM</text>
+<text x="598" y="330" text-anchor="end" font-family="Arial" font-weight="800" font-size="63" letter-spacing="-4" fill="#f9f8f1">THE</text>
+<text x="598" y="386" text-anchor="end" font-family="Arial" font-weight="800" font-size="73" letter-spacing="-4" fill="#f9f8f1">DEAD MALL.</text>
+</g>
+<g font-family="Arial, Helvetica, sans-serif">
+<text x="54" y="523" fill="#e5eef7" font-size="14" letter-spacing="4">POST ANALYTICS</text>
+<g>
+<rect x="52" y="549" width="233" height="123" rx="14" fill="#0b2032" stroke="#3b91bf"/>
+<text x="70" y="582" fill="#69bfff" font-size="17">Impressions</text><text x="70" y="642" fill="#fff" font-size="54" font-weight="700">1.3M</text>
+<rect x="298" y="549" width="233" height="123" rx="14" fill="#0b2630" stroke="#3e9b8e"/>
+<text x="316" y="582" fill="#62e5d4" font-size="17">Engagements</text><text x="316" y="642" fill="#fff" font-size="54" font-weight="700">6,490</text>
+<rect x="544" y="549" width="233" height="123" rx="14" fill="#161f37" stroke="#7b6bc6"/>
+<text x="562" y="582" fill="#b8a1ff" font-size="17">Detail expands</text><text x="562" y="642" fill="#fff" font-size="54" font-weight="700">3,460</text>
+<rect x="790" y="549" width="233" height="123" rx="14" fill="#20202a" stroke="#bc8e67"/>
+<text x="808" y="582" fill="#ffd09a" font-size="17">Profile visits</text><text x="808" y="642" fill="#fff" font-size="54" font-weight="700">880</text>
+</g>
+<g>
+<rect x="52" y="686" width="180" height="114" rx="14" fill="#231b2c" stroke="#9a4f7b"/><text x="68" y="718" font-size="16" fill="#ff9cc2">Likes</text><text x="68" y="775" font-size="47" font-weight="700" fill="#fff">847</text>
+<rect x="246" y="686" width="180" height="114" rx="14" fill="#10292c" stroke="#338c8a"/><text x="262" y="718" font-size="16" fill="#8dfff0">Reposts</text><text x="262" y="775" font-size="47" font-weight="700" fill="#fff">81</text>
+<rect x="440" y="686" width="180" height="114" rx="14" fill="#121e38" stroke="#3870bf"/><text x="456" y="718" font-size="16" fill="#a3caff">Replies</text><text x="456" y="775" font-size="47" font-weight="700" fill="#fff">56</text>
+<rect x="636" y="686" width="207" height="114" rx="14" fill="#181f3b" stroke="#8876d9"/><text x="652" y="718" font-size="16" fill="#c5aeff">Unique video views</text><text x="652" y="775" font-size="43" font-weight="700" fill="#fff">54,923</text>
+<rect x="858" y="686" width="207" height="114" rx="14" fill="#0a2338" stroke="#3a8dce"/><text x="874" y="718" font-size="16" fill="#7cccff">Video views</text><text x="874" y="775" font-size="43" font-weight="700" fill="#fff">62,403</text>
+</g>
+<text x="1185" y="592" fill="#aebed0" font-size="16" letter-spacing="4">ORIGINAL FILM</text>
+<text x="1185" y="632" fill="#fff" font-size="29" font-weight="700">MXVDXN / DAN</text>
+<text x="1185" y="678" fill="#c1d2df" font-size="19">Independent Gen AI</text>
+<text x="1185" y="705" fill="#c1d2df" font-size="19">short film</text>
+<text x="1185" y="772" fill="#6fcae4" font-size="18">X / @MXVDXN</text>
+<line x1="52" y1="840" x2="1548" y2="840" stroke="#7893a5" opacity=".4"/>
+<text x="54" y="866" fill="#9ab0c1" font-size="14" letter-spacing="3">DAN PRADANA / MXVDXN STUDIO</text>
+<text x="1546" y="866" text-anchor="end" fill="#9ab0c1" font-size="14" letter-spacing="3">POST PERFORMANCE / MAY 1, 2026</text>
+</g>
+</svg>
